@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "dtru:baobab_branch",
+    "dtru:cypress_branch",
+    "dtru:dead_branch",
+    "dtru:eucalyptus_branch",
+    "dtru:joshua_branch",
+    "dtru:kapok_branch",
+    "dtru:larch_branch",
+    "dtru:magnolia_branch",
+    "dtru:maple_branch",
+    "dtru:palm_branch",
+    "dtru:pine_branch",
+    "dtru:redwood_branch",
+    "dtru:willow_branch"
+  ]
+}

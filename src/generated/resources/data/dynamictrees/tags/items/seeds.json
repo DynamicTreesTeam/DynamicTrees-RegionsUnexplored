@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "dtru:baobab_seed",
+    "dtru:cypress_seed",
+    "dtru:dead_seed",
+    "dtru:eucalyptus_seed",
+    "dtru:joshua_seed",
+    "dtru:kapok_seed",
+    "dtru:larch_seed",
+    "dtru:golden_larch_seed",
+    "dtru:magnolia_seed",
+    "dtru:blue_magnolia_seed",
+    "dtru:pink_magnolia_seed",
+    "dtru:white_magnolia_seed",
+    "dtru:maple_seed",
+    "dtru:orange_maple_seed",
+    "dtru:red_maple_seed",
+    "dtru:palm_seed",
+    "dtru:pine_seed",
+    "dtru:redwood_seed",
+    "dtru:willow_seed"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "dtru:stripped_baobab_branch",
+    "dtru:stripped_cypress_branch",
+    "dtru:stripped_dead_branch",
+    "dtru:stripped_eucalyptus_branch",
+    "dtru:stripped_joshua_branch",
+    "dtru:stripped_kapok_branch",
+    "dtru:stripped_larch_branch",
+    "dtru:stripped_magnolia_branch",
+    "dtru:stripped_maple_branch",
+    "dtru:stripped_palm_branch",
+    "dtru:stripped_pine_branch",
+    "dtru:stripped_redwood_branch",
+    "dtru:stripped_willow_branch"
+  ]
+}
