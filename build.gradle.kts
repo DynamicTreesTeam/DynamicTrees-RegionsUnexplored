@@ -89,12 +89,12 @@ sourceSets.main.get().resources {
 dependencies {
     minecraft("net.minecraftforge:forge:1.20.1-47.2.0")
 
-    implementation(fg.deobf("curse.maven:dynamictrees-252818:5065701"))
-    implementation(fg.deobf("curse.maven:regions-unexplored-659110:5151869"))
+    implementation(fg.deobf("com.ferreusveritas.dynamictrees:DynamicTrees-$mcVersion:${property("dynamicTreesVersion")}"))
+    runtimeOnly(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
 
-    implementation(fg.deobf(files("C:/Users/Luke/IdeaProjects/DynamicTreesPlus/build/libs/DynamicTreesPlus-1.20.1-1.3.0-BETA1.jar")))
-    //runtimeOnly(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
-    runtimeOnly(fg.deobf("curse.maven:terrablender-563928:4618490"))
+    runtimeOnly(fg.deobf("curse.maven:terrablender-563928:5378180"))
+    implementation(fg.deobf("curse.maven:regions-unexplored-659110:5558225"))
+
     runtimeOnly(fg.deobf("curse.maven:jade-324717:4986594"))
     compileOnly(fg.deobf("mezz.jei:jei-$mcVersion-forge-api:${property("jeiVersion")}"))
     compileOnly(fg.deobf("mezz.jei:jei-$mcVersion-common-api:${property("jeiVersion")}"))

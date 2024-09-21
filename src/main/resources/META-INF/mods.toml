@@ -33,14 +33,14 @@ Compatibility Mod between Dynamic trees and Regions Unexplored
 [[dependencies.dtru]]
     modId="dynamictrees"
     mandatory=true
-    versionRange="[1.3.0-BETA3,)"
+    versionRange="[1.3.0,)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.dtru]]
     modId="dynamictreesplus"
     mandatory=false
-    versionRange="[1.3.0-BETA1,)"
+    versionRange="[1.2.0-BETA2,)"
     ordering="AFTER"
     side="BOTH"
 
