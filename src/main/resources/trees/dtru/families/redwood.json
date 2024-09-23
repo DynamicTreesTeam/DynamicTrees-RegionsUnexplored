@@ -1,0 +1,16 @@
+{
+  "common_leaves": "dtru:redwood",
+  "common_species": "dtru:small_redwood",
+  "primitive_log": "regions_unexplored:redwood_log",
+  "primitive_stripped_log": "regions_unexplored:stripped_redwood_log",
+  "max_branch_radius": 24,
+  "max_signal_depth": 64,
+  "generate_surface_root": true,
+  "conifer_variants": true,
+  "texture_overrides": {
+    "branch": "regions_unexplored:block/redwood_log",
+    "branch_top": "regions_unexplored:block/redwood_log_top",
+    "stripped_branch": "regions_unexplored:block/stripped_redwood_log",
+    "stripped_branch_top": "regions_unexplored:block/stripped_redwood_log_top"
+  }
+}

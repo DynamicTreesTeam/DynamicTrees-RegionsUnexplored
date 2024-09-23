@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "regions_unexplored:block/baobab_log",
+    "rings": "regions_unexplored:block/baobab_log_top"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "family": "dtru:larch",
+  "tapering": 0.225,
+  "signal_energy": 35.0,
+  "up_probability": 9,
+  "lowest_branch_height": 6,
+  "growth_rate": 1.2,
+  "soil_longevity": 24,
+  "max_branch_radius": 24,
+  "world_gen_leaf_map_height": 50,
+  "growth_logic_kit": {
+    "name": "conifer",
+    "properties": {
+      "energy_divisor": 5
+    }
+  },
+  "leaves_properties": "dtru:golden_larch",
+  "environment_factors" : {
+    "hot": 0.50,
+    "dry": 0.25,
+    "wet": 0.75
+  },
+  "seed": "dtru:golden_larch_seed",
+  "features" : [
+    "conifer_topper",
+    {
+      "name": "mound",
+      "properties": {
+          "mound_cutoff_radius": 999
+      }
+    },
+    {
+      "name": "roots",
+      "properties": {
+        "min_trunk_radius": 9,
+        "scale_factor": 20
+      }
+    },
+    "clear_volume",
+    "podzol",
+    "bottom_flare"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "dynamictrees:block/smartmodel/sapling",
+  "textures": {
+    "particle": "regions_unexplored:block/redwood_leaves",
+    "log": "regions_unexplored:block/redwood_log",
+    "leaves": "regions_unexplored:block/redwood_leaves"
+  }
+}

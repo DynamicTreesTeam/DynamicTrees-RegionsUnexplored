@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "regions_unexplored:block/stripped_willow_log",
+    "rings": "regions_unexplored:block/stripped_willow_log_top"
+  }
+}

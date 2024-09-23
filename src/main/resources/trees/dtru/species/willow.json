@@ -1,0 +1,52 @@
+{
+  "type": "dtru:generates_underwater",
+  "family": "dtru:willow",
+  "tapering": 0.2,
+  "signal_energy": 16.0,
+  "lowest_branch_height": 6,
+  "growth_rate": 0.8,
+  "growth_logic_kit": "dtru:willow",
+  "environment_factors" : {
+    "snowy": 0.75,
+    "dry": 0.5
+  },
+  "perfect_biomes": { "type": "swamp" },
+  "primitive_sapling": "regions_unexplored:willow_sapling",
+  "acceptable_soils": ["dirt_like", "water_like"],
+  "world_gen_acceptable_soils": [ "mud_like", "dirt_like", "water_like" ],
+  "mega_species": "dtru:mega_willow",
+  "features": [
+    {
+      "name": "roots",
+      "properties": {
+        "min_trunk_radius": 8,
+        "level_limit": 4,
+        "scale_factor": 14
+      }
+    },
+    {
+      "name": "biome_predicate",
+      "properties": {
+        "only_world_gen": true,
+        "gen_feature": {
+          "name": "dtru:huge_mushrooms",
+          "properties": {
+            "place_chance": 0.2,
+            "max_count": 1,
+            "max_attempts": 3
+          }
+        },
+        "biome_predicate": { "name": "regions_unexplored:glowshroom_bayou" }
+      }
+    },
+    "mound",
+    "bottom_flare",
+    {
+      "name": "vines",
+      "properties": {
+        "quantity": 32,
+        "max_length": 16
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "primitive_soil": "regions_unexplored:silt_podzol",
+  "acceptable_soils": [ "dirt_like" ]
+}

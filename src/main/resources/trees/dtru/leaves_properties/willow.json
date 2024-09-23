@@ -1,0 +1,10 @@
+{
+  "primitive_leaves": "regions_unexplored:willow_leaves",
+  "cell_kit": "dtru:willow",
+  "model_overrides": {
+    "leaves": "regions_unexplored:block/willow_leaves"
+  },
+  "texture_overrides": {
+    "leaves": "regions_unexplored:block/willow_leaves"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "family": "dtru:magnolia",
+  "tapering": 0.2,
+  "signal_energy": 10.0,
+  "up_probability": 4,
+  "lowest_branch_height": 5,
+  "growth_rate": 0.8,
+  "leaves_properties": "dtru:pink_magnolia",
+  "growth_logic_kit": "dtru:variate_height",
+  "generate_seed": true,
+  "generate_sapling": true,
+  "environment_factors": {
+    "cold": 0.75,
+    "hot": 0.9,
+    "dry": 0.5
+  },
+  "perfect_biomes": {
+    "name": ".*magnolia.*"
+  },
+  "primitive_sapling": "regions_unexplored:pink_magnolia_sapling",
+  "world_gen_acceptable_soils": [ "dirt_like" ],
+  "acceptable_soils": ["dirt_like"],
+  "features": [
+    "bee_nest"
+  ]
+}

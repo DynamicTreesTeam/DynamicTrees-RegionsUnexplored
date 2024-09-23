@@ -1,0 +1,7 @@
+{
+  "type": "scruffy",
+  "primitive_leaves": "regions_unexplored:orange_maple_leaves",
+  "texture_overrides": {
+    "leaves": "regions_unexplored:block/orange_maple_leaves"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "dynamictrees:item/branch",
+  "textures": {
+    "bark": "regions_unexplored:block/cypress_log",
+    "rings": "regions_unexplored:block/cypress_log_top"
+  }
+}

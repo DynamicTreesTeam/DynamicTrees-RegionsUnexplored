@@ -1,0 +1,4 @@
+{
+  "primitive_soil": "regions_unexplored:stone_grass_block",
+  "acceptable_soils": [ "dirt_like" ]
+}

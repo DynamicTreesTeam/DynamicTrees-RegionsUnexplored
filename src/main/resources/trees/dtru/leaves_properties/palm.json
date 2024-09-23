@@ -1,0 +1,12 @@
+{
+  "type": "palm",
+  "primitive_leaves": "regions_unexplored:palm_leaves",
+  "cell_kit": "dtru:palm",
+  "color": "#BBFF59",
+  "model_overrides": {
+    "leaves": "regions_unexplored:block/palm_leaves"
+  },
+  "texture_overrides": {
+    "leaves": "regions_unexplored:block/palm_leaves"
+  }
+}

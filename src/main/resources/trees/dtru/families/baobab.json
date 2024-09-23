@@ -1,0 +1,13 @@
+{
+  "common_leaves": "dtru:baobab",
+  "common_species": "dtru:baobab",
+  "primitive_log": "regions_unexplored:baobab_log",
+  "primitive_stripped_log": "regions_unexplored:stripped_baobab_log",
+  "max_branch_radius": 24,
+  "texture_overrides": {
+    "branch": "regions_unexplored:block/baobab_log",
+    "branch_top": "regions_unexplored:block/baobab_log_top",
+    "stripped_branch": "regions_unexplored:block/stripped_baobab_log",
+    "stripped_branch_top": "regions_unexplored:block/stripped_baobab_log_top"
+  }
+}

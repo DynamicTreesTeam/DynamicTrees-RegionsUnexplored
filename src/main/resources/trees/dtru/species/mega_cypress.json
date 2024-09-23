@@ -1,0 +1,43 @@
+{
+  "type": "dtru:generates_underwater",
+  "family": "dtru:cypress",
+  "tapering": 0.45,
+  "signal_energy": 36.0,
+  "up_probability": 2,
+  "lowest_branch_height": 6,
+  "growth_rate": 1.3,
+  "soil_longevity": 18,
+  "max_branch_radius": 24,
+  "growth_logic_kit": {
+    "name": "dtru:cypress",
+    "properties": {
+      "canopy_energy": 18.5,
+      "height_variation": 5,
+      "bottom_branch_side_energy": 6.5
+    }
+  },
+  "leaves_properties": "dtru:cypress",
+  "environment_factors" : {
+    "hot": 0.7,
+    "dry": 0.5
+  },
+  "perfect_biomes": { "types": [ "swamp", "overworld" ] },
+  "acceptable_soils": [ "water_like", "dirt_like" ],
+  "features": [
+    "dtru:extra_bottom_flare",
+    {
+      "name": "mound",
+      "properties": {
+        "mound_cutoff_radius": 999
+      }
+    },
+    {
+      "name": "roots",
+      "properties": {
+        "min_trunk_radius": 6,
+        "level_limit": 5,
+        "scale_factor": 25
+      }
+    }
+  ]
+}

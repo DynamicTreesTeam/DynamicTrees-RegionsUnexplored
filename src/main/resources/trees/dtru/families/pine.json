@@ -1,0 +1,16 @@
+{
+  "common_leaves": "dtru:pine",
+  "common_species": "dtru:pine",
+  "primitive_log": "regions_unexplored:pine_log",
+  "primitive_stripped_log": "regions_unexplored:stripped_pine_log",
+  "max_branch_radius": 24,
+  "conifer_variants": true,
+  "generate_surface_root": true,
+  "max_signal_depth": 64,
+  "texture_overrides": {
+    "branch": "regions_unexplored:block/pine_log",
+    "branch_top": "regions_unexplored:block/pine_log_top",
+    "stripped_branch": "regions_unexplored:block/stripped_pine_log",
+    "stripped_branch_top": "regions_unexplored:block/stripped_pine_log_top"
+  }
+}

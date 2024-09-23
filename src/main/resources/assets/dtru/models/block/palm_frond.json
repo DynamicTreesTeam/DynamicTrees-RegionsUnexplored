@@ -1,0 +1,6 @@
+{
+  "loader": "dtru:palm_fronds",
+  "textures": {
+    "frond": "dtru:block/palm_frond"
+  }
+}

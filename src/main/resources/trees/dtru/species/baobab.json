@@ -1,0 +1,25 @@
+{
+  "family": "dtru:baobab",
+  "tapering": 0.9,
+  "signal_energy": 28.0,
+  "up_probability": 1,
+  "lowest_branch_height": 15,
+  "growth_rate": 0.4,
+  "soil_longevity": 20,
+  "max_branch_radius": 24,
+  "leaves_properties": "dtru:baobab",
+  "environment_factors": {
+    "cold": 0.75,
+    "forest": 0.9
+  },
+  "perfect_biomes": {
+    "name": "regions_unexplored:.*baobab.*"
+  },
+  "primitive_saplings": [
+    "regions_unexplored:baobab_sapling",
+    {
+      "sapling_item": "regions_unexplored:baobab_seed",
+      "can_craft_seed_to_sapling": false
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "__comment": "Cancel standard tree features from the RU overworld.",
+    "select": { "names": [ "regions_unexplored:.*", "!regions_unexplored:alpha_grove" ], "tag": [ "!#minecraft:is_nether" ] },
+    "cancellers": {
+      "type": "tree",
+      "namespaces": ["regions_unexplored", "minecraft"]
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "primitive_leaves": "regions_unexplored:eucalyptus_leaves",
+  "cell_kit": "acacia",
+  "model_overrides": {
+    "leaves": "regions_unexplored:block/eucalyptus_leaves"
+  },
+  "texture_overrides": {
+    "leaves": "regions_unexplored:block/eucalyptus_leaves"
+  }
+}

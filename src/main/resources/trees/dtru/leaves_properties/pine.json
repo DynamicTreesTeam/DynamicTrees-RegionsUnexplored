@@ -1,0 +1,12 @@
+{
+  "primitive_leaves": "regions_unexplored:pine_leaves",
+  "cell_kit": "dynamictrees:conifer",
+  "smother": 20,
+  "light_requirement": 11,
+  "model_overrides": {
+    "leaves": "regions_unexplored:block/pine_leaves"
+  },
+  "texture_overrides": {
+    "leaves": "regions_unexplored:block/pine_leaves"
+  }
+}

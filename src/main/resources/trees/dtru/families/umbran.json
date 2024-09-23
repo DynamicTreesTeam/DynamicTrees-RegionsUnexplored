@@ -1,0 +1,8 @@
+{
+  "common_leaves": "dtru:umbran",
+  "common_species": "dtru:umbran",
+  "primitive_log": "biomesoplenty:umbran_log",
+  "primitive_stripped_log": "biomesoplenty:stripped_umbran_log",
+  "max_branch_radius": 24,
+  "conifer_variants": true
+}

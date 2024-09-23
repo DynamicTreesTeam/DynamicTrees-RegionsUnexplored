@@ -1,0 +1,13 @@
+{
+  "type": "scruffy",
+  "primitive_leaves": "regions_unexplored:maple_leaves",
+  "model_overrides": {
+    "leaves": "regions_unexplored:block/maple_leaves"
+  },
+  "texture_overrides": {
+    "leaves": "regions_unexplored:block/maple_leaves"
+  },
+
+  "scruffy_leaf_chance": 0.66,
+  "scruffy_max_hydro": 1
+}

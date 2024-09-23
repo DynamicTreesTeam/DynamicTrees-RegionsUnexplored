@@ -1,0 +1,15 @@
+{
+  "common_leaves": "dtru:cypress",
+  "common_species": "dtru:cypress",
+  "primitive_log": "regions_unexplored:cypress_log",
+  "primitive_stripped_log": "regions_unexplored:stripped_cypress_log",
+  "max_branch_radius": 24,
+  "max_signal_depth": 64,
+  "generate_surface_root": true,
+  "texture_overrides": {
+    "branch": "regions_unexplored:block/cypress_log",
+    "branch_top": "regions_unexplored:block/cypress_log_top",
+    "stripped_branch": "regions_unexplored:block/stripped_cypress_log",
+    "stripped_branch_top": "regions_unexplored:block/stripped_cypress_log_top"
+  }
+}

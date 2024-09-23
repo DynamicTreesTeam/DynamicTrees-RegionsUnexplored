@@ -1,0 +1,16 @@
+{
+  "type": "dtru:diagonal_palm",
+  "common_leaves": "dtru:palm",
+  "common_species": "dtru:palm",
+  "primitive_log": "regions_unexplored:palm_log",
+  "primitive_stripped_log": "regions_unexplored:stripped_palm_log",
+  "primary_thickness": 3,
+  "secondary_thickness": 4,
+  "max_branch_radius": 16,
+  "texture_overrides": {
+    "branch": "regions_unexplored:block/palm_log",
+    "branch_top": "regions_unexplored:block/palm_log_top",
+    "stripped_branch": "regions_unexplored:block/stripped_palm_log",
+    "stripped_branch_top": "regions_unexplored:block/stripped_palm_log_top"
+  }
+}

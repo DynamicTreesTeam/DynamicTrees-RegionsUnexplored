@@ -1,0 +1,4 @@
+{
+  "primitive_soil": "regions_unexplored:deepslate_prismoss",
+  "acceptable_soils": [ "fungus_like", "dirt_like" ]
+}

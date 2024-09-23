@@ -1,0 +1,38 @@
+{
+  "family": "dtru:pine",
+  "tapering": 0.25,
+  "signal_energy": 34.0,
+  "up_probability": 10,
+  "lowest_branch_height": 6,
+  "growth_rate": 0.9,
+  "soil_longevity": 20,
+  "max_branch_radius": 8,
+  "growth_logic_kit": "dtru:mega_pine",
+  "leaves_properties": "dtru:pine",
+  "environment_factors" : {
+    "hot": 0.50,
+    "dry": 0.25,
+    "wet": 0.75
+  },
+  "world_gen_leaf_map_height": 60,
+  "perfect_biomes": { "type": "coniferous" },
+  "features" : [
+    "conifer_topper",
+    {
+      "name": "mound",
+      "properties": {
+        "mound_cutoff_radius": 999
+      }
+    },
+    {
+      "name": "roots",
+      "properties": {
+        "min_trunk_radius": 8,
+        "scale_factor": 16
+      }
+    },
+    "bottom_flare",
+    "clear_volume",
+    "podzol"
+  ]
+}

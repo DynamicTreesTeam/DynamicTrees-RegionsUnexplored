@@ -1,0 +1,46 @@
+{
+  "type": "dtru:generates_underwater",
+  "family": "dtru:willow",
+  "tapering": 0.3,
+  "signal_energy": 24.0,
+  "up_probability": 5,
+  "lowest_branch_height": 10,
+  "growth_rate": 1.2,
+  "max_branch_radius": 20,
+  "growth_logic_kit": {
+    "name": "dtru:willow",
+    "properties": {
+      "canopy_depth": 6
+    }
+  },
+  "environment_factors" : {
+    "snowy": 0.75,
+    "dry": 0.5
+  },
+  "perfect_biomes": { "type": "swamp" },
+  "primitive_sapling": "regions_unexplored:willow_sapling",
+  "acceptable_soils": ["dirt_like", "water_like"],
+  "features": [
+    {
+      "name": "roots",
+      "properties": {
+        "level_limit": 6,
+        "scale_factor": 18
+      }
+    },
+    {
+      "name": "mound",
+      "properties": {
+        "mound_cutoff_radius": 999
+      }
+    },
+    "bottom_flare",
+    {
+      "name": "vines",
+      "properties": {
+        "quantity": 32,
+        "max_length": 16
+      }
+    }
+  ]
+}

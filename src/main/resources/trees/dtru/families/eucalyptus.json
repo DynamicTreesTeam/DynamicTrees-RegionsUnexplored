@@ -1,0 +1,15 @@
+{
+  "common_leaves": "dtru:eucalyptus",
+  "common_species": "dtru:eucalyptus",
+  "primitive_log": "regions_unexplored:eucalyptus_log",
+  "primitive_stripped_log": "regions_unexplored:stripped_eucalyptus_log",
+  "max_branch_radius": 24,
+  "generate_surface_root": true,
+  "max_signal_depth": 64,
+  "texture_overrides": {
+    "branch": "regions_unexplored:block/eucalyptus_log",
+    "branch_top": "regions_unexplored:block/eucalyptus_log_top",
+    "stripped_branch": "regions_unexplored:block/stripped_eucalyptus_log",
+    "stripped_branch_top": "regions_unexplored:block/stripped_eucalyptus_log_top"
+  }
+}

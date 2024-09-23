@@ -1,0 +1,10 @@
+{
+  "primitive_leaves": "regions_unexplored:baobab_leaves",
+  "cell_kit": "dynamictrees:acacia",
+  "model_overrides": {
+    "leaves": "regions_unexplored:block/baobab_leaves"
+  },
+  "texture_overrides": {
+    "leaves": "regions_unexplored:block/baobab_leaves"
+  }
+}

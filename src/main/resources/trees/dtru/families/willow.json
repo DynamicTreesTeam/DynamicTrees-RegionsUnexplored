@@ -1,0 +1,14 @@
+{
+  "common_leaves": "dtru:willow",
+  "common_species": "dtru:willow",
+  "primitive_log": "regions_unexplored:willow_log",
+  "primitive_stripped_log": "regions_unexplored:stripped_willow_log",
+  "max_branch_radius": 24,
+  "generate_surface_root": true,
+  "texture_overrides": {
+    "branch": "regions_unexplored:block/willow_log",
+    "branch_top": "regions_unexplored:block/willow_log_top",
+    "stripped_branch": "regions_unexplored:block/stripped_willow_log",
+    "stripped_branch_top": "regions_unexplored:block/stripped_willow_log_top"
+  }
+}

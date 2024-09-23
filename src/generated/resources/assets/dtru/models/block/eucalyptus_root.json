@@ -1,0 +1,6 @@
+{
+  "loader": "dynamictrees:surface_root",
+  "textures": {
+    "bark": "regions_unexplored:block/eucalyptus_log"
+  }
+}

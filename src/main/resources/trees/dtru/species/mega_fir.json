@@ -1,0 +1,31 @@
+{
+  "family": "dtru:fir",
+  "tapering": 0.3,
+  "signal_energy": 32.0,
+  "up_probability": 7,
+  "lowest_branch_height": 7,
+  "growth_rate": 1.0,
+  "soil_longevity": 18,
+  "max_branch_radius": 24,
+  "growth_logic_kit": "dtru:fir",
+  "leaves_properties": "dtru:fir",
+  "environment_factors" : {
+    "hot": 0.50,
+    "dry": 0.25,
+    "wet": 0.75
+  },
+  "perfect_biomes": { "type": "coniferous" },
+  "common_override": { "name": "biomesoplenty:coniferous_forest" },
+  "features" : [
+    "conifer_topper",
+    {
+      "name": "mound",
+      "properties": {
+        "mound_cutoff_radius": 999
+      }
+    },
+    "clear_volume",
+    "podzol",
+    "bottom_flare"
+  ]
+}

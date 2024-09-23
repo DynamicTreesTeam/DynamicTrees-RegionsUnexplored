@@ -1,0 +1,35 @@
+{
+  "type": "dtru:generates_on_extra_soil",
+  "extra_soil_for_worldgen": "byg:mossy_stone",
+  "soil_replacement_for_worldgen": "byg:overgrown_stone",
+  "family": "dtru:eucalyptus",
+  "tapering": 0.45,
+  "signal_energy": 32.0,
+  "up_probability": 5,
+  "lowest_branch_height": 3,
+  "growth_rate": 1.5,
+  "soil_longevity": 24,
+  "max_branch_radius": 22,
+  "growth_logic_kit": "dtru:mega_eucalyptus",
+  "leaves_properties": "dtru:eucalyptus",
+  "environment_factors" : {
+    "snowy": 0.5,
+    "dry": 0.75
+  },
+  "perfect_biomes": {
+    "type": "jungle"
+  },
+  "features": [
+    {
+      "name": "roots",
+      "properties": {
+        "level_limit": 6,
+        "scale_factor": 23
+      }
+    },
+    "bottom_flare",
+    "mound",
+    "clear_volume",
+    "bee_nest"
+  ]
+}
