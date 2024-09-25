@@ -1,0 +1,5 @@
+{
+  "primitive_soil": "regions_unexplored:silt_farmland",
+  "acceptable_soils": [ "dirt_like", "silt_like" ],
+  "substitute_soil" : "dtru:silt_dirt"
+}

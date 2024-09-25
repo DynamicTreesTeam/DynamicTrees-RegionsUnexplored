@@ -1,5 +1,4 @@
 {
-  "replace": false,
   "values": [
     "dtru:baobab_branch",
     "dtru:cypress_branch",
@@ -13,6 +12,7 @@
     "dtru:palm_branch",
     "dtru:pine_branch",
     "dtru:redwood_branch",
+    "dtru:umbran_branch",
     "dtru:willow_branch"
   ]
 }

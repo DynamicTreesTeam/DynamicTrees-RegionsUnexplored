@@ -10,7 +10,7 @@ public class DTRUGenFeatures {
 
     public static final GenFeature BIG_BOTTOM_FLARE = new BigBottomFlareGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "big_bottom_flare"));
     public static final GenFeature EXTRA_BOTTOM_FLARE = new ExtraBottomFlareGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "extra_bottom_flare"));
-    public static final GenFeature BRANCH_SPROUTS = new BranchSproutsGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "branch_sprouts"));
+    public static final GenFeature REPLACE_ON_RADIUS = new ReplaceOnRadiusGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "replace_on_radius"));
     public static final GenFeature BIOME_PREDICATE_2 = new BiomePredicateGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "biome_predicate"));
     public static final GenFeature SYTHIAN_TOPPER = new SythianTopperGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "sythian_topper"));
     public static final GenFeature ALTERNATIVE_BRANCH = new AlternativeBranchGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "alt_branch"));
@@ -18,7 +18,7 @@ public class DTRUGenFeatures {
 
     public static void register(final Registry<GenFeature> registry) {
         registry.registerAll(BIG_BOTTOM_FLARE, EXTRA_BOTTOM_FLARE,
-                BRANCH_SPROUTS,
+                REPLACE_ON_RADIUS,
                 BIOME_PREDICATE_2,
                 SYTHIAN_TOPPER, ALTERNATIVE_BRANCH, MUSHROOM_VINES);
     }

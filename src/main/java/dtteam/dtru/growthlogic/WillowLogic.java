@@ -22,7 +22,8 @@ public class WillowLogic extends VariateHeightLogic {
 
     @Override
     protected void registerProperties() {
-        this.register(CANOPY_DEPTH, HEIGHT_VARIATION);
+        super.registerProperties();
+        this.register(CANOPY_DEPTH);
     }
 
 

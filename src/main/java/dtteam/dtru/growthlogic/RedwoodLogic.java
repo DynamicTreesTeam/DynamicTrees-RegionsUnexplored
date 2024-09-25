@@ -32,7 +32,8 @@ public class RedwoodLogic extends VariateHeightLogic {
 
     @Override
     protected void registerProperties() {
-        this.register(HEIGHT_OF_CANOPY, HEIGHT_VARIATION, LOWEST_BRANCH_VARIATION);
+        super.registerProperties();
+        this.register(HEIGHT_OF_CANOPY);
     }
 
     @Override

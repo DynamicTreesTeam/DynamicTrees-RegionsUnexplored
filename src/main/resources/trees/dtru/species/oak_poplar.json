@@ -1,0 +1,23 @@
+{
+  "type": "dtru:poplar",
+  "family": "oak",
+  "generate_seed": false,
+  "generate_sapling": true,
+  "tapering": 0.25,
+  "signal_energy": 11.0,
+  "up_probability": 5,
+  "lowest_branch_height": 4,
+  "growth_rate": 0.85,
+  "growth_logic_kit": "dtru:poplar",
+  "leaves_properties": "dtru:oak_poplar",
+  "perfect_biomes": { "name": "regions_unexplored:deciduous_forest" },
+  "features": [
+    {
+      "name": "dtru:replace_on_radius",
+      "properties": {
+        "species": "oak",
+        "min_radius": 5
+      }
+    }
+  ]
+}

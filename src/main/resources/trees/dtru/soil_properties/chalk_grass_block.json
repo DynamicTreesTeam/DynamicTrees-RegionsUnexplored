@@ -1,4 +1,4 @@
 {
   "primitive_soil": "regions_unexplored:chalk_grass_block",
-  "acceptable_soils": [ "dirt_like" ]
+  "acceptable_soils": [ "dirt_like", "stone_like" ]
 }

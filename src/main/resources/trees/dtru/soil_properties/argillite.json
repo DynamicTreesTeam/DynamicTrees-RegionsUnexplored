@@ -1,0 +1,4 @@
+{
+  "primitive_soil": "regions_unexplored:argillite",
+  "acceptable_soils": [ "stone_like" ]
+}

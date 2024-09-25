@@ -12,6 +12,71 @@
     }
   },
   {
+    "select": { "name": "regions_unexplored:deciduous_forest" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "oak_undergrowth" : 1,
+          "oak" : 6,
+          "dtru:oak_poplar" : 1
+        }
+      },
+      "density": [ 1.2 ],
+      "chance": 1.0
+    }
+  },
+  {
+    "select": { "name": "regions_unexplored:cold_deciduous_forest" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:red_maple" : 1,
+          "oak" : 6,
+          "dtru:tall_spruce" : 1
+        }
+      },
+      "density": [ 1.2 ],
+      "chance": 1.0
+    }
+  },
+  {
+    "select": { "name": "regions_unexplored:shrubland" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "oak_undergrowth" : 24,
+          "dtru:tall_spruce" : 1
+        }
+      },
+      "density": [ 1 ],
+      "chance": 0.8
+    }
+  },
+  {
+    "select": { "name": "regions_unexplored:prairie" },
+    "apply": {
+      "species" : "oak",
+      "density": 0,
+      "chance": 0.06
+    }
+  },
+  {
+    "select": { "name": "regions_unexplored:maple_forest" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:maple" : 3,
+          "dtru:red_maple" : 3,
+          "dtru:tall_spruce" : 2,
+          "mega_spruce" : 1
+        }
+      },
+      "density": 0,
+      "chance": 0.06
+    }
+  },
+
+  {
     "select": { "name": "regions_unexplored:autumnal_maple_forest" },
     "apply": {
       "species" : {

@@ -30,7 +30,8 @@ public class CypressLogic extends VariateHeightLogic {
 
     @Override
     protected void registerProperties() {
-        this.register(CANOPY_ENERGY, BOTTOM_BRANCH_SIDE_ENERGY, HEIGHT_VARIATION);
+        super.registerProperties();
+        this.register(CANOPY_ENERGY, BOTTOM_BRANCH_SIDE_ENERGY);
     }
 
 

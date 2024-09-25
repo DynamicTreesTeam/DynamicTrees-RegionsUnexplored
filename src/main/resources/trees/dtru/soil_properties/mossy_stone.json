@@ -1,0 +1,4 @@
+{
+  "primitive_soil": "regions_unexplored:mossy_stone",
+  "acceptable_soils": [ "stone_like" ]
+}

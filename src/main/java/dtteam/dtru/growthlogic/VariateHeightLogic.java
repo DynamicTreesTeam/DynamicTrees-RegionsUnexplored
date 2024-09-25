@@ -19,12 +19,13 @@ public class VariateHeightLogic extends GrowthLogicKit {
     @Override
     protected GrowthLogicKitConfiguration createDefaultConfiguration() {
         return super.createDefaultConfiguration()
-                .with(HEIGHT_VARIATION, 6);
+                .with(HEIGHT_VARIATION, 5)
+                .with(LOWEST_BRANCH_VARIATION, 3);
     }
 
     @Override
     protected void registerProperties() {
-        this.register(HEIGHT_VARIATION);
+        this.register(HEIGHT_VARIATION, LOWEST_BRANCH_VARIATION);
     }
 
     public static int getHashedVariation (LevelAccessor world, BlockPos pos, int heightVariation){
@@ -44,7 +45,7 @@ public class VariateHeightLogic extends GrowthLogicKit {
     @Override
     public int getLowestBranchHeight(GrowthLogicKitConfiguration configuration, PositionalSpeciesContext context) {
         return super.getLowestBranchHeight(configuration, context)
-                + getHashedVariation(context.level(), context.pos(), configuration.get(HEIGHT_VARIATION));
+                + getHashedVariation(context.level(), context.pos(), configuration.get(LOWEST_BRANCH_VARIATION));
     }
 
 }

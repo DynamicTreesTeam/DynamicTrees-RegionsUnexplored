@@ -1,0 +1,6 @@
+{
+  "primitive_leaves": "minecraft:oak_leaves",
+  "cell_kit": "dtru:poplar",
+  "smother": 9,
+  "light_requirement": 13
+}

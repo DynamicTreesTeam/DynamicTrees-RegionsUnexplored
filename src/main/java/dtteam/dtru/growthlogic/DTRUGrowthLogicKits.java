@@ -6,7 +6,6 @@ import net.minecraft.resources.ResourceLocation;
 import dtteam.dtru.DynamicTreesRU;
 
 public class DTRUGrowthLogicKits {
-    public static final GrowthLogicKit MAPLE = new MapleLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "maple"));
     public static final GrowthLogicKit THIN_CONIFER = new PineLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "thin_conifer"));
     public static final GrowthLogicKit MEGA_PINE = new MegaPineLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "mega_pine"));
     public static final GrowthLogicKit REDWOOD = new RedwoodLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "redwood"));
@@ -20,7 +19,7 @@ public class DTRUGrowthLogicKits {
     public static final GrowthLogicKit WILLOW = new WillowLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "willow"));
 
     public static void register(final Registry<GrowthLogicKit> registry) {
-        registry.registerAll(MAPLE, THIN_CONIFER, MEGA_PINE, REDWOOD, SMALL_REDWOOD,
+        registry.registerAll(THIN_CONIFER, MEGA_PINE, REDWOOD, SMALL_REDWOOD,
                 BAOBAB, VARIATE_HEIGHT, CYPRESS, MEGA_EUCALYPTUS, WILLOW, PALM);
     }
 

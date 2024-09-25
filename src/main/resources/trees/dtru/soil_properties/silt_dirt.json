@@ -1,0 +1,8 @@
+{
+  "type": "spreadable",
+  "primitive_soil": "regions_unexplored:silt_dirt",
+  "acceptable_soils": [ "dirt_like", "silt_like" ],
+
+  "required_light": 9,
+  "spreadable_soils": [ "dtru:silt_grass_block" ]
+}

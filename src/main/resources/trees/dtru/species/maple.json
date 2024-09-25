@@ -1,12 +1,12 @@
 {
   "family": "dtru:maple",
   "tapering": 0.2,
-  "signal_energy": 18.0,
-  "up_probability": 6,
+  "signal_energy": 22.0,
+  "up_probability": 4,
   "lowest_branch_height": 6,
   "growth_rate": 0.8,
   "leaves_properties": "dtru:maple",
-  "growth_logic_kit": "dtru:maple",
+  "growth_logic_kit": "dtru:variate_height",
   "environment_factors": {
     "cold": 1.1,
     "hot": 0.2,
@@ -17,17 +17,7 @@
     "name": "regions_unexplored:maple.*"
   },
   "primitive_sapling": "regions_unexplored:maple_sapling",
-  "world_gen_acceptable_soils": [ "dirt_like" ],
   "acceptable_soils": ["dirt_like"],
   "features": [
-    {
-      "name": "roots",
-      "properties": {
-        "min_trunk_radius": 8,
-        "scale_factor": 16
-      }
-    },
-    "bottom_flare",
-    "mound"
   ]
 }
