@@ -3,7 +3,6 @@
   "render_type": "minecraft:cutout_mipped",
   "textures": {
     "leaves": "regions_unexplored:block/blue_magnolia_leaves",
-    "log": "regions_unexplored:block/magnolia_log",
-    "particle": "regions_unexplored:block/blue_magnolia_leaves"
+    "log": "regions_unexplored:block/magnolia_log"
   }
 }

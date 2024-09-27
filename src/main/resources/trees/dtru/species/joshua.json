@@ -7,21 +7,12 @@
   "generate_seed": true,
   "generate_sapling": true,
   "environment_factors" : {
-    "wet": 0.75,
-    "cold": 0.75
+    "#forge:is_wet": 0.75,
+    "#forge:is_cold": 0.75
   },
-  "perfect_biomes": { "types": [ "desert", "overworld" ] },
-  "primitive_saplings": [
-    "regions_unexplored:joshua_sapling",
-    {
-      "sapling_item": "regions_unexplored:joshua_fruit",
-      "can_craft_seed_to_sapling": false
-    }
-  ],
+  "perfect_biomes": { "tags": [ "#forge:is_desert", "#minecraft:is_overworld" ] },
+  "primitive_sapling": "regions_unexplored:joshua_sapling",
   "acceptable_soils": ["dirt_like", "sand_like"],
-  "fruits": [
-    "dtru:joshua_fruit"
-  ],
   "features" : [
     {
       "name": "rot_soil",

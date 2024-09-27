@@ -10,16 +10,19 @@
   "generate_seed": true,
   "generate_sapling": true,
   "environment_factors": {
-    "cold": 1.1,
-    "hot": 0.2,
-    "dry": 0.4,
-    "forest": 0.9
+    "#forge:is_cold": 1.1,
+    "#forge:is_hot": 0.2,
+    "#forge:is_dry": 0.4,
+    "#forge:is_forest": 0.9
   },
   "perfect_biomes": {
-    "name": "regions_unexplored:maple.*"
+    "name": ".*maple.*"
   },
   "primitive_sapling": "regions_unexplored:red_maple_sapling",
   "acceptable_soils": ["dirt_like"],
   "features": [
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Red Maple Samara"
+  }
 }

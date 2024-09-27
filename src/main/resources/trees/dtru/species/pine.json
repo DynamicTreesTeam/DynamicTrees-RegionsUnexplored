@@ -8,15 +8,18 @@
   "growth_logic_kit": "dtru:thin_conifer",
   "leaves_properties": "dtru:pine",
   "environment_factors" : {
-    "hot": 0.50,
-    "wet": 0.75
+    "#forge:is_hot": 0.50,
+    "#forge:is_wet": 0.75
   },
-  "perfect_biomes": { "type": "coniferous" },
+  "perfect_biomes": { "tag": "#forge:is_coniferous" },
   "primitive_sapling": "regions_unexplored:pine_sapling",
   "world_gen_acceptable_soils": [ "dirt_like" ],
   "acceptable_soils": ["dirt_like"],
   "mega_species": "dtru:mega_pine",
   "features" : [
     "conifer_topper"
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Pine Cone"
+  }
 }

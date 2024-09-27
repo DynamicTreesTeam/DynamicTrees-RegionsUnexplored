@@ -1,10 +1,9 @@
 {
   "values": [
     "dtru:baobab_leaves",
-    "dtru:birch_leaves",
     "dtru:blue_magnolia_leaves",
     "dtru:cypress_leaves",
-    "dtru:dying_leaves",
+    "dtru:dead_leaves",
     "dtru:eucalyptus_leaves",
     "dtru:flowering_oak_leaves",
     "dtru:flowering_oak_undergrowth_leaves",
@@ -14,7 +13,7 @@
     "dtru:larch_leaves",
     "dtru:magnolia_leaves",
     "dtru:maple_leaves",
-    "dtru:mega_palm_leaves",
+    "dtru:mauve_leaves",
     "dtru:oak_poplar_leaves",
     "dtru:orange_maple_leaves",
     "dtru:palm_leaves",
@@ -22,7 +21,6 @@
     "dtru:pink_magnolia_leaves",
     "dtru:red_maple_leaves",
     "dtru:redwood_leaves",
-    "dtru:ripe_joshua_leaves",
     "dtru:white_magnolia_leaves",
     "dtru:willow_leaves"
   ]

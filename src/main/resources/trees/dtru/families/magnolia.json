@@ -3,11 +3,5 @@
   "common_species": "dtru:magnolia",
   "primitive_log": "regions_unexplored:magnolia_log",
   "primitive_stripped_log": "regions_unexplored:stripped_magnolia_log",
-  "max_branch_radius": 24,
-  "texture_overrides": {
-    "branch": "regions_unexplored:block/magnolia_log",
-    "branch_top": "regions_unexplored:block/magnolia_log_top",
-    "stripped_branch": "regions_unexplored:block/stripped_magnolia_log",
-    "stripped_branch_top": "regions_unexplored:block/stripped_magnolia_log_top"
-  }
+  "max_branch_radius": 8
 }

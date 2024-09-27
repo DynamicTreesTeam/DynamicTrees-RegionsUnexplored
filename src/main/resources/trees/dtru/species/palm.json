@@ -9,11 +9,10 @@
   "growth_logic_kit": "dtru:diagonal_palm",
   "leaves_properties": "dtru:palm",
   "environment_factors" : {
-    "cold": 0.75,
-    "hot": 1.1,
-    "dry": 1.1
+    "#forge:is_cold": 0.75,
+    "#forge:is_hot": 1.1,
+    "#forge:is_dry": 1.1
   },
-  "mega_species": "dtru:mega_palm",
   "transformable": false,
   "perfect_biomes": { "type": "beach" },
   "primitive_sapling": "regions_unexplored:palm_sapling",

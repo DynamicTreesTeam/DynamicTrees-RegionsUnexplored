@@ -1,0 +1,7 @@
+{
+  "common_leaves": "dtru:mauve",
+  "common_species": "dtru:mauve",
+  "primitive_log": "regions_unexplored:mauve_log",
+  "primitive_stripped_log": "regions_unexplored:stripped_mauve_log",
+  "max_branch_radius": 8
+}

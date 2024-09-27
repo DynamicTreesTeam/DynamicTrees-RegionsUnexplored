@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "dtru:block/saplings/redwood"
+      "model": "dtru:block/saplings/redwood_sapling"
     }
   }
 }

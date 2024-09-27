@@ -75,7 +75,7 @@ minecraft {
                 "--output", file("src/generated/resources/"),
                 "--existing", file("src/main/resources"),
                 "--existing-mod", "dynamictrees",
-                "--existing-mod", "biomesoplenty"
+                "--existing-mod", "regions_unexplored"
             )
         }
     }

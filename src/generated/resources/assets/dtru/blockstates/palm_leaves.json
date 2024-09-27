@@ -1,20 +1,44 @@
 {
   "multipart": [
     {
-      "when": { "distance": "1|2" },
-      "apply": { "model": "dtru:block/palm_frond" }
+      "apply": {
+        "model": "dtru:block/palm_leaves/palm_frond"
+      },
+      "when": {
+        "distance": "1|2"
+      }
     },
     {
-      "when": { "distance": "3" },
-      "apply": { "model": "dtru:block/palm_core_top" }
+      "apply": {
+        "model": "dtru:block/palm_leaves/palm_core_top"
+      },
+      "when": {
+        "distance": "3"
+      }
     },
     {
-      "when": { "distance": "4" },
-      "apply": { "model": "dtru:block/palm_core_bottom" }
+      "apply": {
+        "model": "dtru:block/palm_leaves/palm_core_bottom"
+      },
+      "when": {
+        "distance": "4"
+      }
     },
     {
-      "when": { "OR": [ { "direction": "0", "distance": "1|2" }, { "distance": "5|6|7" } ] },
-      "apply": { "model": "regions_unexplored:block/palm_leaves" }
+      "apply": {
+        "model": "regions_unexplored:block/palm_leaves"
+      },
+      "when": {
+        "OR": [
+          {
+            "direction": "0",
+            "distance": "1|2"
+          },
+          {
+            "distance": "5|6|7"
+          }
+        ]
+      }
     }
   ]
 }

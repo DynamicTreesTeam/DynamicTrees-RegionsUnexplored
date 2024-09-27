@@ -9,8 +9,8 @@
   "max_branch_radius": 24,
   "leaves_properties": "dtru:baobab",
   "environment_factors": {
-    "cold": 0.75,
-    "forest": 0.9
+    "#forge:is_cold": 0.75,
+    "#forge:is_forest": 0.9
   },
   "perfect_biomes": {
     "name": "regions_unexplored:.*baobab.*"

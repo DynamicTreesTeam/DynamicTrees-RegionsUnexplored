@@ -1,7 +1,5 @@
 {
-  "type": "scruffy",
   "primitive_leaves": "regions_unexplored:golden_larch_leaves",
-
-  "scruffy_leaf_chance": 0.5,
-  "scruffy_max_hydro": 2
+  "smother": 6,
+  "cell_kit": "dynamictrees:conifer"
 }

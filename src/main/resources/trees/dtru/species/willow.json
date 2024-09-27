@@ -7,14 +7,13 @@
   "growth_rate": 0.8,
   "growth_logic_kit": "dtru:willow",
   "environment_factors" : {
-    "snowy": 0.75,
-    "dry": 0.5
+    "#forge:is_snowy": 0.75,
+    "#forge:is_dry": 0.5
   },
-  "perfect_biomes": { "type": "swamp" },
+  "perfect_biomes": { "tag": "#forge:is_swamp" },
   "primitive_sapling": "regions_unexplored:willow_sapling",
   "acceptable_soils": ["dirt_like", "water_like"],
   "world_gen_acceptable_soils": [ "mud_like", "dirt_like", "water_like" ],
-  "mega_species": "dtru:mega_willow",
   "features": [
     {
       "name": "roots",
@@ -22,21 +21,6 @@
         "min_trunk_radius": 8,
         "level_limit": 4,
         "scale_factor": 14
-      }
-    },
-    {
-      "name": "biome_predicate",
-      "properties": {
-        "only_world_gen": true,
-        "gen_feature": {
-          "name": "dtru:huge_mushrooms",
-          "properties": {
-            "place_chance": 0.2,
-            "max_count": 1,
-            "max_attempts": 3
-          }
-        },
-        "biome_predicate": { "name": "regions_unexplored:glowshroom_bayou" }
       }
     },
     "mound",
@@ -48,5 +32,8 @@
         "max_length": 16
       }
     }
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Willow Catkin"
+  }
 }

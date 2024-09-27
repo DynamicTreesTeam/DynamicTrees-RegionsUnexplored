@@ -13,11 +13,11 @@
   "growth_logic_kit": "dtru:mega_eucalyptus",
   "leaves_properties": "dtru:eucalyptus",
   "environment_factors" : {
-    "snowy": 0.5,
-    "dry": 0.75
+    "#forge:is_snowy": 0.5,
+    "#forge:is_dry": 0.75
   },
   "perfect_biomes": {
-    "type": "jungle"
+    "tag": "#minecraft:is_jungle"
   },
   "features": [
     {

@@ -18,10 +18,10 @@
   },
   "leaves_properties": "dtru:cypress",
   "environment_factors" : {
-    "hot": 0.7,
-    "dry": 0.5
+    "#forge:is_hot": 0.7,
+    "#forge:is_dry": 0.5
   },
-  "perfect_biomes": { "types": [ "swamp", "overworld" ] },
+  "perfect_biomes": { "tags": [ "#forge:is_swamp", "#minecraft:is_overworld" ] },
   "acceptable_soils": [ "water_like", "dirt_like" ],
   "features": [
     "dtru:extra_bottom_flare",

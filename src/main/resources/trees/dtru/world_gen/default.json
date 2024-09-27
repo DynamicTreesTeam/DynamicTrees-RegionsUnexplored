@@ -8,7 +8,8 @@
         }
       },
       "density": [ 0.1 ],
-      "chance": 0.5
+      "chance": 0.5,
+      "forestness" : 0.5
     }
   },
   {
@@ -22,7 +23,8 @@
         }
       },
       "density": [ 1.2 ],
-      "chance": 1.0
+      "chance": 1.0,
+      "forestness" : 1.0
     }
   },
   {
@@ -36,7 +38,8 @@
         }
       },
       "density": [ 1.2 ],
-      "chance": 1.0
+      "chance": 1.0,
+      "forestness" : 1.0
     }
   },
   {
@@ -75,15 +78,15 @@
       "chance": 0.06
     }
   },
-
   {
     "select": { "name": "regions_unexplored:autumnal_maple_forest" },
     "apply": {
       "species" : {
         "random" : {
-          "dtru:maple" : 2,
-          "dtru:orange_maple" : 2,
-          "dtru:red_maple" : 2
+          "dtru:maple" : 1,
+          "dtru:orange_maple" : 1,
+          "dtru:red_maple" : 1,
+          "dtru:silver_birch" : 1
         }
       },
       "density": 1.0,
@@ -91,4 +94,7 @@
       "forestness" : 1.0
     }
   }
+
+
+
 ]

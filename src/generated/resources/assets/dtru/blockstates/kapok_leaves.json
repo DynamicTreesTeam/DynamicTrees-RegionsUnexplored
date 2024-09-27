@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "dtru:block/kapok_leaves"
+      "model": "regions_unexplored:block/kapok_leaves"
     }
   }
 }
