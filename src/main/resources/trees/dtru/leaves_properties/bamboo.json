@@ -1,0 +1,6 @@
+{
+  "primitive_leaves": "regions_unexplored:bamboo_leaves",
+  "cell_kit": "dtru:bamboo",
+  "smother": 6,
+  "light_requirement": 13
+}

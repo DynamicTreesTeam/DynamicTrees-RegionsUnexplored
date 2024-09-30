@@ -1,9 +1,12 @@
 {
   "values": [
+    "dtru:acacia_twiglet_leaves",
+    "dtru:bamboo_leaves",
     "dtru:baobab_leaves",
     "dtru:blue_magnolia_leaves",
     "dtru:cypress_leaves",
     "dtru:dead_leaves",
+    "dtru:enchanted_birch_leaves",
     "dtru:eucalyptus_leaves",
     "dtru:flowering_oak_leaves",
     "dtru:flowering_oak_undergrowth_leaves",
@@ -15,12 +18,16 @@
     "dtru:maple_leaves",
     "dtru:mauve_leaves",
     "dtru:oak_poplar_leaves",
+    "dtru:oak_twiglet_leaves",
     "dtru:orange_maple_leaves",
     "dtru:palm_leaves",
     "dtru:pine_leaves",
+    "dtru:pine_twiglet_leaves",
     "dtru:pink_magnolia_leaves",
     "dtru:red_maple_leaves",
     "dtru:redwood_leaves",
+    "dtru:silver_birch_leaves",
+    "dtru:spruce_twiglet_leaves",
     "dtru:white_magnolia_leaves",
     "dtru:willow_leaves"
   ]

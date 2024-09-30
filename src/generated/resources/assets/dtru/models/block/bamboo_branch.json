@@ -1,0 +1,7 @@
+{
+  "loader": "dtru:bamboo",
+  "textures": {
+    "bark": "regions_unexplored:block/bamboo_log",
+    "rings": "regions_unexplored:block/bamboo_log"
+  }
+}

@@ -12,15 +12,15 @@ public class DTRUGrowthLogicKits {
     public static final GrowthLogicKit SMALL_REDWOOD = new SmallRedwoodLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "small_redwood"));
     public static final GrowthLogicKit BAOBAB = new BaobabLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "baobab"));
     public static final GrowthLogicKit PALM = new DiagonalPalmLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "palm"));
-
     public static final GrowthLogicKit VARIATE_HEIGHT = new VariateHeightLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "variate_height"));
     public static final GrowthLogicKit CYPRESS = new CypressLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "cypress"));
     public static final GrowthLogicKit MEGA_EUCALYPTUS = new MegaEucalyptusLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "mega_eucalyptus"));
     public static final GrowthLogicKit WILLOW = new WillowLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "willow"));
+    public static final GrowthLogicKit BAMBOO = new BambooLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "bamboo"));
 
     public static void register(final Registry<GrowthLogicKit> registry) {
         registry.registerAll(THIN_CONIFER, MEGA_PINE, REDWOOD, SMALL_REDWOOD,
-                BAOBAB, VARIATE_HEIGHT, CYPRESS, MEGA_EUCALYPTUS, WILLOW, PALM);
+                BAOBAB, VARIATE_HEIGHT, CYPRESS, MEGA_EUCALYPTUS, WILLOW, PALM, BAMBOO);
     }
 
 }

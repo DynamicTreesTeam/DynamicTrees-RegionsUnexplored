@@ -1,0 +1,5 @@
+{
+  "primitive_leaves": "regions_unexplored:pine_leaves",
+  "cell_kit": "dtru:sparse",
+  "can_grow_on_ground": true
+}

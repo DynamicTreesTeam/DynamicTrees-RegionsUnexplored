@@ -1,9 +1,4 @@
 {
   "primitive_leaves": "regions_unexplored:maple_leaves",
-  "model_overrides": {
-    "leaves": "regions_unexplored:block/maple_leaves"
-  },
-  "texture_overrides": {
-    "leaves": "regions_unexplored:block/maple_leaves"
-  }
+  "has_tick_particles": true
 }

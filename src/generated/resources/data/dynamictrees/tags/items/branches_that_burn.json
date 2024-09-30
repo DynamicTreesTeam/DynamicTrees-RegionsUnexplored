@@ -1,5 +1,6 @@
 {
   "values": [
+    "dtru:bamboo_branch",
     "dtru:baobab_branch",
     "dtru:cypress_branch",
     "dtru:dead_branch",

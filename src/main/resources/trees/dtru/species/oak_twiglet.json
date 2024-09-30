@@ -1,5 +1,8 @@
 {
-  "type": "dtru:twiglet",
   "family": "oak",
-  "leaves_properties": "dtru:oak_twiglet"
+  "tapering": 0.3,
+  "signal_energy": 2.5,
+  "lowest_branch_height": 3,
+  "leaves_properties": "dtru:oak_twiglet",
+  "acceptable_soils": [ "dirt_like", "terracotta_like" ]
 }

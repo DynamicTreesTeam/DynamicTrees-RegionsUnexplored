@@ -1,3 +1,4 @@
 {
-  "primitive_leaves": "regions_unexplored:mauve_leaves"
+  "primitive_leaves": "regions_unexplored:mauve_leaves",
+  "has_tick_particles": true
 }

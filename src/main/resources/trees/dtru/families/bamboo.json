@@ -1,0 +1,19 @@
+{
+  "type": "dtru:bamboo",
+  "common_leaves": "dtru:bamboo",
+  "common_species": "dtru:bamboo",
+  "primitive_log": "regions_unexplored:bamboo_log",
+  "primitive_stripped_log": "regions_unexplored:stripped_bamboo_log",
+  "min_radius_for_stripping": 3,
+  "max_branch_radius": 8,
+  "loot_volume_multiplier": 4,
+  "texture_overrides": {
+    "branch": "regions_unexplored:block/bamboo_log",
+    "branch_top": "regions_unexplored:block/bamboo_log",
+    "stripped_branch": "regions_unexplored:block/stripped_bamboo_log",
+    "stripped_branch_top": "regions_unexplored:block/stripped_bamboo_log"
+  },
+  "lang_overrides": {
+    "branch": "Giant Bamboo"
+  }
+}

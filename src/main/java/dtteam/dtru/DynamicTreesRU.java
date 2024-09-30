@@ -6,10 +6,15 @@ import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
 import com.ferreusveritas.dynamictrees.block.rooty.SoilProperties;
 import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
+import dtteam.dtru.init.DTRUClient;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -21,7 +26,7 @@ public class DynamicTreesRU {
     public DynamicTreesRU() {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
-//        modEventBus.addListener(this::clientSetup);
+        modEventBus.addListener(this::clientSetup);
         modEventBus.addListener(this::gatherData);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -33,12 +38,10 @@ public class DynamicTreesRU {
 
     }
 
-//    @OnlyIn(Dist.CLIENT)
-//    private void clientSetup(final FMLClientSetupEvent event) {
-//        final BlockColors blockColors = Minecraft.getInstance().getBlockColors();
-//
-//        blockColors.register((state, world, pos, tintIndex) -> dtruRegistries.largeRootyWater.colorMultiplier(blockColors, state, world, pos, tintIndex), dtruRegistries.largeRootyWater);
-//    }
+    @OnlyIn(Dist.CLIENT)
+    private void clientSetup(final FMLClientSetupEvent event) {
+        DTRUClient.setup();
+    }
 
     private void gatherData(final GatherDataEvent event) {
         GatherDataHelper.gatherAllData(MOD_ID, event,
@@ -47,6 +50,10 @@ public class DynamicTreesRU {
                 Species.REGISTRY,
                 LeavesProperties.REGISTRY
         );
+    }
+
+    public static ResourceLocation location (String name){
+        return new ResourceLocation(MOD_ID, name);
     }
 
 }

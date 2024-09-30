@@ -1,12 +1,11 @@
 {
   "family": "dtru:magnolia",
   "tapering": 0.2,
-  "signal_energy": 10.0,
-  "up_probability": 4,
-  "lowest_branch_height": 5,
-  "growth_rate": 0.8,
+  "signal_energy": 12.0,
+  "up_probability": 0,
+  "lowest_branch_height": 3,
+  "growth_rate": 0.7,
   "leaves_properties": "dtru:blue_magnolia",
-  "growth_logic_kit": "dtru:variate_height",
   "generate_seed": true,
   "generate_sapling": true,
   "environment_factors": {
@@ -14,13 +13,21 @@
     "#forge:is_hot": 0.9,
     "#forge:is_dry": 0.5
   },
-  "always_show_on_waila": true,
   "perfect_biomes": {
     "name": ".*magnolia.*"
   },
   "primitive_sapling": "regions_unexplored:blue_magnolia_sapling",
   "features": [
-    "bee_nest"
+    "bee_nest",
+    "bottom_flare",
+    "mound",
+    {
+      "name": "roots",
+      "properties": {
+        "min_trunk_radius": 8,
+        "scale_factor": 16
+      }
+    }
   ],
   "lang_overrides": {
     "seed": "Blue Magnolia Fruit"

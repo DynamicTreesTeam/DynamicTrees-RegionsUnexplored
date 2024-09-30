@@ -15,11 +15,5 @@
   "perfect_biomes": {
     "name": "regions_unexplored:.*baobab.*"
   },
-  "primitive_saplings": [
-    "regions_unexplored:baobab_sapling",
-    {
-      "sapling_item": "regions_unexplored:baobab_seed",
-      "can_craft_seed_to_sapling": false
-    }
-  ]
+  "primitive_sapling": "regions_unexplored:baobab_sapling"
 }

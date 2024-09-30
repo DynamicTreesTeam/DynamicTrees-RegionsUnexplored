@@ -2,18 +2,23 @@ package dtteam.dtru.init;
 
 import com.ferreusveritas.dynamictrees.api.cell.CellKit;
 import com.ferreusveritas.dynamictrees.api.registry.TypeRegistryEvent;
+import com.ferreusveritas.dynamictrees.api.worldgen.FeatureCanceller;
 import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
 import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKit;
 import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
+import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
+import com.ferreusveritas.dynamictrees.worldgen.featurecancellation.TreeFeatureCanceller;
 import dtteam.dtru.DynamicTreesRU;
 import dtteam.dtru.cell.DTRUCellKits;
 import dtteam.dtru.genfeature.DTRUGenFeatures;
 import dtteam.dtru.growthlogic.DTRUGrowthLogicKits;
+import dtteam.dtru.tree.BambooFamily;
 import dtteam.dtru.tree.GenUnderwaterSpecies;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.regions_unexplored.world.level.feature.configuration.RuTreeConfiguration;
 
 @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
 public class DTRURegistries {
@@ -41,19 +46,18 @@ public class DTRURegistries {
     @SubscribeEvent
     public static void registerSpeciesTypes(final TypeRegistryEvent<Species> event) {
         event.registerType(new ResourceLocation(DynamicTreesRU.MOD_ID, "cypress"), GenUnderwaterSpecies.TYPE);
-        //event.registerType(new ResourceLocation(DynamicTreesRU.MOD_ID, "maple"), MapleSpecies.TYPE);
-        //event.registerType(new ResourceLocation(DynamicTreesRU.MOD_ID, "generates_on_stone"), GenOnStoneSpecies.TYPE);
     }
 
     @SubscribeEvent
-    public static void registerSpecies(final com.ferreusveritas.dynamictrees.api.registry.RegistryEvent<Species> event) {
-        // Registers fake species for generating bushes.
-//        event.getRegistry().registerAll(new Bush("flowering_oak_bush", new ResourceLocation("oak_log"), new ResourceLocation("oak_leaves"), new ResourceLocation("biomesoplenty", "flowering_oak_leaves")));
-//        event.getRegistry().registerAll(new Bush("oak_bush", new ResourceLocation("oak_log"), new ResourceLocation("oak_leaves")));
-//        event.getRegistry().registerAll(new Bush("infested_oak_bush", new ResourceLocation("oak_log"), new ResourceLocation("oak_leaves"), new ResourceLocation("cobweb")));
-//        event.getRegistry().registerAll(new Bush("silk_bush", new ResourceLocation("oak_log"), new ResourceLocation("cobweb")));
-//        event.getRegistry().registerAll(new Bush("acacia_bush", new ResourceLocation("acacia_log"), new ResourceLocation("acacia_leaves")).addAcceptableSoils(SoilHelper.SAND_LIKE));
-//        event.getRegistry().registerAll(new Bush("spruce_bush", new ResourceLocation("spruce_log"), new ResourceLocation("spruce_leaves")));
-
+    public static void registerFamilyTypes(final TypeRegistryEvent<Family> event) {
+        event.registerType(new ResourceLocation(DynamicTreesRU.MOD_ID, "bamboo"), BambooFamily.TYPE);
     }
+
+    public static final FeatureCanceller RU_TREE_CANCELLER = new TreeFeatureCanceller<>(DynamicTreesRU.location("tree"), RuTreeConfiguration.class);
+
+    @SubscribeEvent
+    public static void onFeatureCancellerRegistry(final com.ferreusveritas.dynamictrees.api.registry.RegistryEvent<FeatureCanceller> event) {
+        event.getRegistry().registerAll(RU_TREE_CANCELLER);
+    }
+
 }

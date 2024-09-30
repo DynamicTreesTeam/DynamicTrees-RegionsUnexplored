@@ -1,0 +1,8 @@
+{
+  "family": "oak",
+  "tapering": 0.3,
+  "signal_energy": 3.5,
+  "lowest_branch_height": 3,
+  "leaves_properties": "dtru:spruce_twiglet",
+  "acceptable_soils": [ "dirt_like" ]
+}

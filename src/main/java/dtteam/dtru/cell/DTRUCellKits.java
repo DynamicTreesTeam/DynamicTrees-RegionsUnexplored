@@ -15,15 +15,11 @@ import net.minecraft.resources.ResourceLocation;
 
 public class DTRUCellKits {
 
-    public static class SparseCellKit extends CellKit {
-        protected final Cell sparseBranch = new SparseBranchCell();
-        protected final Cell sparseLeaves = new NormalCell(1);
+    public static final CellKit SPARSE = new CellKit(new ResourceLocation(DynamicTreesRU.MOD_ID, "sparse")){
+        private final Cell sparseBranch = new SparseBranchCell();
+        private final Cell sparseLeaves = new NormalCell(1);
 
-        protected final CellSolver solver = new CellKits.BasicSolver(new short[]{0x0211});
-
-        public SparseCellKit(ResourceLocation registryName) {
-            super(registryName);
-        }
+        private final CellSolver solver = new CellKits.BasicSolver(new short[]{0x0211});
 
         @Override
         public Cell getCellForLeaves(int hydro) {
@@ -49,9 +45,7 @@ public class DTRUCellKits {
         public int getDefaultHydration() {
             return 1;
         }
-    }
-
-    public static final CellKit SPARSE = new SparseCellKit(new ResourceLocation(DynamicTreesRU.MOD_ID, "sparse"));
+    };
 
     public static final CellKit BRUSH = new CellKit(new ResourceLocation(DynamicTreesRU.MOD_ID, "brush")) {
 
@@ -205,9 +199,54 @@ public class DTRUCellKits {
 
     };
 
+    public static final CellKit BAMBOO = new CellKit(new ResourceLocation(DynamicTreesRU.MOD_ID, "bamboo")) {
+
+        private final Cell bambooTopBranch = new EucalyptusTopBranchCell();
+        private final Cell bambooUpperTrunk = new NormalCell(2);
+
+        private final Cell[] bambooLeaves = new Cell[] {
+                CellNull.NULL_CELL,
+                new EucalyptusLeafCell(1),
+                new EucalyptusLeafCell(2),
+                new EucalyptusLeafCell(3),
+                new EucalyptusLeafCell(4),
+        };
+
+        private final CellSolver solver = new CellKits.BasicSolver(new short[] {
+                0x0514, 0x0423, 0x0411, 0x0312, 0x0211
+        });
+
+        @Override
+        public Cell getCellForLeaves(int hydro) {
+            return bambooLeaves[hydro];
+        }
+
+        @Override
+        public Cell getCellForBranch(int radius, int meta) {
+            if (meta == MetadataCell.TOP_BRANCH) return bambooTopBranch;
+            if (radius == 2) return bambooUpperTrunk;
+            return CellNull.NULL_CELL;
+        }
+
+        @Override
+        public SimpleVoxmap getLeafCluster() {
+            return DTRULeafClusters.EUCALYPTUS;
+        }
+
+        @Override
+        public CellSolver getCellSolver() {
+            return solver;
+        }
+
+        @Override
+        public int getDefaultHydration() {
+            return 4;
+        }
+
+    };
 
     public static void register(final Registry<CellKit> registry) {
-        registry.registerAll(SPARSE, BRUSH, EUCALYPTUS, POPLAR);
+        registry.registerAll(SPARSE, BRUSH, EUCALYPTUS, POPLAR, BAMBOO);
     }
 
 }
