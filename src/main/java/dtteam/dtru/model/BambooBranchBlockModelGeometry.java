@@ -15,20 +15,19 @@ import net.minecraftforge.client.model.geometry.IGeometryBakingContext;
 
 import java.util.function.Function;
 
-/**
- * @author Harley O'Connor
- */
 @OnlyIn(Dist.CLIENT)
 public class BambooBranchBlockModelGeometry extends BranchBlockModelGeometry {
 
-    public BambooBranchBlockModelGeometry(ResourceLocation barkTextureLocation, ResourceLocation ringsTextureLocation) {
-        super(barkTextureLocation, ringsTextureLocation, null, false);
-    }
+    protected final ResourceLocation leavesTextureLocation;
 
+    public BambooBranchBlockModelGeometry(ResourceLocation barkTextureLocation, ResourceLocation ringsTextureLocation, ResourceLocation leavesTextureLocation) {
+        super(barkTextureLocation, ringsTextureLocation, null, false);
+        this.leavesTextureLocation = leavesTextureLocation;
+    }
 
     @Override
     public BakedModel bake(IGeometryBakingContext owner, ModelBaker baker, Function<Material, TextureAtlasSprite> spriteGetter, ModelState modelTransform, ItemOverrides overrides, ResourceLocation modelLocation) {
-        return new BambooBranchBlockBakedModel(modelLocation, this.barkTextureLocation, this.ringsTextureLocation, spriteGetter);
+        return new BambooBranchBlockBakedModel(owner, modelLocation, this.barkTextureLocation, this.ringsTextureLocation, this.leavesTextureLocation, spriteGetter);
     }
 
 }

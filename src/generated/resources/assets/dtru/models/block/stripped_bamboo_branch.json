@@ -1,7 +1,9 @@
 {
   "loader": "dtru:bamboo",
+  "render_type": "minecraft:cutout_mipped",
   "textures": {
     "bark": "regions_unexplored:block/stripped_bamboo_log",
-    "rings": "regions_unexplored:block/stripped_bamboo_log"
+    "rings": "regions_unexplored:block/stripped_bamboo_log",
+    "leaves": "dynamictrees:block/air"
   }
 }

@@ -81,7 +81,25 @@ public class DTRULeafClusters {
             0, 0, 0, 0, 0,
     }).setCenter(new BlockPos(2, 1, 2));
 
-    public static final SimpleVoxmap EUCALYPTUS_TOP = new SimpleVoxmap(5, 4, 5, new byte[] {
+    public static final SimpleVoxmap BAMBOO = new SimpleVoxmap(5, 7, 5, new byte[] {
+            0, 0, 0, 0, 0,
+            0, 0, 1, 0, 0,
+            0, 1, 0, 1, 0,
+            0, 0, 1, 0, 0,
+            0, 0, 0, 0, 0,
+
+            0, 0, 0, 0, 0,
+            0, 0, 1, 0, 0,
+            0, 1, 0, 1, 0,
+            0, 0, 1, 0, 0,
+            0, 0, 0, 0, 0,
+
+            0, 0, 0, 0, 0,
+            0, 0, 1, 0, 0,
+            0, 1, 0, 1, 0,
+            0, 0, 1, 0, 0,
+            0, 0, 0, 0, 0,
+
             0, 0, 0, 0, 0,
             0, 1, 1, 1, 0,
             0, 1, 0, 1, 0,
@@ -105,31 +123,7 @@ public class DTRULeafClusters {
             0, 0, 1, 0, 0,
             0, 0, 0, 0, 0,
             0, 0, 0, 0, 0,
-    }).setCenter(new BlockPos(2, 1, 2));
-
-    public static final SimpleVoxmap EUCALYPTUS = new SimpleVoxmap(3, 3, 3, new byte[] {
-            0, 0, 0,
-            0, 1, 0,
-            0, 0, 0,
-
-            0, 1, 0,
-            1, 0, 1,
-            0, 1, 0,
-
-            0, 0, 0,
-            0, 1, 0,
-            0, 0, 0,
-    }).setCenter(new BlockPos(1, 1, 1));
-
-    public static final SimpleVoxmap EUCALYPTUS_TRUNK = new SimpleVoxmap(3, 2, 3, new byte[] {
-            0, 1, 0,
-            1, 0, 1,
-            0, 1, 0,
-
-            0, 2, 0,
-            2, 0, 2,
-            0, 2, 0,
-    }).setCenter(new BlockPos(1, 1, 1));
+    }).setCenter(new BlockPos(2, 4, 2));
 
     public static final SimpleVoxmap HELLBARK = new SimpleVoxmap(5, 2, 5, new byte[] {
 

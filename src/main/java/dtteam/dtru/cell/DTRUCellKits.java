@@ -69,6 +69,9 @@ public class DTRUCellKits {
                 new NormalCell(2),
                 new NormalCell(3),
                 new NormalCell(4),
+                new NormalCell(5),
+                new NormalCell(6),
+                new NormalCell(7),
         };
 
         private final CellSolver solver = new CellKits.BasicSolver(new short[]{
@@ -105,16 +108,19 @@ public class DTRUCellKits {
 
     public static final CellKit EUCALYPTUS = new CellKit(new ResourceLocation(DynamicTreesRU.MOD_ID, "eucalyptus")) {
 
-        private final Cell eucalyptusTopBranch = new EucalyptusTopBranchCell();
+        private final Cell eucalyptusTopBranch = new BambooTopBranchCell();
         private final Cell eucalyptusBranch = new NormalCell(2);
         private final Cell eucalyptusUpperTrunk = new NormalCell(3);
 
         private final Cell[] eucalyptusLeaves = new Cell[]{
                 CellNull.NULL_CELL,
-                new EucalyptusLeafCell(1),
-                new EucalyptusLeafCell(2),
-                new EucalyptusLeafCell(3),
-                new EucalyptusLeafCell(4),
+                new BambooLeafCell(1),
+                new BambooLeafCell(2),
+                new BambooLeafCell(3),
+                new BambooLeafCell(4),
+                new BambooLeafCell(5),
+                new BambooLeafCell(6),
+                new BambooLeafCell(7),
         };
 
         private final CellSolver solver = new CellKits.BasicSolver(new short[]{
@@ -136,7 +142,7 @@ public class DTRUCellKits {
 
         @Override
         public SimpleVoxmap getLeafCluster() {
-            return DTRULeafClusters.EUCALYPTUS;
+            return DTRULeafClusters.BAMBOO;
         }
 
         @Override
@@ -163,6 +169,9 @@ public class DTRUCellKits {
                 new PoplarLeafCell(2),
                 new PoplarLeafCell(3),
                 new PoplarLeafCell(4),
+                new PoplarLeafCell(5),
+                new PoplarLeafCell(6),
+                new PoplarLeafCell(7),
         };
 
         private final CellSolver solver = new CellKits.BasicSolver(new short[] {
@@ -201,15 +210,18 @@ public class DTRUCellKits {
 
     public static final CellKit BAMBOO = new CellKit(new ResourceLocation(DynamicTreesRU.MOD_ID, "bamboo")) {
 
-        private final Cell bambooTopBranch = new EucalyptusTopBranchCell();
+        private final Cell bambooTopBranch = new BambooTopBranchCell();
         private final Cell bambooUpperTrunk = new NormalCell(2);
 
         private final Cell[] bambooLeaves = new Cell[] {
                 CellNull.NULL_CELL,
-                new EucalyptusLeafCell(1),
-                new EucalyptusLeafCell(2),
-                new EucalyptusLeafCell(3),
-                new EucalyptusLeafCell(4),
+                new BambooLeafCell(1),
+                new BambooLeafCell(2),
+                new BambooLeafCell(3),
+                new BambooLeafCell(4),
+                new BambooLeafCell(5),
+                new BambooLeafCell(6),
+                new BambooLeafCell(7)
         };
 
         private final CellSolver solver = new CellKits.BasicSolver(new short[] {
@@ -230,7 +242,7 @@ public class DTRUCellKits {
 
         @Override
         public SimpleVoxmap getLeafCluster() {
-            return DTRULeafClusters.EUCALYPTUS;
+            return DTRULeafClusters.BAMBOO;
         }
 
         @Override

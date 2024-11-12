@@ -3,7 +3,7 @@ package dtteam.dtru.cell;
 import com.ferreusveritas.dynamictrees.api.cell.Cell;
 import net.minecraft.core.Direction;
 
-public class EucalyptusTopBranchCell implements Cell {
+public class BambooTopBranchCell implements Cell {
 
     @Override
     public int getValue() {

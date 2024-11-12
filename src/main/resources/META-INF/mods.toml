@@ -9,8 +9,8 @@ displayName="Dynamic Trees for Regions Unexplored" #mandatory
 updateJSONURL="https://github.com/DynamicTreesTeam/DynamicTreesVersionInfo/blob/master/Add-ons/BOP.json?raw=true" #optional
 displayURL="https://www.curseforge.com/minecraft/mc-mods/dtru" #optional
 logoFile="" #optional
-credits="ferreusveritas, hawksteak" #optional
-authors="mangoose, Max Hyper" #optional
+credits="hawksteak" #optional
+authors="Max Hyper" #optional
 
 description='''
 Compatibility Mod between Dynamic trees and Regions Unexplored

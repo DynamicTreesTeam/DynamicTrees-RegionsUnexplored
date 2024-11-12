@@ -5,7 +5,7 @@
   "primitive_log": "regions_unexplored:bamboo_log",
   "primitive_stripped_log": "regions_unexplored:stripped_bamboo_log",
   "min_radius_for_stripping": 3,
-  "max_branch_radius": 8,
+  "max_branch_radius": 4,
   "loot_volume_multiplier": 4,
   "texture_overrides": {
     "branch": "regions_unexplored:block/bamboo_log",

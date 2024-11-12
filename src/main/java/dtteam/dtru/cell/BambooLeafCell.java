@@ -2,9 +2,9 @@ package dtteam.dtru.cell;
 
 import com.ferreusveritas.dynamictrees.cell.MatrixCell;
 
-public class EucalyptusLeafCell extends MatrixCell {
+public class BambooLeafCell extends MatrixCell {
 
-    public EucalyptusLeafCell(int value) {
+    public BambooLeafCell(int value) {
         super(value, valMap);
     }
 
