@@ -1,0 +1,20 @@
+{
+  "family": "dtru:silver_birch",
+  "tapering": 0.2,
+  "signal_energy": 16.0,
+  "up_probability": 8,
+  "lowest_branch_height": 3,
+  "growth_rate": 0.9,
+  "soil_longevity": 3,
+  "growth_logic_kit": {
+    "name": "dtru:twisting_tree",
+    "properties": {
+      "split_ends_energy": 2
+    }
+  },
+  "leaves_properties": "dtru:enchanted_birch",
+  "environment_factors" : {
+    "sparse": 0.80,
+    "dry": 0.50
+  }
+}

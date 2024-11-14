@@ -5,9 +5,11 @@
   "growth_rate": 0.8,
   "leaves_properties": "dtru:mauve",
   "environment_factors" : {
+    "#forge:is_cold": 0.8,
     "#forge:is_hot": 0.8,
     "#forge:is_dry": 0.5
   },
+  "mega_species": "dtru:mega_mauve",
   "perfect_biomes": { "name": "regions_unexplored:rocky_meadow" },
   "primitive_sapling": "regions_unexplored:mauve_sapling",
   "features" : [

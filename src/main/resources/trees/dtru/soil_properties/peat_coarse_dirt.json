@@ -1,4 +1,4 @@
 {
   "primitive_soil": "regions_unexplored:peat_coarse_dirt",
-  "acceptable_soils": [ "dirt_like", "peat_like" ]
+  "acceptable_soils": [ "dirt_like", "peat_like", "peat_no_grass" ]
 }

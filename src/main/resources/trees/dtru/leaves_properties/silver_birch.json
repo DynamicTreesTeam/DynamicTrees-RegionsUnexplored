@@ -1,4 +1,6 @@
 {
   "primitive_leaves": "regions_unexplored:silver_birch_leaves",
+  "cell_kit": "azalea",
+  "light_requirement": 6,
   "has_tick_particles": true
 }

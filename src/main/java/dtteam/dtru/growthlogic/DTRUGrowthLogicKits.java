@@ -17,10 +17,12 @@ public class DTRUGrowthLogicKits {
     public static final GrowthLogicKit MEGA_EUCALYPTUS = new MegaEucalyptusLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "mega_eucalyptus"));
     public static final GrowthLogicKit WILLOW = new WillowLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "willow"));
     public static final GrowthLogicKit BAMBOO = new BambooLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "bamboo"));
+    public static final GrowthLogicKit TWISTING_TREE = new TwistingTreeLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "twisting_tree"));
 
     public static void register(final Registry<GrowthLogicKit> registry) {
         registry.registerAll(THIN_CONIFER, MEGA_PINE, REDWOOD, SMALL_REDWOOD,
-                BAOBAB, VARIATE_HEIGHT, CYPRESS, MEGA_EUCALYPTUS, WILLOW, PALM, BAMBOO);
+                BAOBAB, VARIATE_HEIGHT, CYPRESS, MEGA_EUCALYPTUS, WILLOW, PALM,
+                TWISTING_TREE, BAMBOO);
     }
 
 }

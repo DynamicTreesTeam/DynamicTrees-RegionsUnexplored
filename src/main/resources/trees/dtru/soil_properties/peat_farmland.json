@@ -1,5 +1,5 @@
 {
   "primitive_soil": "regions_unexplored:peat_farmland",
-  "acceptable_soils": [ "dirt_like", "peat_like" ],
+  "acceptable_soils": [ "dirt_like", "peat_like", "peat_no_grass" ],
   "substitute_soil" : "dtru:peat_dirt"
 }

@@ -1,0 +1,7 @@
+{
+  "common_leaves": "regions_unexplored:silver_birch",
+  "common_species": "regions_unexplored:silver_birch",
+  "primitive_log": "regions_unexplored:silver_birch_log",
+  "primitive_stripped_log": "regions_unexplored:stripped_silver_birch_log",
+  "max_branch_radius": 8
+}

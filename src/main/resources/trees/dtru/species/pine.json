@@ -17,7 +17,14 @@
   "acceptable_soils": ["dirt_like"],
   "mega_species": "dtru:mega_pine",
   "features" : [
-    "conifer_topper"
+    "conifer_topper",
+    {
+      "name": "dtru:soil_whitelist",
+      "properties": {
+        "allowed_soil": "peat_no_grass",
+        "replacement_species": "dtru:pine_twiglet"
+      }
+    }
   ],
   "lang_overrides": {
     "seed": "Pine Cone"

@@ -202,5 +202,33 @@
       "chance": 0.7,
       "forestness" : 1.0
     }
+  },
+  {
+    "select": { "name": "regions_unexplored:pine_taiga" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:pine" : 1
+        }
+      },
+      "density": 0.7,
+      "chance": 1.0,
+      "forestness" : 1.0
+    }
+  },
+  {
+    "select": { "name": "regions_unexplored:mauve_hills" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:mauve" : 4,
+          "dtru:mega_mauve" : 1,
+          "dtru:enchanted_birch" : 2
+        }
+      },
+      "density": 0.8,
+      "chance": 0.8,
+      "forestness" : 1.0
+    }
   }
 ]
