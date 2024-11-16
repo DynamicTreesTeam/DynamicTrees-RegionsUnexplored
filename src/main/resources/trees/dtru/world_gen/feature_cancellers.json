@@ -3,7 +3,15 @@
     "__comment": "Cancel standard tree features from the RU overworld.",
     "select": { "names": [ "regions_unexplored:.*", "!regions_unexplored:alpha_grove" ], "tag": [ "!#minecraft:is_nether" ] },
     "cancellers": {
-      "types": ["tree", "dtru:tree"],
+      "types": ["tree", "dtru:tree", "dtru:tree_2"],
+      "namespaces": ["regions_unexplored", "minecraft"]
+    }
+  },
+  {
+    "only_if_loaded": "dynamictreesplus",
+    "select": { "names": [ "regions_unexplored:.*", "!regions_unexplored:alpha_grove" ], "tag": [ "!#minecraft:is_nether" ] },
+    "cancellers": {
+      "types": ["tree", "dtru:tree", "dtru:tree_2", "cactus", "mushroom", "dtru:mushroom", "dtru:mushroom_2"],
       "namespaces": ["regions_unexplored", "minecraft"]
     }
   }

@@ -37,7 +37,7 @@
                   ]
                 }
               ],
-              "name": "regions_unexplored:silver_birch_leaves"
+              "name": "minecraft:birch_leaves"
             },
             {
               "type": "dynamictrees:seed_item",
@@ -134,5 +134,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dtru:blocks/silver_birch_leaves"
+  "random_sequence": "dtru:blocks/twisting_birch_leaves"
 }

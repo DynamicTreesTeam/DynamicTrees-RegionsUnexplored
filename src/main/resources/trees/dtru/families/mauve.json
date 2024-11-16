@@ -3,5 +3,6 @@
   "common_species": "dtru:mauve",
   "primitive_log": "regions_unexplored:mauve_log",
   "primitive_stripped_log": "regions_unexplored:stripped_mauve_log",
-  "max_branch_radius": 24
+  "max_branch_radius": 24,
+  "generate_surface_root": true
 }

@@ -1,5 +1,5 @@
 {
-  "type": "dtru:generates_underwater",
+  "type": "dtru:cypress",
   "family": "dtru:cypress",
   "tapering": 0.45,
   "signal_energy": 36.0,

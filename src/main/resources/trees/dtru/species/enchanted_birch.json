@@ -6,6 +6,8 @@
   "lowest_branch_height": 3,
   "growth_rate": 0.9,
   "soil_longevity": 3,
+  "generate_seed": true,
+  "generate_sapling": true,
   "growth_logic_kit": {
     "name": "dtru:twisting_tree",
     "properties": {
@@ -16,5 +18,8 @@
   "environment_factors" : {
     "sparse": 0.80,
     "dry": 0.50
+  },
+  "lang_overrides": {
+    "seed": "Enchanted Birch Catkin"
   }
 }

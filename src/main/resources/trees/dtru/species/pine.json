@@ -19,10 +19,16 @@
   "features" : [
     "conifer_topper",
     {
-      "name": "dtru:soil_whitelist",
+      "name": "biome_predicate",
       "properties": {
-        "allowed_soil": "peat_no_grass",
-        "replacement_species": "dtru:pine_twiglet"
+        "gen_feature": {
+          "name": "dtru:soil_whitelist",
+          "properties": {
+            "allowed_soil": "peat_no_grass",
+            "replacement_species": "dtru:pine_twiglet"
+          }
+        },
+        "biome_predicate": { "name": "regions_unexplored:pine_taiga" }
       }
     }
   ],

@@ -4,7 +4,6 @@
   "primitive_log": "regions_unexplored:pine_log",
   "primitive_stripped_log": "regions_unexplored:stripped_pine_log",
   "max_branch_radius": 24,
-  "conifer_variants": true,
   "generate_surface_root": true,
   "max_signal_depth": 64
 }

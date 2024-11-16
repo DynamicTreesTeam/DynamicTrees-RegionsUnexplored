@@ -16,5 +16,8 @@
   "environment_factors" : {
     "sparse": 0.80,
     "dry": 0.50
+  },
+  "lang_overrides": {
+    "seed": "Silver Birch Catkin"
   }
 }

@@ -1,6 +1,6 @@
 {
   "family": "dtru:mauve",
-  "tapering": 0.2,
+  "tapering": 0.25,
   "signal_energy": 32.0,
   "up_probability": 2,
   "lowest_branch_height": 9,
@@ -22,7 +22,16 @@
     "#forge:is_dry": 0.5
   },
   "perfect_biomes": { "name": "regions_unexplored:rocky_meadow" },
-  "features" : [
+  "features": [
+    {
+      "name": "roots",
+      "properties": {
+        "level_limit": 3,
+        "scale_factor": 20
+      }
+    },
+    "bottom_flare",
+    "mound",
     "bee_nest"
   ]
 }
