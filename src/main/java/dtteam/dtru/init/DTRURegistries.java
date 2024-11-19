@@ -15,6 +15,7 @@ import dtteam.dtru.cell.DTRUCellKits;
 import dtteam.dtru.genfeature.DTRUGenFeatures;
 import dtteam.dtru.growthlogic.DTRUGrowthLogicKits;
 import dtteam.dtru.tree.BambooFamily;
+import dtteam.dtru.tree.EucalyptusFamily;
 import dtteam.dtru.tree.GenUnderwaterSpecies;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -60,6 +61,7 @@ public class DTRURegistries {
     @SubscribeEvent
     public static void registerFamilyTypes(final TypeRegistryEvent<Family> event) {
         event.registerType(new ResourceLocation(DynamicTreesRU.MOD_ID, "bamboo"), BambooFamily.TYPE);
+        event.registerType(new ResourceLocation(DynamicTreesRU.MOD_ID, "eucalyptus"), EucalyptusFamily.TYPE);
     }
 
     public static final FeatureCanceller RU_TREE_CANCELLER = new TreeFeatureCanceller<>(DynamicTreesRU.location("tree"), RuTreeConfiguration.class);

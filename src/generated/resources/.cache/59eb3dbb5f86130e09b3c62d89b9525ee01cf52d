@@ -1,9 +1,11 @@
-// 1.20.1	2024-11-14T15:41:09.9269608	Loot Tables
+// 1.20.1	2024-11-16T18:47:18.4353549	Loot Tables
 f5d739cbc7c4a627b91d14b333542a8705151a34 data/dtru/loot_tables/blocks/acacia_twiglet_leaves.json
 8a8dab4ee235fadb7305080479fd1a577c83bb6a data/dtru/loot_tables/blocks/bamboo_leaves.json
 2176a15f4fb5315ca8b7ba00d91951ad49dd913b data/dtru/loot_tables/blocks/baobab_leaves.json
 98305b05714c7645b192f11445ebc72e7f696a83 data/dtru/loot_tables/blocks/blue_magnolia_leaves.json
 9b3d70acbe5ab03638564fd383f044e42e171d7c data/dtru/loot_tables/blocks/cypress_leaves.json
+a01577a44ba8aaa5d64488d9930a0db233110af6 data/dtru/loot_tables/blocks/dead_leaves.json
+5af4f4d010abddddcd922d1fe4b9ba3ef1d0d019 data/dtru/loot_tables/blocks/dead_pine_leaves.json
 06ad461411de67f086ebc69a208af4b93a4bfa99 data/dtru/loot_tables/blocks/enchanted_birch_leaves.json
 197e87ec16e3d73058448249753bbee28b8b8072 data/dtru/loot_tables/blocks/eucalyptus_leaves.json
 959e59fc7147fd085cf55fb7e1afaf6085b7c775 data/dtru/loot_tables/blocks/golden_larch_leaves.json
@@ -62,6 +64,8 @@ e485472959ac3b066dbc347480d4252a8530ee64 data/dtru/loot_tables/trees/leaves/bamb
 95fb527c0677c8340002188479d38a2324414745 data/dtru/loot_tables/trees/leaves/baobab.json
 4d51aa820c76d5b7269c8ef26c59682f97a3ef21 data/dtru/loot_tables/trees/leaves/blue_magnolia.json
 2def13b9e1b95358dd3cf9d63accddbd3b708476 data/dtru/loot_tables/trees/leaves/cypress.json
+2e01ad0227cfafc304a7d0ebb6dafe1e21511644 data/dtru/loot_tables/trees/leaves/dead.json
+b8ca81fe217d23c6adbbcef12340920969912e6c data/dtru/loot_tables/trees/leaves/dead_pine.json
 dbc416c14d03842862f0b32561f42455f8b14944 data/dtru/loot_tables/trees/leaves/enchanted_birch.json
 bb808e7b15e2d6bf3f757570cdc07459baea71b1 data/dtru/loot_tables/trees/leaves/eucalyptus.json
 ba61f853f88ed31dfe4040e266b6e489c3d073a8 data/dtru/loot_tables/trees/leaves/golden_larch.json

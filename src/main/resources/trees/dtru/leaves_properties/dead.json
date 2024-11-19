@@ -1,4 +1,7 @@
 {
-  "primitive_leaves": "biomesoplenty:dead_leaves",
-  "cell_kit": "dtru:sparse"
+  "type": "scruffy",
+  "primitive_leaves": "regions_unexplored:dead_leaves",
+  "cell_kit": "dtru:sparse",
+  "scruffy_leaf_chance": 0.9,
+  "scruffy_max_hydro": 3
 }

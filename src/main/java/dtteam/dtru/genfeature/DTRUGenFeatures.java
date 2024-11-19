@@ -11,7 +11,7 @@ public class DTRUGenFeatures {
     public static final GenFeature BIG_BOTTOM_FLARE = new BigBottomFlareGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "big_bottom_flare"));
     public static final GenFeature EXTRA_BOTTOM_FLARE = new ExtraBottomFlareGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "extra_bottom_flare"));
     public static final GenFeature REPLACE_ON_RADIUS = new ReplaceOnRadiusGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "replace_on_radius"));
-    public static final GenFeature BIOME_PREDICATE_2 = new BiomePredicateGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "biome_predicate"));
+    public static final GenFeature BIOME_PREDICATE_2 = new GenerateBiomePredicateGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "biome_predicate"));
     public static final GenFeature SOIL_WHITELIST = new SoilWhitelistGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "soil_whitelist"));
     public static final GenFeature SYTHIAN_TOPPER = new SythianTopperGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "sythian_topper"));
     public static final GenFeature ALTERNATIVE_BRANCH = new AlternativeBranchGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "alt_branch"));

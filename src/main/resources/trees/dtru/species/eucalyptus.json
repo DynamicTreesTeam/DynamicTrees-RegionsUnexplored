@@ -4,14 +4,14 @@
   "soil_replacement_for_worldgen": "byg:overgrown_stone",
   "family": "dtru:eucalyptus",
   "tapering": 0.2,
-  "signal_energy": 32.0,
+  "signal_energy": 24.0,
   "up_probability": 3,
-  "lowest_branch_height": 16,
+  "lowest_branch_height": 8,
   "growth_rate": 1.4,
   "growth_logic_kit": {
-    "name": "dtru:variate_height",
+    "name": "jungle",
     "properties": {
-      "height_variation": 4
+      "canopy_height": 18
     }
   },
   "leaves_properties": "dtru:eucalyptus",
@@ -29,37 +29,15 @@
   "world_gen_acceptable_soils": [ "dirt_like" ],
   "acceptable_soils": ["dirt_like"],
   "features": [
-    "bee_nest",
     {
-      "name": "biome_predicate",
+      "name": "roots",
       "properties": {
-        "only_world_gen": true,
-        "gen_feature": {
-          "name": "huge_mushrooms",
-          "properties": {
-            "place_chance": 0.8,
-            "max_count": 2,
-            "max_attempts": 3
-          }
-        },
-        "biome_predicate": { "name": "byg:tropical_fungal_rainforest.*" }
+        "level_limit": 3,
+        "scale_factor": 20
       }
     },
-    {
-      "name": "dtbyg:biome_predicate",
-      "properties": {
-        "only_world_gen": true,
-        "gen_feature": {
-          "name": "dtbyg:huge_mushrooms",
-          "properties": {
-            "place_chance": 0.8,
-            "max_count": 2,
-            "max_attempts": 3
-          }
-        },
-        "biome_predicate": { "name": "byg:tropical_fungal_forest.*" }
-      }
-    }
+    "bottom_flare",
+    "mound"
   ],
   "lang_overrides": {
     "seed": "Eucalyptus Pod"

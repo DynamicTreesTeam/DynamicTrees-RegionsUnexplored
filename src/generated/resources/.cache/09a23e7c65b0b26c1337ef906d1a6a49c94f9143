@@ -1,4 +1,4 @@
-// 1.20.1	2024-11-14T15:41:09.928962	Block States: dtru
+// 1.20.1	2024-11-16T18:47:18.4393586	Block States: dtru
 2606791521eac27fa77ebbeeea442b8073802a51 assets/dtru/blockstates/acacia_twiglet_leaves.json
 364f5b2897afa0b5f29778bd56bc402e710442fe assets/dtru/blockstates/bamboo_branch.json
 8dbf990d7c05ee61ec38cefe29f374a825c58f3a assets/dtru/blockstates/bamboo_leaves.json
@@ -13,6 +13,8 @@ cdfe2639222a10c2d165a4b33b88b01e06c5e805 assets/dtru/blockstates/cypress_leaves.
 3f9b0c14a41691e89f082f696e355de51483ce63 assets/dtru/blockstates/cypress_root.json
 97f6f06b95cc9d45ad0d85eba333a3acb5fb0013 assets/dtru/blockstates/cypress_sapling.json
 168d469741f413155a18bf1d1bd621930b842ba6 assets/dtru/blockstates/dead_branch.json
+6131eac4037afd72b29d0c97a8ba5ecf651247e7 assets/dtru/blockstates/dead_leaves.json
+3bd47be627e025ed5aa41d45311c701d741870db assets/dtru/blockstates/dead_pine_leaves.json
 229cd04da99fd21fbb87d97fe08153f9326ee7ee assets/dtru/blockstates/enchanted_birch_leaves.json
 478c042383d7aaf622e8ef464cbf31ec7420e183 assets/dtru/blockstates/enchanted_birch_sapling.json
 ff7eb7db1418baf7222160af1a197327156dc497 assets/dtru/blockstates/eucalyptus_branch.json
@@ -38,6 +40,7 @@ cfbd05d845f69e5b1661563c38918f13b72623f7 assets/dtru/blockstates/larch_leaves.js
 3cc2a22cd6bd49266c8722c5b1b61e1787cf3d7a assets/dtru/blockstates/maple_sapling.json
 97bca56dd90c317bcb7b96ed0c25af382ae40d26 assets/dtru/blockstates/mauve_branch.json
 e16e768d48c132bbb00c47e54a66537b2ed7dd40 assets/dtru/blockstates/mauve_leaves.json
+f76100b77f8bdff729fa4921fbba2d77d003925d assets/dtru/blockstates/mauve_root.json
 2528a54bd29f598b41009d4c5e5239e8b9101c73 assets/dtru/blockstates/mauve_sapling.json
 9b73d2419e07259eb9681640ac018a6aeb7e7e93 assets/dtru/blockstates/oak_poplar_leaves.json
 bb55f5ed209ebb6b861e08feb9d7bff52ea8e4d6 assets/dtru/blockstates/oak_poplar_sapling.json
@@ -128,6 +131,7 @@ c1fcb5a486e790d4f306c09f097e44127ac06f22 assets/dtru/models/block/magnolia_branc
 5a787871b4046efb15e9ec448b803ff5ca13a726 assets/dtru/models/block/maple_branch.json
 9b6b99399960d0e9108fb7adc590c6ab0c2b3637 assets/dtru/models/block/maple_root.json
 b683f5f8b91eb7c095c51e7f3c0073d06ea73eb4 assets/dtru/models/block/mauve_branch.json
+7411a8592733868dea4374b2451789796b81dd4f assets/dtru/models/block/mauve_root.json
 f4269559914392541fbc217f6cb26fb315f272ed assets/dtru/models/block/palm_branch.json
 2b636be62fa7eafeb064c138c315d40223044c90 assets/dtru/models/block/palm_leaves/palm_core_bottom.json
 681a4f9974993840ce17d6f05e5ab13e65b16611 assets/dtru/models/block/palm_leaves/palm_core_top.json

@@ -18,8 +18,8 @@ public class PineLogic extends ConiferLogic {
     @Override
     protected GrowthLogicKitConfiguration createDefaultConfiguration() {
         return super.createDefaultConfiguration()
-                .with(ENERGY_DIVISOR, 10F)
-                .with(HORIZONTAL_LIMITER, 2F);
+                .with(ENERGY_DIVISOR, 5F)
+                .with(HORIZONTAL_LIMITER, 3F);
     }
 
     @Override

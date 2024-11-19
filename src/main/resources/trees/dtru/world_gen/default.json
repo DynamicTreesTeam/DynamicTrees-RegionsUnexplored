@@ -43,7 +43,7 @@
     }
   },
   {
-    "select": { "name": "regions_unexplored:shrubland" },
+    "select": { "name": "regions_unexplored:(shrubland|frozen_tundra)" },
     "apply": {
       "species" : {
         "random" : {
@@ -126,11 +126,12 @@
     "apply": {
       "species" : {
         "random" : {
-          "dtru:eucalyptus" : 7,
-          "oak_undergrowth" : 1
+          "dtru:eucalyptus" : 5,
+          "dtru:mega_eucalyptus" : 2,
+          "oak_undergrowth" : 2
         }
       },
-      "density": [ 1.2 ],
+      "density": [ 1.4 ],
       "chance": 1.0,
       "forestness" : 1.0
     }
@@ -172,7 +173,7 @@
     "apply": {
       "species" : "dtru:tall_spruce",
       "density": [ 1.0 ],
-      "chance": 0.3
+      "chance": 0.5
     }
   },
   {
@@ -215,6 +216,20 @@
       },
       "density": [0.7],
       "chance": 1.0,
+      "forestness" : 1.0
+    }
+  },
+  {
+    "select": { "name": "regions_unexplored:frozen_pine_taiga" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:pine" : 3,
+          "dtru:pine_twiglet" : 1
+        }
+      },
+      "density": [0.7],
+      "chance": 0.7,
       "forestness" : 1.0
     }
   },
@@ -278,7 +293,7 @@
       "species" : {
         "random" : {
           "dtru:larch" : 24,
-          "dtru:golden_larch" : 6,
+          "dtru:golden_larch" : 4,
           "dtru:twisting_birch" : 1,
           "oak_undergrowth" : 3
         }
@@ -294,7 +309,7 @@
       "species" : {
         "random" : {
           "dtru:golden_larch" : 24,
-          "dtru:larch" : 6,
+          "dtru:larch" : 4,
           "dtru:twisting_birch" : 1,
           "oak_undergrowth" : 3
         }
@@ -344,6 +359,30 @@
       "density": [0.8],
       "chance": 1.0,
       "forestness" : 1.0
+    }
+  },
+  {
+    "select": { "name": "regions_unexplored:fen" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:dead" : 2,
+          "dtru:pine" : 1,
+          "dtru:dead_pine" : 1
+        }
+      },
+      "density": [0.8],
+      "chance": 0.8,
+      "forestness" : 1.0
+    }
+  },
+  {
+    "select": { "name": "regions_unexplored:marsh" },
+    "apply": {
+      "species" : "dtru:dead",
+      "density": [0.6],
+      "chance": 0.3,
+      "forestness" : 0.2
     }
   }
 ]

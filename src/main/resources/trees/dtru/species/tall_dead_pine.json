@@ -1,0 +1,18 @@
+{
+  "family": "dtru:pine",
+  "tapering": 0.22,
+  "signal_energy": 28.0,
+  "up_probability": 10,
+  "lowest_branch_height": 12,
+  "growth_rate": 0.0,
+  "leaves_properties": "dtru:dead_pine",
+  "can_bone_meal_tree": false,
+  "generate_seed": false,
+  "generate_sapling": false,
+  "does_rot": false,
+  "acceptable_soils": [ "dirt_like" ],
+  "world_gen_acceptable_soils": [ "snow_like" ],
+  "lang_overrides": {
+    "seed": "Dead Pine Cone"
+  }
+}

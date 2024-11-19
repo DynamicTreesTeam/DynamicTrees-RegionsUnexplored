@@ -1,7 +1,7 @@
 {
   "family": "dtru:pine",
-  "tapering": 0.2,
-  "signal_energy": 28.0,
+  "tapering": 0.35,
+  "signal_energy": 20.0,
   "up_probability": 10,
   "lowest_branch_height": 7,
   "growth_rate": 0.9,
@@ -13,13 +13,13 @@
   },
   "perfect_biomes": { "tag": "#forge:is_coniferous" },
   "primitive_sapling": "regions_unexplored:pine_sapling",
-  "world_gen_acceptable_soils": [ "dirt_like" ],
+  "world_gen_acceptable_soils": [ "snow_like" ],
   "acceptable_soils": ["dirt_like"],
   "mega_species": "dtru:mega_pine",
   "features" : [
     "conifer_topper",
     {
-      "name": "biome_predicate",
+      "name": "dtru:biome_predicate",
       "properties": {
         "gen_feature": {
           "name": "dtru:soil_whitelist",

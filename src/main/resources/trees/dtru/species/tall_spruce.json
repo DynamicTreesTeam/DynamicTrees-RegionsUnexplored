@@ -3,7 +3,7 @@
   "tapering": 0.25,
   "signal_energy": 20.0,
   "up_probability": 6,
-  "lowest_branch_height": 3,
+  "lowest_branch_height": 6,
   "growth_rate": 0.9,
   "soil_longevity": 10,
   "growth_logic_kit": {
@@ -20,6 +20,7 @@
     "#forge:is_wet": 0.75
   },
   "perfect_biomes": { "tag": "#forge:is_coniferous" },
+  "world_gen_acceptable_soils": [ "snow_like" ],
   "mega_species": "mega_spruce",
   "features" : [
     "conifer_topper"

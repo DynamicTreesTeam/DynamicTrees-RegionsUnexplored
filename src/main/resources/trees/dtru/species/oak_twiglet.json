@@ -4,5 +4,6 @@
   "signal_energy": 2.5,
   "lowest_branch_height": 3,
   "leaves_properties": "dtru:oak_twiglet",
-  "acceptable_soils": [ "dirt_like", "terracotta_like" ]
+  "acceptable_soils": [ "dirt_like" ],
+  "world_gen_acceptable_soils": [ "terracotta_like", "snow_like" ]
 }
