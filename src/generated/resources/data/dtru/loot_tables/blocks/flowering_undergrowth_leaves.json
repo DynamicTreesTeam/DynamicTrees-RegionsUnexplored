@@ -37,7 +37,7 @@
                   ]
                 }
               ],
-              "name": "regions_unexplored:dead_pine_leaves"
+              "name": "regions_unexplored:flowering_leaves"
             },
             {
               "type": "dynamictrees:seed_item",
@@ -128,11 +128,11 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "minecraft:stick"
+          "name": "minecraft:air"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dtru:blocks/dead_pine_leaves"
+  "random_sequence": "dtru:blocks/flowering_undergrowth_leaves"
 }

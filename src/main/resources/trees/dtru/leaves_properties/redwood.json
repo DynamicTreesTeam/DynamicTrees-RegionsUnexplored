@@ -1,8 +1,8 @@
 {
   "primitive_leaves": "regions_unexplored:redwood_leaves",
   "cell_kit": "dynamictrees:conifer",
-  "smother": 32,
-  "light_requirement": 6,
+  "smother": 26,
+  "light_requirement": 9,
   "model_overrides": {
     "leaves": "regions_unexplored:block/redwood_leaves"
   },

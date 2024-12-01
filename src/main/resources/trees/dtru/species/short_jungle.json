@@ -5,7 +5,6 @@
   "up_probability": 4,
   "lowest_branch_height": 8,
   "growth_rate": 0.8,
-  "growth_logic_kit": "dtru:mahogany",
   "leaves_properties": "jungle",
   "environment_factors" : {
     "#forge:is_cold": 0.15,
@@ -19,7 +18,7 @@
     {
       "name": "vines",
       "properties": {
-        "quantity": 16,
+        "quantity": 32,
         "max_length": 16
       }
     }

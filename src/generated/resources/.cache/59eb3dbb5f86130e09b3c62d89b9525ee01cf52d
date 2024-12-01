@@ -1,13 +1,15 @@
-// 1.20.1	2024-11-16T18:47:18.4353549	Loot Tables
+// 1.20.1	2024-12-01T01:24:24.137244	Loot Tables
 f5d739cbc7c4a627b91d14b333542a8705151a34 data/dtru/loot_tables/blocks/acacia_twiglet_leaves.json
 8a8dab4ee235fadb7305080479fd1a577c83bb6a data/dtru/loot_tables/blocks/bamboo_leaves.json
 2176a15f4fb5315ca8b7ba00d91951ad49dd913b data/dtru/loot_tables/blocks/baobab_leaves.json
 98305b05714c7645b192f11445ebc72e7f696a83 data/dtru/loot_tables/blocks/blue_magnolia_leaves.json
 9b3d70acbe5ab03638564fd383f044e42e171d7c data/dtru/loot_tables/blocks/cypress_leaves.json
 a01577a44ba8aaa5d64488d9930a0db233110af6 data/dtru/loot_tables/blocks/dead_leaves.json
-5af4f4d010abddddcd922d1fe4b9ba3ef1d0d019 data/dtru/loot_tables/blocks/dead_pine_leaves.json
+83a621b6b0eca610b868a092636ef7f4091d8227 data/dtru/loot_tables/blocks/dead_pine_leaves.json
 06ad461411de67f086ebc69a208af4b93a4bfa99 data/dtru/loot_tables/blocks/enchanted_birch_leaves.json
 197e87ec16e3d73058448249753bbee28b8b8072 data/dtru/loot_tables/blocks/eucalyptus_leaves.json
+dd8a386caff05c069cab4be0c2fd23d32b1be0a8 data/dtru/loot_tables/blocks/flowering_leaves.json
+ac03a47930f85b2ebc438d63532ae4ca532cc2d2 data/dtru/loot_tables/blocks/flowering_undergrowth_leaves.json
 959e59fc7147fd085cf55fb7e1afaf6085b7c775 data/dtru/loot_tables/blocks/golden_larch_leaves.json
 f3aa7aef80fdab3dbfbaebd7b128f43712cdab43 data/dtru/loot_tables/blocks/joshua_leaves.json
 d6845920971428138ae9f23d3d74269a2b45b8c4 data/dtru/loot_tables/blocks/kapok_leaves.json
@@ -24,6 +26,7 @@ c1ac6d3add905fd31c95231b00331bb487cad587 data/dtru/loot_tables/blocks/pine_leave
 627a237cf0c9d31c27cfadcce19da722ad4cec7f data/dtru/loot_tables/blocks/pink_magnolia_leaves.json
 a82f41973cdd6ca01e4b1e6b4e39504f7083852c data/dtru/loot_tables/blocks/redwood_leaves.json
 ad3af7f97a0e1ab6bf7fb702cd85ca454e965e5a data/dtru/loot_tables/blocks/red_maple_leaves.json
+74acc56a4820a6297844040e958fbc316ffc7239 data/dtru/loot_tables/blocks/reef_jungle_leaves.json
 188d5240aed37c665b0f766f4b6c48b2639b870a data/dtru/loot_tables/blocks/silver_birch_leaves.json
 b1332e6423edb88a6fbd4b48d64bc6cb22eddcd1 data/dtru/loot_tables/blocks/spruce_twiglet_leaves.json
 cbe673238d9a105936f3c9952d9a74d55a77407f data/dtru/loot_tables/blocks/twisting_birch_leaves.json
@@ -68,6 +71,8 @@ e485472959ac3b066dbc347480d4252a8530ee64 data/dtru/loot_tables/trees/leaves/bamb
 b8ca81fe217d23c6adbbcef12340920969912e6c data/dtru/loot_tables/trees/leaves/dead_pine.json
 dbc416c14d03842862f0b32561f42455f8b14944 data/dtru/loot_tables/trees/leaves/enchanted_birch.json
 bb808e7b15e2d6bf3f757570cdc07459baea71b1 data/dtru/loot_tables/trees/leaves/eucalyptus.json
+b80267dfc74a3d7bab8f89a7ccc788027ef2f602 data/dtru/loot_tables/trees/leaves/flowering.json
+b3a9817de646652c4f726104a4808d911697ebc5 data/dtru/loot_tables/trees/leaves/flowering_undergrowth.json
 ba61f853f88ed31dfe4040e266b6e489c3d073a8 data/dtru/loot_tables/trees/leaves/golden_larch.json
 a7f3c1315844e429a179fd92100198b393d1d440 data/dtru/loot_tables/trees/leaves/joshua.json
 80a0f30aa10303b1ef71375c6f936af8eade7d78 data/dtru/loot_tables/trees/leaves/kapok.json
@@ -84,6 +89,7 @@ c93b4bfb61baeff3ab2ae8d3f359c087768dce11 data/dtru/loot_tables/trees/leaves/oran
 ce354f5b160e4456d26370fde775c05375349d81 data/dtru/loot_tables/trees/leaves/pink_magnolia.json
 d47278c6ff8b1dcec986ed0da8b29339a32e7449 data/dtru/loot_tables/trees/leaves/redwood.json
 f70136d1bfd72a5b1159374d65a26a47acbe1b3a data/dtru/loot_tables/trees/leaves/red_maple.json
+5b4a4d73ae4c0b8ee19d9f5759f45d86a7b36936 data/dtru/loot_tables/trees/leaves/reef_jungle.json
 16c77d9864cad7055a29d71bf86859113edbc3cb data/dtru/loot_tables/trees/leaves/silver_birch.json
 b485ab775f266b8790662f1c5065d261a5558854 data/dtru/loot_tables/trees/leaves/spruce_twiglet.json
 d1aa8095151c27b996302fed7e2aa054d46ef4c1 data/dtru/loot_tables/trees/leaves/twisting_birch.json
@@ -97,6 +103,7 @@ f75028498ebdfdee3c2c134f01e3c62ff1b93e9a data/dtru/loot_tables/trees/voluntary/b
 fe079ed34b99473338f9917ae1c0b1b987920260 data/dtru/loot_tables/trees/voluntary/eucalyptus.json
 ad96cfb2994b9c2ff6cbd9d48cb8ab17146cf210 data/dtru/loot_tables/trees/voluntary/golden_larch.json
 033258ee2429e9bf158433ab2617c3ca37f7faeb data/dtru/loot_tables/trees/voluntary/joshua.json
+7c8794ca0c8bfe19d42d5c5c62e9f9b66cecfc48 data/dtru/loot_tables/trees/voluntary/kapok.json
 07fc460a06c7d90528f528dad49ce8131bfcaed5 data/dtru/loot_tables/trees/voluntary/larch.json
 78a7b4fa94b12062795c5c54dd738d8c12cefffd data/dtru/loot_tables/trees/voluntary/magnolia.json
 8b9497c1ed9a190a6e81f7ac36945e242bfc8e1f data/dtru/loot_tables/trees/voluntary/maple.json

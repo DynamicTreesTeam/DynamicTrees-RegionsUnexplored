@@ -1,6 +1,6 @@
 {
   "family": "dtru:pine",
-  "tapering": 0.35,
+  "tapering": 0.3,
   "signal_energy": 20.0,
   "up_probability": 10,
   "lowest_branch_height": 7,

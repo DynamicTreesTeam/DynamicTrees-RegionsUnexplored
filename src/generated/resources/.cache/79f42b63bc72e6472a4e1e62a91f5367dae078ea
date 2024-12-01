@@ -1,4 +1,4 @@
-// 1.20.1	2024-11-14T15:41:09.9259598	Item Models: dtru
+// 1.20.1	2024-12-01T01:24:24.1362436	Item Models: dtru
 b55b5030aaf3499ca78b2424b94d6918825d6b6d assets/dtru/models/item/bamboo_branch.json
 17dfba8f5599a77ada4869ef9a84a50a6cf86e88 assets/dtru/models/item/bamboo_seed.json
 dc7b9ad9690a5fef136dd809471ef1c05a9de9cf assets/dtru/models/item/baobab_branch.json
@@ -13,6 +13,7 @@ ba3681f62286101d80bfa15a2b7651f3654e2de4 assets/dtru/models/item/eucalyptus_seed
 789461dafc2026452bf743eba246a12bcbf5f04a assets/dtru/models/item/golden_larch_seed.json
 7cd3002a1d9abf4426a78b3d71ed08117f1202aa assets/dtru/models/item/joshua_seed.json
 3b73120dc8c8bbd9f576843e83d1a8f8589d3722 assets/dtru/models/item/kapok_branch.json
+50f7b92b42faa15ce2b355db3f175a8d547c1fa4 assets/dtru/models/item/kapok_seed.json
 dd468b0c86d0e92ef2bbac3736fbc25eee4ecc0f assets/dtru/models/item/larch_branch.json
 b05cf0f71ba1b018d5a4db5e4f7ee5bb371e45f5 assets/dtru/models/item/larch_seed.json
 b61365388278bd43270a3060a6f9238c657499d1 assets/dtru/models/item/magnolia_branch.json

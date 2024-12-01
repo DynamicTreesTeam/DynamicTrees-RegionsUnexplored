@@ -1,12 +1,13 @@
 {
   "type": "palm",
   "family": "dtru:palm",
-  "tapering": 0.2,
+  "tapering": 0.25,
   "signal_energy": 10.0,
   "growth_rate": 0.8,
   "soil_longevity": 2,
   "max_branch_radius": 8,
-  "growth_logic_kit": "dtru:diagonal_palm",
+  "lowest_branch_height": 20,
+  "growth_logic_kit": "dtru:variate_height",
   "leaves_properties": "dtru:palm",
   "environment_factors" : {
     "#forge:is_cold": 0.75,
@@ -14,7 +15,10 @@
     "#forge:is_dry": 1.1
   },
   "transformable": false,
-  "perfect_biomes": { "type": "beach" },
+  "perfect_biomes": { "tag": ".*(tropics|rainforest).*" },
   "primitive_sapling": "regions_unexplored:palm_sapling",
-  "acceptable_soils": [ "dirt_like", "sand_like" ]
+  "acceptable_soils": [ "dirt_like", "sand_like" ],
+  "features": [
+    "dtru:prevent_water_generation"
+  ]
 }

@@ -1,4 +1,4 @@
-// 1.20.1	2024-11-16T18:47:18.4393586	Block States: dtru
+// 1.20.1	2024-12-01T01:24:24.1392469	Block States: dtru
 2606791521eac27fa77ebbeeea442b8073802a51 assets/dtru/blockstates/acacia_twiglet_leaves.json
 364f5b2897afa0b5f29778bd56bc402e710442fe assets/dtru/blockstates/bamboo_branch.json
 8dbf990d7c05ee61ec38cefe29f374a825c58f3a assets/dtru/blockstates/bamboo_leaves.json
@@ -21,12 +21,15 @@ ff7eb7db1418baf7222160af1a197327156dc497 assets/dtru/blockstates/eucalyptus_bran
 249a9015198fd0dadd4342a2e30601ec05cf47e2 assets/dtru/blockstates/eucalyptus_leaves.json
 e0c5f2950cf637d9af6939a6d7c0cfe80181d66b assets/dtru/blockstates/eucalyptus_root.json
 d127a7f2b5a786c759bc0a203186b274c08cea55 assets/dtru/blockstates/eucalyptus_sapling.json
+9850282a92986da132acf99c389569f5a4208be8 assets/dtru/blockstates/flowering_leaves.json
+9850282a92986da132acf99c389569f5a4208be8 assets/dtru/blockstates/flowering_undergrowth_leaves.json
 57cd4aa7b9686735a9a051c0f6b315019fee50e6 assets/dtru/blockstates/golden_larch_leaves.json
 25d1fc59b37699bd325128eb91cfb3aea5e451c1 assets/dtru/blockstates/golden_larch_sapling.json
 929a340c51ca4bb0a656e99282f7870f2c099a20 assets/dtru/blockstates/joshua_leaves.json
 cf3081bc02c122d9670785be37b0fc9cae7b71d7 assets/dtru/blockstates/joshua_sapling.json
 7846ab750dee3ddb6c5c4ae70a48e2d3a120bde4 assets/dtru/blockstates/kapok_branch.json
 7f398c7137f435cfe73b402bcb30b20de7272120 assets/dtru/blockstates/kapok_leaves.json
+3911b3c9c9b07c252d6b12b7650efd2040d54a04 assets/dtru/blockstates/kapok_sapling.json
 e1321c6efddc8c02389c59ee314a0e2ee6f73b5b assets/dtru/blockstates/larch_branch.json
 cfbd05d845f69e5b1661563c38918f13b72623f7 assets/dtru/blockstates/larch_leaves.json
 1980ed41cc9fa3f4e6b861049248fd5b163d6cad assets/dtru/blockstates/larch_root.json
@@ -63,6 +66,7 @@ deb709053febd9275fb0b6cbdddd1978bcf616f8 assets/dtru/blockstates/redwood_root.js
 dc7fc08827890f6534aaf1ec75eae71649db47fa assets/dtru/blockstates/redwood_sapling.json
 67dfd89af31f42591ee38100032fbd5ed1e21053 assets/dtru/blockstates/red_maple_leaves.json
 a3f13c504333507e596ace0851e4c7242608904c assets/dtru/blockstates/red_maple_sapling.json
+a82f9fc1c2378f77e75442eb41b6eff31ae0c687 assets/dtru/blockstates/reef_jungle_leaves.json
 a03f7d2cf10764ec684ac54fd380cb63ad4c151b assets/dtru/blockstates/rooty_alpha_grass_block.json
 0a4ce36c3d361e77a8ad056f6724b4883868108e assets/dtru/blockstates/rooty_argillite.json
 beaa46e3e5d59bd44ddc68d3984784a9b376cc5d assets/dtru/blockstates/rooty_argillite_grass_block.json
@@ -148,6 +152,7 @@ d170d69b62a59e47f3ee809f552c4d4a42a3dff9 assets/dtru/models/block/saplings/encha
 c3fb83637caa17f52c188e4f72b9f85387faab0c assets/dtru/models/block/saplings/eucalyptus.json
 a6ed3c75a8f8b7f2d41f740ca71866dedaafbf84 assets/dtru/models/block/saplings/golden_larch.json
 755eb00b07ef71ce683a852359c9f0de2e048cd5 assets/dtru/models/block/saplings/joshua.json
+897de4a513abe52eabf5c4e2bfeeb018a21f1997 assets/dtru/models/block/saplings/kapok.json
 395804b7ab2a456898982fc6ee0984bb6a791cb2 assets/dtru/models/block/saplings/larch.json
 babbdf130a9442e394f5d2cb88a39024b95a5a09 assets/dtru/models/block/saplings/magnolia.json
 25ef391b764f1166cf32b7fba0a1b856e3138e06 assets/dtru/models/block/saplings/maple.json

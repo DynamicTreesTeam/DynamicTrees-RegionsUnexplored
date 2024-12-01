@@ -31,7 +31,7 @@ public class SoilWhitelistGenFeature extends GenFeature {
         return super.createDefaultConfiguration()
                 .with(BLACKLIST, false)
                 .with(ALLOWED_SOIL, "")
-                .with(REPLACEMENT_CHANCE, 0.2f)
+                .with(REPLACEMENT_CHANCE, 0.4f)
                 .with(REPLACEMENT_SPECIES, Species.NULL_SPECIES);
     }
 

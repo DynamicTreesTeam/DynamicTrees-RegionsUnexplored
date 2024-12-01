@@ -47,14 +47,14 @@
     "apply": {
       "species" : {
         "random" : {
-          "oak_undergrowth" : 22,
+          "oak_undergrowth" : 8,
           "dtru:tall_spruce" : 1,
-          "dtru:oak_twiglet" : 1,
-          "dtru:spruce_twiglet" : 1
+          "dtru:oak_twiglet" : 8,
+          "dtru:spruce_twiglet" : 8
         }
       },
-      "density": [ 1 ],
-      "chance": 0.8
+      "density": [ 1.5 ],
+      "chance": 0.9
     }
   },
   {
@@ -267,14 +267,14 @@
     "apply": {
       "species" : {
         "random" : {
-          "dtru:willow" : 3,
+          "dtru:willow" : 4,
           "dtru:blue_magnolia" : 1,
-          "dtru:oak_poplar" : 1,
+          "dtru:oak_poplar" : 2,
           "oak_undergrowth" : 1
         }
       },
-      "density": [1.0],
-      "chance": 1.0,
+      "density": [1.2],
+      "chance": 0.8,
       "forestness" : 1.0
     }
   },
@@ -333,6 +333,35 @@
     }
   },
   {
+    "select": { "name": "regions_unexplored:icy_heights" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:tall_pine" : 1,
+          "dtru:dead_tall_pine" : 1,
+          "dtru:pine_twiglet" : 2
+        }
+      },
+      "density": [1.1],
+      "chance": 0.7,
+      "forestness" : 0.3
+    }
+  },
+  {
+    "select": { "name": "regions_unexplored:towering_cliffs" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:tall_pine" : 1,
+          "dtru:dead_tall_pine" : 1
+        }
+      },
+      "density": [0.8],
+      "chance": 0.8,
+      "forestness" : 0.3
+    }
+  },
+  {
     "select": { "name": "regions_unexplored:bayou" },
     "apply": {
       "species" : {
@@ -383,6 +412,84 @@
       "density": [0.6],
       "chance": 0.3,
       "forestness" : 0.2
+    }
+  },
+  {
+    "select": { "name": "regions_unexplored:orchard" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "oak" : 1,
+          "apple_oak" : 1,
+          "dtru:big_apple_oak" : 1
+        }
+      },
+      "density": [0.7],
+      "chance": 0.7,
+      "forestness" : 0.6
+    }
+  },
+  {
+    "select": { "name": "regions_unexplored:tropics" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:palm" : 1,
+          "dtru:short_palm" : 1,
+          "dtru:flowering_undergrowth" : 1,
+          "dtru:short_jungle" : 1,
+          "jungle" : 1
+        }
+      },
+      "density": [0.8],
+      "chance": 0.8,
+      "forestness" : 1.0
+    }
+  },
+  {
+    "select": { "name": "regions_unexplored:rainforest" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:kapok" : 1,
+          "dtru:palm" : 1,
+          "dtru:flowering_undergrowth" : 1,
+          "dtru:short_jungle" : 1
+        }
+      },
+      "density": [1.2],
+      "chance": 1.0,
+      "forestness" : 1.0
+    }
+  },
+  {
+    "select": { "name": "regions_unexplored:sparse_rainforest" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:kapok" : 1,
+          "dtru:palm" : 1,
+          "dtru:short_palm" : 1,
+          "oak_undergrowth" : 1
+        }
+      },
+      "density": [0.8],
+      "chance": 0.5,
+      "forestness" : 0.5
+    }
+  },
+  {
+    "select": { "name": "regions_unexplored:rocky_reef" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:palm" : 1,
+          "dtru:reef_jungle" : 2
+        }
+      },
+      "density": [1.4],
+      "chance": 1.0,
+      "heightmap": "ocean_floor"
     }
   }
 ]

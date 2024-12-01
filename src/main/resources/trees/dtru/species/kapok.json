@@ -1,8 +1,5 @@
 {
-  "type": "dtru:generates_on_extra_soil",
-  "extra_soil_for_worldgen": "byg:mossy_stone",
-  "soil_replacement_for_worldgen": "byg:overgrown_stone",
-  "family": "dtru:eucalyptus",
+  "family": "dtru:kapok",
   "tapering": 0.2,
   "signal_energy": 24.0,
   "up_probability": 3,
@@ -14,17 +11,16 @@
       "canopy_height": 18
     }
   },
-  "leaves_properties": "dtru:eucalyptus",
+  "leaves_properties": "dtru:kapok",
   "environment_factors" : {
     "#forge:is_snowy": 0.5,
     "#forge:is_dry": 0.75
   },
-  "mega_species": "dtru:mega_eucalyptus",
   "perfect_biomes": {
     "tag": "#minecraft:is_jungle"
   },
   "primitive_saplings": [
-    "regions_unexplored:eucalyptus_sapling"
+    "regions_unexplored:kapok_sapling"
   ],
   "acceptable_soils": ["dirt_like"],
   "features": [
@@ -35,10 +31,10 @@
         "scale_factor": 20
       }
     },
-    "bottom_flare",
+    "dtru_extra_bottom_flare",
     "mound"
   ],
   "lang_overrides": {
-    "seed": "Eucalyptus Pod"
+    "seed": "Kapok Pod"
   }
 }
