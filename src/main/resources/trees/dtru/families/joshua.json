@@ -1,7 +1,9 @@
 {
   "common_leaves": "dtru:joshua",
   "common_species": "dtru:joshua",
-  "primitive_log": "regionsunexplored:joshua_log",
-  "primitive_stripped_log": "regionsunexplored:stripped_joshua_log",
-  "max_branch_radius": 8
+  "primitive_log": "regions_unexplored:joshua_log",
+  "primitive_stripped_log": "regions_unexplored:stripped_joshua_log",
+  "max_branch_radius": 8,
+  "primary_thickness": 3,
+  "secondary_thickness": 4
 }

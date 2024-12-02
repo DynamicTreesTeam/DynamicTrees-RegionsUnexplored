@@ -1,8 +1,17 @@
 {
-  "family": "oak",
-  "tapering": 0.3,
-  "signal_energy": 12.0,
-  "growth_rate": 0.8,
+  "family": "dtru:joshua",
+  "tapering": 0.1,
+  "signal_energy": 8.0,
+  "lowest_branch_height": 3,
+  "growth_rate": 0.6,
+  "soil_longevity": 2,
+  "growth_logic_kit": {
+    "name": "dtru:canopy",
+    "properties": {
+      "height_variation": 3,
+      "lowest_branch_variation": 3
+    }
+  },
   "leaves_properties": "dtru:joshua",
   "generate_seed": true,
   "generate_sapling": true,
@@ -13,20 +22,5 @@
   "perfect_biomes": { "tags": [ "#forge:is_desert", "#minecraft:is_overworld" ] },
   "primitive_sapling": "regions_unexplored:joshua_sapling",
   "acceptable_soils": ["dirt_like", "sand_like"],
-  "features" : [
-    {
-      "name": "rot_soil",
-      "properties": {
-        "rotten_soil": "podzol"
-      }
-    },
-    "mushroom_rot",
-    {
-      "name": "fruit",
-      "properties": {
-        "fruit": "dtru:joshua_fruit",
-        "quantity": 8
-      }
-    }
-  ]
+  "features" : []
 }

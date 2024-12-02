@@ -3,6 +3,6 @@
   "render_type": "minecraft:cutout_mipped",
   "textures": {
     "leaves": "regions_unexplored:block/joshua_leaves_top",
-    "log": "minecraft:block/oak_log"
+    "log": "regions_unexplored:block/joshua_log"
   }
 }

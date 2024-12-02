@@ -5,9 +5,7 @@ import com.ferreusveritas.dynamictrees.api.cell.CellKit;
 import com.ferreusveritas.dynamictrees.api.cell.CellNull;
 import com.ferreusveritas.dynamictrees.api.cell.CellSolver;
 import com.ferreusveritas.dynamictrees.api.registry.Registry;
-import com.ferreusveritas.dynamictrees.cell.CellKits;
-import com.ferreusveritas.dynamictrees.cell.MetadataCell;
-import com.ferreusveritas.dynamictrees.cell.NormalCell;
+import com.ferreusveritas.dynamictrees.cell.*;
 import com.ferreusveritas.dynamictrees.util.SimpleVoxmap;
 import dtteam.dtru.DynamicTreesRU;
 import net.minecraft.core.Direction;
@@ -257,8 +255,65 @@ public class DTRUCellKits {
 
     };
 
+    public static final CellKit DOME = new CellKit(DynamicTreesRU.location("dome")) {
+
+        private final Cell acaciaBranch = new Cell() {
+            @Override
+            public int getValue() {
+                return 5;
+            }
+
+            final int[] map = {0, 3, 5, 5, 5, 5};
+
+            @Override
+            public int getValueFromSide(Direction side) {
+                return map[side.ordinal()];
+            }
+
+        };
+
+        private final Cell[] acaciaLeafCells = {
+                CellNull.NULL_CELL,
+                new AcaciaLeafCell(1),
+                new AcaciaLeafCell(2),
+                new AcaciaLeafCell(3),
+                new AcaciaLeafCell(4),
+                new AcaciaLeafCell(5),
+                new AcaciaLeafCell(6),
+                new AcaciaLeafCell(7)
+        };
+
+        private final CellKits.BasicSolver acaciaSolver = new CellKits.BasicSolver(new short[]{0x0514, 0x0423, 0x0412, 0x0312, 0x0211});
+
+        @Override
+        public Cell getCellForLeaves(int hydro) {
+            return acaciaLeafCells[hydro];
+        }
+
+        @Override
+        public Cell getCellForBranch(int radius, int meta) {
+            return radius == 1 ? acaciaBranch : CellNull.NULL_CELL;
+        }
+
+        @Override
+        public SimpleVoxmap getLeafCluster() {
+            return LeafClusters.ACACIA;
+        }
+
+        @Override
+        public CellSolver getCellSolver() {
+            return acaciaSolver;
+        }
+
+        @Override
+        public int getDefaultHydration() {
+            return 4;
+        }
+
+    };
+
     public static void register(final Registry<CellKit> registry) {
-        registry.registerAll(SPARSE, BRUSH, EUCALYPTUS, POPLAR, BAMBOO);
+        registry.registerAll(SPARSE, BRUSH, EUCALYPTUS, POPLAR, BAMBOO, DOME);
     }
 
 }

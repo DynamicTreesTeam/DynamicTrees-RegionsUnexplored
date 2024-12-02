@@ -1,5 +1,6 @@
 {
   "values": [
+    "dtru:stripped_ashen_branch",
     "dtru:stripped_bamboo_branch",
     "dtru:stripped_baobab_branch",
     "dtru:stripped_cypress_branch",
@@ -15,6 +16,7 @@
     "dtru:stripped_pine_branch",
     "dtru:stripped_redwood_branch",
     "dtru:stripped_silver_birch_branch",
+    "dtru:stripped_socotra_branch",
     "dtru:stripped_willow_branch"
   ]
 }

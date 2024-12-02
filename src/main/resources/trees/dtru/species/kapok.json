@@ -2,15 +2,11 @@
   "family": "dtru:kapok",
   "tapering": 0.2,
   "signal_energy": 24.0,
-  "up_probability": 3,
-  "lowest_branch_height": 8,
+  "up_probability": 4,
+  "lowest_branch_height": 12,
   "growth_rate": 1.4,
-  "growth_logic_kit": {
-    "name": "jungle",
-    "properties": {
-      "canopy_height": 18
-    }
-  },
+  "max_branch_radius": 16,
+  "growth_logic_kit": "dtru:canopy",
   "leaves_properties": "dtru:kapok",
   "environment_factors" : {
     "#forge:is_snowy": 0.5,
@@ -24,6 +20,7 @@
   ],
   "acceptable_soils": ["dirt_like"],
   "features": [
+    "dtru:extra_bottom_flare",
     {
       "name": "roots",
       "properties": {
@@ -31,7 +28,6 @@
         "scale_factor": 20
       }
     },
-    "dtru_extra_bottom_flare",
     "mound"
   ],
   "lang_overrides": {

@@ -1,0 +1,17 @@
+{
+  "family": "dtru:ashen",
+  "tapering": 0.3,
+  "signal_energy": 20.0,
+  "up_probability": 10,
+  "lowest_branch_height": 7,
+  "growth_rate": 0.0,
+  "leaves_properties": "dtru:ashen",
+  "can_bone_meal_tree": false,
+  "generate_seed": false,
+  "generate_sapling": false,
+  "does_rot": false,
+  "acceptable_soils": [ "dirt_like" ],
+  "lang_overrides": {
+    "seed": "Ashen Tree Seed"
+  }
+}

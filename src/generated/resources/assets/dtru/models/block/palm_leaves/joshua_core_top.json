@@ -1,0 +1,6 @@
+{
+  "parent": "dynamictrees:block/smartmodel/palm/core_top",
+  "textures": {
+    "frond": "dtru:block/joshua_frond"
+  }
+}

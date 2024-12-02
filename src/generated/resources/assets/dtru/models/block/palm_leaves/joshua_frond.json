@@ -1,0 +1,6 @@
+{
+  "loader": "dynamictrees:large_palm_fronds",
+  "textures": {
+    "frond": "dtru:block/joshua_frond"
+  }
+}

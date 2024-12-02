@@ -1,0 +1,7 @@
+{
+  "common_leaves": "dtru:socotra",
+  "common_species": "dtru:socotra",
+  "primitive_log": "regions_unexplored:socotra_log",
+  "primitive_stripped_log": "regions_unexplored:stripped_socotra_log",
+  "max_branch_radius": 16
+}

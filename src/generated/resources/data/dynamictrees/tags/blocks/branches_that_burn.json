@@ -1,5 +1,6 @@
 {
   "values": [
+    "dtru:ashen_branch",
     "dtru:bamboo_branch",
     "dtru:baobab_branch",
     "dtru:cypress_branch",
@@ -15,6 +16,7 @@
     "dtru:pine_branch",
     "dtru:redwood_branch",
     "dtru:silver_birch_branch",
+    "dtru:socotra_branch",
     "dtru:willow_branch"
   ]
 }

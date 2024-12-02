@@ -1,0 +1,29 @@
+{
+  "family": "dtru:socotra",
+  "tapering": 0.2,
+  "signal_energy": 14.0,
+  "up_probability": 5,
+  "lowest_branch_height": 3,
+  "growth_rate": 1.4,
+  "growth_logic_kit": {
+    "name": "dtru:canopy",
+    "properties": {
+      "zigzag_up_chance": 0
+    }
+  },
+  "leaves_properties": "dtru:socotra",
+  "environment_factors" : {
+    "#forge:is_snowy": 0.5,
+    "#forge:is_dry": 0.75
+  },
+  "perfect_biomes": {
+    "tag": "#minecraft:is_jungle"
+  },
+  "primitive_saplings": [
+    "regions_unexplored:socotra_sapling"
+  ],
+  "acceptable_soils": ["dirt_like"],
+  "features": [
+    "bottom_flare"
+  ]
+}

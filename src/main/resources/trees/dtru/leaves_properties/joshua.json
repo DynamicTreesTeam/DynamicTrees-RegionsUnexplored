@@ -1,6 +1,7 @@
 {
+  "type": "palm",
   "primitive_leaves": "regions_unexplored:joshua_leaves",
-  "cell_kit": "dtru:sparse",
+  "cell_kit": "bare",
   "model_overrides": {
     "leaves": "regions_unexplored:block/joshua_leaves_top"
   },

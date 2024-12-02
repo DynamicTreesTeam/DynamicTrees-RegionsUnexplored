@@ -1,4 +1,5 @@
-// 1.20.1	2024-12-01T01:24:24.1362436	Item Models: dtru
+// 1.20.1	2024-12-01T20:21:40.0717548	Item Models: dtru
+42b315ad74a5ffa3c8bc5e4fcb5bfabf677219a2 assets/dtru/models/item/ashen_branch.json
 b55b5030aaf3499ca78b2424b94d6918825d6b6d assets/dtru/models/item/bamboo_branch.json
 17dfba8f5599a77ada4869ef9a84a50a6cf86e88 assets/dtru/models/item/bamboo_seed.json
 dc7b9ad9690a5fef136dd809471ef1c05a9de9cf assets/dtru/models/item/baobab_branch.json
@@ -11,6 +12,7 @@ a20cc4267b219d143feb10bafa0901cd08ecb836 assets/dtru/models/item/blue_magnolia_s
 0ae03bd573d54ae2b76adfcb00e532e3dbf8326e assets/dtru/models/item/eucalyptus_branch.json
 ba3681f62286101d80bfa15a2b7651f3654e2de4 assets/dtru/models/item/eucalyptus_seed.json
 789461dafc2026452bf743eba246a12bcbf5f04a assets/dtru/models/item/golden_larch_seed.json
+a336594e47dc36f516af8d6c704f35392be55807 assets/dtru/models/item/joshua_branch.json
 7cd3002a1d9abf4426a78b3d71ed08117f1202aa assets/dtru/models/item/joshua_seed.json
 3b73120dc8c8bbd9f576843e83d1a8f8589d3722 assets/dtru/models/item/kapok_branch.json
 50f7b92b42faa15ce2b355db3f175a8d547c1fa4 assets/dtru/models/item/kapok_seed.json
@@ -33,6 +35,8 @@ f289f4950e3b5f041f730d87917a3f75f46bedb7 assets/dtru/models/item/redwood_seed.js
 7cb87ce14227189e10e95191e05465767460feac assets/dtru/models/item/red_maple_seed.json
 be515a68e8ab33f067359f143e366370308b31c0 assets/dtru/models/item/silver_birch_branch.json
 bbf896ece4e3ce88025f59a8b5e349194740ec45 assets/dtru/models/item/silver_birch_seed.json
+09da769a07e22f427c87b87827c4df56672338e3 assets/dtru/models/item/socotra_branch.json
+be981289a11b16215ffb283c8e33cd6aba1f0ba3 assets/dtru/models/item/socotra_seed.json
 0bb4d6202b2e88e853e895547eabc0d21d720885 assets/dtru/models/item/white_magnolia_seed.json
 d2a6b9357a8ef7e61f5e3ff5c622107ec2ef9153 assets/dtru/models/item/willow_branch.json
 b6ed4a0d0d98292c5e2e3713848a394453d7941e assets/dtru/models/item/willow_seed.json

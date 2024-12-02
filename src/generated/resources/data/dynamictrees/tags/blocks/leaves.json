@@ -1,6 +1,8 @@
 {
   "values": [
     "dtru:acacia_twiglet_leaves",
+    "dtru:ashen_leaves",
+    "dtru:ashen_pine_leaves",
     "dtru:bamboo_leaves",
     "dtru:baobab_leaves",
     "dtru:blue_magnolia_leaves",
@@ -29,6 +31,7 @@
     "dtru:redwood_leaves",
     "dtru:reef_jungle_leaves",
     "dtru:silver_birch_leaves",
+    "dtru:socotra_leaves",
     "dtru:spruce_twiglet_leaves",
     "dtru:twisting_birch_leaves",
     "dtru:white_magnolia_leaves",
