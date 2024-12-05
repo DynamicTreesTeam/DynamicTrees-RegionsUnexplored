@@ -312,8 +312,79 @@ public class DTRUCellKits {
 
     };
 
+    public static final CellKit JOSHUA = new CellKit(DynamicTreesRU.location("joshua")) {
+
+        private final Cell joshuaBranch = new Cell() {
+            @Override
+            public int getValue() {
+                return 5;
+            }
+
+            @Override
+            public int getValueFromSide(Direction side) {
+                return side == Direction.UP ? getValue() : 0;
+            }
+
+        };
+
+        private final Cell[] joshuaFrondCells = {
+                CellNull.NULL_CELL,
+                new JoshuaFrondCell(1),
+                new JoshuaFrondCell(2),
+                new JoshuaFrondCell(3),
+                new JoshuaFrondCell(4),
+                new JoshuaFrondCell(5),
+                new JoshuaFrondCell(6),
+                new JoshuaFrondCell(7)
+        };
+
+        private final CellKits.BasicSolver joshuaSolver = new CellKits.BasicSolver(new short[]{0x0514, 0x0413});
+
+        @Override
+        public Cell getCellForLeaves(int hydro) {
+            return joshuaFrondCells[hydro];
+        }
+
+        @Override
+        public Cell getCellForBranch(int radius, int meta) {
+            return joshuaBranch;
+        }
+
+        @Override
+        public SimpleVoxmap getLeafCluster() {
+            return DTRULeafClusters.JOSHUA;
+        }
+
+        @Override
+        public CellSolver getCellSolver() {
+            return joshuaSolver;
+        }
+
+        @Override
+        public int getDefaultHydration() {
+            return 4;
+        }
+
+        class JoshuaFrondCell extends MatrixCell {
+
+            public JoshuaFrondCell(int value) {
+                super(value, valMap);
+            }
+
+            static final byte[] valMap = {
+                    0, 0, 0, 0, 0, 0, 0, 0, //D Maps * -> 0
+                    0, 1, 2, 3, 4, 5, 6, 7, //U Maps
+                    0, 0, 0, 0, 0, 0, 0, 0, //N Maps * -> 0
+                    0, 0, 0, 0, 0, 0, 0, 0, //S Maps * -> 0
+                    0, 0, 0, 0, 0, 0, 0, 0, //W Maps * -> 0
+                    0, 0, 0, 0, 0, 0, 0, 0  //E Maps * -> 0
+            };
+
+        }
+    };
+
     public static void register(final Registry<CellKit> registry) {
-        registry.registerAll(SPARSE, BRUSH, EUCALYPTUS, POPLAR, BAMBOO, DOME);
+        registry.registerAll(SPARSE, BRUSH, EUCALYPTUS, POPLAR, BAMBOO, DOME, JOSHUA);
     }
 
 }

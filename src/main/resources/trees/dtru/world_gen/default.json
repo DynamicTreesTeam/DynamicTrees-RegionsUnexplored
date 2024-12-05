@@ -525,7 +525,7 @@
     "apply": {
       "species" : "dtru:joshua",
       "density": [0.8],
-      "chance": 0.3
+      "chance": 0.2
     }
   }
 ]
