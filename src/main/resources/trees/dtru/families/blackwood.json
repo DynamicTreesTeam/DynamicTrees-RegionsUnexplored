@@ -1,0 +1,9 @@
+{
+  "common_leaves": "dtru:blackwood",
+  "common_species": "dtru:blackwood",
+  "primitive_log": "regions_unexplored:blackwood_log",
+  "primitive_stripped_log": "regions_unexplored:stripped_blackwood_log",
+  "max_branch_radius": 24,
+  "generate_surface_root": true,
+  "max_signal_depth": 64
+}

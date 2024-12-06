@@ -17,12 +17,13 @@ public class DTRUGenFeatures {
     public static final GenFeature ALTERNATIVE_BRANCH = new AlternativeBranchGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "alt_branch"));
     public static final GenFeature MUSHROOM_VINES = new MushroomVinesGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "mushroom_vines"));
     public static final GenFeature PREVENT_WATER_GEN = new PreventWaterGenerationGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "prevent_water_generation"));
+    public static final GenFeature STRIPPED_BOTTOM = new StrippedBottomGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "stripped_bottom"));
 
     public static void register(final Registry<GenFeature> registry) {
         registry.registerAll(BIG_BOTTOM_FLARE, EXTRA_BOTTOM_FLARE,
                 REPLACE_ON_RADIUS, BIOME_PREDICATE_2, SOIL_WHITELIST,
                 SYTHIAN_TOPPER, ALTERNATIVE_BRANCH, MUSHROOM_VINES,
-                PREVENT_WATER_GEN);
+                PREVENT_WATER_GEN, STRIPPED_BOTTOM);
     }
 
 }

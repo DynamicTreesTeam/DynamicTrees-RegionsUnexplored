@@ -11,7 +11,7 @@
     "only_if_loaded": "dynamictreesplus",
     "select": { "names": [ "regions_unexplored:.*", "!regions_unexplored:alpha_grove" ], "tag": [ "!#minecraft:is_nether" ] },
     "cancellers": {
-      "types": ["tree", "dtru:tree", "dtru:tree_2", "cactus", "mushroom", "dtru:mushroom", "dtru:mushroom_2"],
+      "types": ["tree", "dtru:tree", "dtru:tree_2", "dynamictreesplus:cactus", "mushroom", "dtru:mushroom", "dtru:mushroom_2"],
       "namespaces": ["regions_unexplored", "minecraft"]
     }
   }

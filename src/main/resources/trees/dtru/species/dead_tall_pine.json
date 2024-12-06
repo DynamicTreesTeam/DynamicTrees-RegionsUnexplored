@@ -14,5 +14,9 @@
   "world_gen_acceptable_soils": [ "snow_like" ],
   "lang_overrides": {
     "seed": "Dead Pine Cone"
-  }
+  },
+  "features" : [
+    "conifer_topper",
+    "dtru:stripped_bottom"
+  ]
 }

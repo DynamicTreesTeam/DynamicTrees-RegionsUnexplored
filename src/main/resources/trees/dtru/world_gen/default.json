@@ -8,8 +8,8 @@
         }
       },
       "density": [ 0.1 ],
-      "chance": 0.5,
-      "forestness" : 0.5
+      "chance": 0.3,
+      "forestness" : 0.3
     }
   },
   {
@@ -342,7 +342,7 @@
           "dtru:pine_twiglet" : 2
         }
       },
-      "density": [1.1],
+      "density": [1.0],
       "chance": 0.7,
       "forestness" : 0.3
     }
@@ -400,7 +400,7 @@
           "dtru:dead_pine" : 1
         }
       },
-      "density": [0.8],
+      "density": [1.6],
       "chance": 0.8,
       "forestness" : 1.0
     }
@@ -512,7 +512,7 @@
         "random" : {
           "dtru:socotra" : 2,
           "dtru:oak_twiglet" : 2,
-          "dtru:acacia" : 1
+          "acacia" : 1
         }
       },
       "density": [0.5],
@@ -527,5 +527,37 @@
       "density": [0.8],
       "chance": 0.2
     }
+  },
+
+
+
+  {
+    "only_if_loaded": "dynamictreesplus",
+    "select": { "name": "regions_unexplored:outback" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:acacia_twiglet" : 6,
+          "dynamictreesplus:pipe_cactus" : 1
+        }
+      },
+      "density": [1.5],
+      "chance": 0.1
+    }
+  },
+  {
+    "only_if_loaded": "dynamictreesplus",
+    "select": { "name": "regions_unexplored:saguaro_desert" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dynamictreesplus:saguaro_cactus" : 16,
+          "dynamictreesplus:pipe_cactus" : 1
+        }
+      },
+      "density": [1.0],
+      "chance": 0.3
+    }
   }
+
 ]

@@ -30,6 +30,13 @@
         },
         "biome_predicate": { "name": "regions_unexplored:pine_taiga" }
       }
+    },
+    {
+      "name": "biome_predicate",
+      "properties": {
+        "gen_feature": "dtru:stripped_bottom",
+        "biome_predicate": { "name": "regions_unexplored:(frozen_pine_taiga|pine_slopes)" }
+      }
     }
   ],
   "lang_overrides": {

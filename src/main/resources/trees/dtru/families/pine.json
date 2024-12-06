@@ -1,4 +1,5 @@
 {
+  "type": "dtru:stripped_transition_log",
   "common_leaves": "dtru:pine",
   "common_species": "dtru:pine",
   "primitive_log": "regions_unexplored:pine_log",
