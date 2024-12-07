@@ -7,5 +7,6 @@
   },
   "texture_overrides": {
     "leaves": "regions_unexplored:block/joshua_leaves_top"
-  }
+  },
+  "seed_drop_chances": [0.125, 0.25, 0.375, 0.5]
 }

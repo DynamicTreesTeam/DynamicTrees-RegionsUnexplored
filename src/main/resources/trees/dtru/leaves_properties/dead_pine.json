@@ -4,6 +4,6 @@
   "cell_kit": "dynamictrees:conifer",
   "smother": 20,
   "light_requirement": 11,
-  "scruffy_leaf_chance": 0.66,
+  "scruffy_leaf_chance": 0.8,
   "scruffy_max_hydro": 1
 }

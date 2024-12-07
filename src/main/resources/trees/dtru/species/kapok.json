@@ -1,12 +1,17 @@
 {
   "family": "dtru:kapok",
   "tapering": 0.2,
-  "signal_energy": 24.0,
+  "signal_energy": 27.0,
   "up_probability": 4,
-  "lowest_branch_height": 12,
+  "lowest_branch_height": 18,
   "growth_rate": 1.4,
   "max_branch_radius": 16,
-  "growth_logic_kit": "dtru:canopy",
+  "growth_logic_kit": {
+    "name": "dtru:canopy",
+    "properties": {
+      "lowest_branch_variation": 3
+    }
+  },
   "leaves_properties": "dtru:kapok",
   "environment_factors" : {
     "#forge:is_snowy": 0.5,
@@ -28,7 +33,17 @@
         "scale_factor": 20
       }
     },
-    "mound"
+    "mound",
+    {
+      "name": "vines",
+      "properties": {
+        "vine_type": "ceiling",
+        "block": "regions_unexplored:kapok_vines_plant",
+        "tip_block": "regions_unexplored:kapok_vines",
+        "max_length": 10,
+        "quantity": 24
+      }
+    }
   ],
   "lang_overrides": {
     "seed": "Kapok Pod"

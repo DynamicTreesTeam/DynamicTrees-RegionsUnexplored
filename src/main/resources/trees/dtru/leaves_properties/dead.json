@@ -3,5 +3,5 @@
   "primitive_leaves": "regions_unexplored:dead_leaves",
   "cell_kit": "dtru:sparse",
   "scruffy_leaf_chance": 0.8,
-  "scruffy_max_hydro": 3
+  "scruffy_max_hydro": 2
 }

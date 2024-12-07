@@ -22,11 +22,13 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.HugeMushroomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.regions_unexplored.world.features.treedecorators.BlackwoodBioshroom;
 import net.regions_unexplored.world.level.feature.configuration.GiantBioshroomConfiguration;
 import net.regions_unexplored.world.level.feature.configuration.RuTreeConfiguration;
 import net.regions_unexplored.world.level.feature.tree.*;
@@ -83,13 +85,40 @@ public class DTRURegistries {
         public boolean shouldCancel(ConfiguredFeature<?, ?> configuredFeature, BiomePropertySelectors.NormalFeatureCancellation featureCancellations) {
             final Feature<?> featureConfig = configuredFeature.feature();
             return featureConfig instanceof YellowBioshroomShrubFeature ||
-                    featureConfig instanceof CobaltShrubFeature;
+                    featureConfig instanceof CobaltShrubFeature ||
+                    configuredFeature.config() instanceof HugeMushroomFeatureConfiguration;
+        }
+    };
+    public static final FeatureCanceller TREE_NO_SHROOMS_CANCELLER = new TreeFeatureCanceller<>(DynamicTreesRU.location("tree_no_shrooms"), NoneFeatureConfiguration.class){
+        private boolean isConfigClass (FeatureConfiguration config){
+            return config instanceof TreeConfiguration || config instanceof RuTreeConfiguration;
+        }
+        @Override
+        public boolean shouldCancel(ConfiguredFeature<?, ?> configuredFeature, BiomePropertySelectors.NormalFeatureCancellation featureCancellations) {
+            final FeatureConfiguration featureConfig = configuredFeature.config();
+
+            if (isConfigClass(featureConfig)) {
+                if (featureConfig instanceof TreeConfiguration treeConfiguration && treeConfiguration.decorators.size() > 0 && treeConfiguration.decorators.get(0) instanceof BlackwoodBioshroom){
+                    return false;
+                }
+                String nameSpace = "";
+                final ConfiguredFeature<?, ?> nextConfiguredFeature = configuredFeature.getFeatures().findFirst().get();
+                final FeatureConfiguration nextFeatureConfig = nextConfiguredFeature.config();
+                final ResourceLocation featureRegistryName = ForgeRegistries.FEATURES.getKey(nextConfiguredFeature.feature());
+                if (featureRegistryName != null) {
+                    nameSpace = featureRegistryName.getNamespace();
+                }
+                return isConfigClass(nextFeatureConfig) && !nameSpace.equals("") &&
+                        featureCancellations.shouldCancelNamespace(nameSpace); // Removes any individual trees.
+            }
+
+            return false;
         }
     };
 
     @SubscribeEvent
     public static void onFeatureCancellerRegistry(final com.ferreusveritas.dynamictrees.api.registry.RegistryEvent<FeatureCanceller> event) {
-        event.getRegistry().registerAll(RU_TREE_CANCELLER, RU_TREE2_CANCELLER, RU_MUSHROOM_CANCELLER, RU_MUSHROOM2_CANCELLER);
+        event.getRegistry().registerAll(RU_TREE_CANCELLER, RU_TREE2_CANCELLER, RU_MUSHROOM_CANCELLER, RU_MUSHROOM2_CANCELLER, TREE_NO_SHROOMS_CANCELLER);
     }
 
 }

@@ -1,7 +1,8 @@
 [
   {
     "__comment": "Cancel standard tree features from the RU overworld.",
-    "select": { "names": [ "regions_unexplored:.*", "!regions_unexplored:alpha_grove" ], "tag": [ "!#minecraft:is_nether" ] },
+    "select": { "names": [ "regions_unexplored:.*", "!regions_unexplored:alpha_grove",
+      "!regions_unexplored:blackwood_taiga", "!regions_unexplored:fungal_fen", "!regions_unexplored:bioshroom_caves" ], "tag": [ "!#minecraft:is_nether" ] },
     "cancellers": {
       "types": ["tree", "dtru:tree", "dtru:tree_2"],
       "namespaces": ["regions_unexplored", "minecraft"]
@@ -9,9 +10,28 @@
   },
   {
     "only_if_loaded": "dynamictreesplus",
-    "select": { "names": [ "regions_unexplored:.*", "!regions_unexplored:alpha_grove" ], "tag": [ "!#minecraft:is_nether" ] },
+    "select": { "names": [ "regions_unexplored:.*", "!regions_unexplored:alpha_grove",
+      "!regions_unexplored:blackwood_taiga", "!regions_unexplored:fungal_fen", "!regions_unexplored:bioshroom_caves" ], "tag": [ "!#minecraft:is_nether" ] },
+    "_to-do": ["dtru:mushroom", "dtru:mushroom_2"],
+    "_comment": "when adding mushrooms remove blackwood taiga, fungal fen and bioshroom caves blacklist from this module",
     "cancellers": {
-      "types": ["tree", "dtru:tree", "dtru:tree_2", "dynamictreesplus:cactus", "mushroom", "dtru:mushroom", "dtru:mushroom_2"],
+      "types": ["tree", "dtru:tree", "dtru:tree_2", "dynamictreesplus:cactus", "mushroom"],
+      "namespaces": ["regions_unexplored", "minecraft"]
+    }
+  },
+  {
+    "__comment": "Override for biomes with bioshrooms.",
+    "select": { "name": "regions_unexplored:(blackwood_taiga|fungal_fen)" },
+    "cancellers": {
+      "types": ["dtru:tree_no_shrooms"],
+      "namespaces": ["regions_unexplored", "minecraft"]
+    }
+  },
+  {
+    "only_if_loaded": "dynamictreesplus",
+    "select": { "name": "regions_unexplored:fungal_fen" },
+    "cancellers": {
+      "types": ["dtru:tree_no_shrooms", "dtru:mushroom_2"],
       "namespaces": ["regions_unexplored", "minecraft"]
     }
   }

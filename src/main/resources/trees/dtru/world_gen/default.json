@@ -528,6 +528,33 @@
       "chance": 0.2
     }
   },
+  {
+    "select": { "name": "regions_unexplored:blackwood_taiga" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:blackwood" : 3,
+          "dark_oak" : 1
+        }
+      },
+      "density": [1.0],
+      "chance": 1.0,
+      "forestness" : 1.0
+    }
+  },
+  {
+    "select": { "name": "regions_unexplored:fungal_fen" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:pine" : 1
+        }
+      },
+      "density": [1.0],
+      "chance": 0.6,
+      "forestness" : 1.0
+    }
+  },
 
 
 
@@ -557,6 +584,22 @@
       },
       "density": [1.0],
       "chance": 0.3
+    }
+  },
+  {
+    "only_if_loaded": "dynamictreesplus",
+    "select": { "name": "regions_unexplored:fungal_fen" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:pine" : 3,
+          "dynamictreesplus:red_mushroom" : 1,
+          "dynamictreesplus:brown_mushroom" : 1
+        }
+      },
+      "density": [1.0],
+      "chance": 0.8,
+      "forestness" : 1.0
     }
   }
 

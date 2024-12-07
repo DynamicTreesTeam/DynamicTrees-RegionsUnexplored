@@ -19,7 +19,7 @@
   "features" : [
     "conifer_topper",
     {
-      "name": "dtru:biome_predicate",
+      "name": "dtru:biome_predicate_2",
       "properties": {
         "gen_feature": {
           "name": "dtru:soil_whitelist",
@@ -36,6 +36,19 @@
       "properties": {
         "gen_feature": "dtru:stripped_bottom",
         "biome_predicate": { "name": "regions_unexplored:(frozen_pine_taiga|pine_slopes)" }
+      }
+    },
+    {
+      "name": "dtru:biome_predicate",
+      "properties": {
+        "gen_feature": {
+          "name": "vines",
+          "properties": {
+            "max_length": 12,
+            "quantity": 24
+          }
+        },
+        "biome_predicate": { "name": "regions_unexplored:fungal_fen" }
       }
     }
   ],

@@ -15,5 +15,8 @@
   "perfect_biomes": {
     "name": "regions_unexplored:.*baobab.*"
   },
-  "primitive_sapling": "regions_unexplored:baobab_sapling"
+  "primitive_sapling": "regions_unexplored:baobab_sapling",
+  "features": [
+    "mound"
+  ]
 }
