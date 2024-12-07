@@ -1,9 +1,6 @@
 {
-  "type": "dtru:generates_on_extra_soil",
-  "extra_soil_for_worldgen": "byg:mossy_stone",
-  "soil_replacement_for_worldgen": "byg:overgrown_stone",
   "family": "dtru:eucalyptus",
-  "tapering": 0.45,
+  "tapering": 0.3,
   "signal_energy": 32.0,
   "up_probability": 5,
   "lowest_branch_height": 3,
@@ -17,6 +14,7 @@
     }
   },
   "leaves_properties": "dtru:eucalyptus",
+  "world_gen_leaf_map_height": 64,
   "environment_factors" : {
     "#forge:is_snowy": 0.5,
     "#forge:is_dry": 0.75
@@ -35,6 +33,27 @@
     "bottom_flare",
     "mound",
     "clear_volume",
-    "bee_nest"
+    "bee_nest",
+    {
+      "name": "dtru:replace_on_radius",
+      "properties": {
+        "species": "dtru:eucalyptus",
+        "min_radius": 9,
+        "max_radius": 5
+      }
+    },
+    {
+      "name": "random_predicate",
+      "properties": {
+        "gen_feature": {
+          "name": "undergrowth",
+          "properties": {
+            "undergrowth_species": "dynamictrees:oak_undergrowth",
+            "proportion_of_secondary_species": 0
+          }
+        },
+        "only_world_gen": true
+      }
+    }
   ]
 }

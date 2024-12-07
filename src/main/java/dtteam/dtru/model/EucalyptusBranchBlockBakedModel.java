@@ -375,7 +375,7 @@ public class EucalyptusBranchBlockBakedModel implements IDynamicBakedModel {
     public RenderType getRenderType (){
         ResourceLocation renderTypeHint = blockModel.customData.getRenderTypeHint();
         if (renderTypeHint == null)
-            return RenderType.solid();
+            return RenderType.cutoutMipped();
         return NamedRenderTypeManager.get(renderTypeHint).block();
     }
 }

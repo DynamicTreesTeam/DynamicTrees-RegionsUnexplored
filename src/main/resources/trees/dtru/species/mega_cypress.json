@@ -51,8 +51,7 @@
             "max_length": 5,
             "quantity": 12
           }
-        },
-        "biome_predicate": { "name": "regions_unexplored:(frozen_pine_taiga|pine_slopes)" }
+        }
       }
     }
   ]

@@ -1,6 +1,8 @@
 {
-  "loader": "dynamictrees:surface_root",
+  "loader": "dtru:eucalyptus_surface_root",
+  "render_type": "minecraft:cutout",
   "textures": {
-    "bark": "regions_unexplored:block/eucalyptus_log"
+    "bark": "regions_unexplored:block/eucalyptus_log",
+    "overlay": "regions_unexplored:block/eucalyptus_log_overlay"
   }
 }

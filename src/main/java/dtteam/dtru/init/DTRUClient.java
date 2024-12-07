@@ -42,7 +42,13 @@ public class DTRUClient {
             family.getBranch().ifPresent(branchBlock ->
                     ModelHelper.regColorHandler(branchBlock, (state, level, pos, tintIndex) ->
                             pos != null ? family.branchColorMultiplier(state, level, pos) : magenta
-            ));
+                    )
+            );
+            family.getSurfaceRoot().ifPresent(surfaceRoot ->
+                    ModelHelper.regColorHandler(surfaceRoot, (state, level, pos, tintIndex) ->
+                            pos != null ? family.branchColorMultiplier(state, level, pos) : magenta
+                    )
+            );
         }
 
     }

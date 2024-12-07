@@ -42,6 +42,19 @@
         "level_limit": 4
       }
     },
-    "bottom_flare"
+    "bottom_flare",
+    {
+      "name": "random_predicate",
+      "properties": {
+        "gen_feature": {
+          "name": "undergrowth",
+          "properties": {
+            "undergrowth_species": "dynamictrees:oak_undergrowth",
+            "proportion_of_secondary_species": 0
+          }
+        },
+        "only_world_gen": true
+      }
+    }
   ]
 }

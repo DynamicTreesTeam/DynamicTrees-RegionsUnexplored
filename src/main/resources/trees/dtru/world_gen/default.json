@@ -126,12 +126,11 @@
     "apply": {
       "species" : {
         "random" : {
-          "dtru:eucalyptus" : 5,
-          "dtru:mega_eucalyptus" : 2,
-          "oak_undergrowth" : 2
+          "dtru:eucalyptus" : 1,
+          "dtru:mega_eucalyptus" : 3
         }
       },
-      "density": [ 1.4 ],
+      "density": [ 1.0 ],
       "chance": 1.0,
       "forestness" : 1.0
     }
@@ -181,8 +180,8 @@
     "apply": {
       "species" : {
         "random" : {
-          "dtru:redwood" : 5,
-          "dtru:small_redwood" : 3,
+          "dtru:redwood" : 10,
+          "dtru:small_redwood" : 6,
           "oak_undergrowth" : 1
         }
       },
@@ -198,7 +197,7 @@
         "random" : {
           "dtru:redwood" : 1,
           "dtru:small_redwood" : 6,
-          "oak_undergrowth" : 6
+          "oak_undergrowth" : 5
         }
       },
       "density": 0.5,
@@ -542,22 +541,21 @@
       "forestness" : 1.0
     }
   },
+
+
+
   {
-    "select": { "name": "regions_unexplored:fungal_fen" },
+    "select": { "name": "regions_unexplored:outback" },
     "apply": {
       "species" : {
         "random" : {
-          "dtru:pine" : 1
+          "dtru:acacia_twiglet" : 1
         }
       },
-      "density": [1.0],
-      "chance": 0.6,
-      "forestness" : 1.0
+      "density": [1.5],
+      "chance": 0.08
     }
   },
-
-
-
   {
     "only_if_loaded": "dynamictreesplus",
     "select": { "name": "regions_unexplored:outback" },
@@ -572,18 +570,18 @@
       "chance": 0.1
     }
   },
+
   {
-    "only_if_loaded": "dynamictreesplus",
-    "select": { "name": "regions_unexplored:saguaro_desert" },
+    "select": { "name": "regions_unexplored:fungal_fen" },
     "apply": {
       "species" : {
         "random" : {
-          "dynamictreesplus:saguaro_cactus" : 16,
-          "dynamictreesplus:pipe_cactus" : 1
+          "dtru:pine" : 1
         }
       },
       "density": [1.0],
-      "chance": 0.3
+      "chance": 0.6,
+      "forestness" : 1.0
     }
   },
   {
@@ -600,6 +598,20 @@
       "density": [1.0],
       "chance": 0.8,
       "forestness" : 1.0
+    }
+  },
+  {
+    "only_if_loaded": "dynamictreesplus",
+    "select": { "name": "regions_unexplored:saguaro_desert" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dynamictreesplus:saguaro_cactus" : 16,
+          "dynamictreesplus:pipe_cactus" : 1
+        }
+      },
+      "density": [1.0],
+      "chance": 0.3
     }
   }
 
