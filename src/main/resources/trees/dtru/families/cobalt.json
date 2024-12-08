@@ -1,0 +1,11 @@
+{
+  "common_leaves": "dtru:cobalt",
+  "common_species": "dtru:cobalt",
+  "primitive_log": "regions_unexplored:cobalt_log",
+  "primitive_stripped_log": "regions_unexplored:stripped_cobalt_log",
+  "max_branch_radius": 8,
+  "fire_proof": true,
+  "primary_thickness": 3,
+  "secondary_thickness": 4,
+  "loot_volume_multiplier": 2
+}

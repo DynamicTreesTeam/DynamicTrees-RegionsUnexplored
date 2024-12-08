@@ -4,6 +4,7 @@ import com.ferreusveritas.dynamictrees.api.configuration.ConfigurationProperty;
 import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKitConfiguration;
 import com.ferreusveritas.dynamictrees.growthlogic.PalmGrowthLogic;
 import com.ferreusveritas.dynamictrees.growthlogic.context.DirectionManipulationContext;
+import com.ferreusveritas.dynamictrees.growthlogic.context.PositionalSpeciesContext;
 import com.ferreusveritas.dynamictrees.systems.GrowSignal;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.ferreusveritas.dynamictrees.util.CoordUtils;
@@ -28,12 +29,13 @@ public class DiagonalPalmLogic extends PalmGrowthLogic {
         return super.createDefaultConfiguration()
                 .with(CHANCE_TO_DIVERGE, 0.8f)
                 .with(CHANCE_TO_SPLIT, 0.06f)
-                .with(SPLIT_MAX_ENERGY_FACTOR, 0.5f); //can only split under the bottom half
+                .with(SPLIT_MAX_ENERGY_FACTOR, 0.5f)//can only split under the bottom half
+                .with(HEIGHT_VARIATION, 3);
     }
 
     @Override
     protected void registerProperties() {
-        this.register(CHANCE_TO_DIVERGE, CHANCE_TO_SPLIT, SPLIT_MAX_ENERGY_FACTOR);
+        this.register(CHANCE_TO_DIVERGE, CHANCE_TO_SPLIT, SPLIT_MAX_ENERGY_FACTOR, HEIGHT_VARIATION);
     }
 
     @Override
@@ -44,6 +46,9 @@ public class DiagonalPalmLogic extends PalmGrowthLogic {
         final int[] probMap = context.probMap();
         final BlockPos pos = context.pos();
         Direction originDir = signal.dir.getOpposite();
+
+        int deltaYFromLowest = signal.delta.getY() - species.getLowestBranchHeight();
+        if (deltaYFromLowest < 0) return new int[]{0,1,0,0,0,0};
 
         // Alter probability map for direction change
         probMap[0] = 0; // Down is always disallowed for palm
@@ -74,6 +79,14 @@ public class DiagonalPalmLogic extends PalmGrowthLogic {
         probMap[originDir.ordinal()] = 0; // Disable the direction we came from
 
         return probMap;
+    }
+
+    @Override
+    public float getEnergy(GrowthLogicKitConfiguration configuration, PositionalSpeciesContext context) {
+        Level world = context.level();
+        BlockPos pos = context.pos();
+        return super.getEnergy(configuration, context) * context.species().biomeSuitability(world, pos)
+                + VariateHeightLogic.getHashedVariation(world, pos, configuration.get(HEIGHT_VARIATION));
     }
 
 }

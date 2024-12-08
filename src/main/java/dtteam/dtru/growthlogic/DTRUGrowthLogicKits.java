@@ -11,7 +11,7 @@ public class DTRUGrowthLogicKits {
     public static final GrowthLogicKit REDWOOD = new RedwoodLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "redwood"));
     public static final GrowthLogicKit SMALL_REDWOOD = new SmallRedwoodLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "small_redwood"));
     public static final GrowthLogicKit BAOBAB = new BaobabLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "baobab"));
-    public static final GrowthLogicKit PALM = new DiagonalPalmLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "palm"));
+    public static final GrowthLogicKit PALM = new DiagonalPalmLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "diagonal_palm"));
     public static final GrowthLogicKit VARIATE_HEIGHT = new VariateHeightLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "variate_height"));
     public static final GrowthLogicKit CYPRESS = new CypressLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "cypress"));
     public static final GrowthLogicKit MEGA_EUCALYPTUS = new MegaEucalyptusLogic(new ResourceLocation(DynamicTreesRU.MOD_ID, "mega_eucalyptus"));

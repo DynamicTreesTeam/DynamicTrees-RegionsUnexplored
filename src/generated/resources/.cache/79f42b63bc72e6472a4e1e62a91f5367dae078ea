@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-06T14:03:28.3177737	Item Models: dtru
+// 1.20.1	2024-12-07T19:11:36.0398709	Item Models: dtru
 42b315ad74a5ffa3c8bc5e4fcb5bfabf677219a2 assets/dtru/models/item/ashen_branch.json
 b55b5030aaf3499ca78b2424b94d6918825d6b6d assets/dtru/models/item/bamboo_branch.json
 17dfba8f5599a77ada4869ef9a84a50a6cf86e88 assets/dtru/models/item/bamboo_seed.json
@@ -7,6 +7,8 @@ b793be3a904ba0601948d3b0adccfee7a86564ae assets/dtru/models/item/baobab_seed.jso
 3f0beaaca4f82289c9e24cb0b159c0d5e7ff17d2 assets/dtru/models/item/blackwood_branch.json
 69de3fea4360ffe392807e3d024e0b09dc8342f2 assets/dtru/models/item/blackwood_seed.json
 a20cc4267b219d143feb10bafa0901cd08ecb836 assets/dtru/models/item/blue_magnolia_seed.json
+cc26399efcfd9bbaaa6b1597831e4de92360b133 assets/dtru/models/item/cobalt_branch.json
+45a3fa67e5bc8454adc27f69304ddca14f58c5f8 assets/dtru/models/item/cobalt_seed.json
 6b279000498431b954d75d0ebbcf128f229a2d5e assets/dtru/models/item/cypress_branch.json
 2e177f4dca8d3e8e66452bf06547d03f583458fc assets/dtru/models/item/cypress_seed.json
 48c3e03783b33c54598114f79e50172f2982448b assets/dtru/models/item/dead_branch.json

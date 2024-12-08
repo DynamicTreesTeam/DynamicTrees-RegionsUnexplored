@@ -32,6 +32,7 @@ import net.regions_unexplored.world.features.treedecorators.BlackwoodBioshroom;
 import net.regions_unexplored.world.level.feature.configuration.GiantBioshroomConfiguration;
 import net.regions_unexplored.world.level.feature.configuration.RuTreeConfiguration;
 import net.regions_unexplored.world.level.feature.tree.*;
+import net.regions_unexplored.world.level.feature.tree.nether.BrimWillowFeature;
 
 @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
 public class DTRURegistries {
@@ -76,7 +77,9 @@ public class DTRURegistries {
             final Feature<?> featureConfig = configuredFeature.feature();
             return featureConfig instanceof LargeJoshuaTreeFeature ||
                     featureConfig instanceof MediumJoshuaTreeFeature ||
-                    featureConfig instanceof SmallSocotraTreeFeature;
+                    featureConfig instanceof SmallSocotraTreeFeature ||
+                    featureConfig instanceof CobaltShrubFeature ||
+                    featureConfig instanceof BrimWillowFeature;
         }
     };
     public static final FeatureCanceller RU_MUSHROOM_CANCELLER = new TreeFeatureCanceller<>(DynamicTreesRU.location("mushroom"), GiantBioshroomConfiguration.class);

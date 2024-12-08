@@ -40,10 +40,11 @@ public class CanopyLogic extends VariateHeightLogic {
 
         int lowestBranch =  context.species().getLowestBranchHeight() + getHashedVariation(context.level(), signal.rootPos, configuration.get(LOWEST_BRANCH_VARIATION));
         int deltaYFromLowest = signal.delta.getY() - lowestBranch;
+        if (deltaYFromLowest < 0) return new int[]{0,1,0,0,0,0};
         int branchingHeight = configuration.get(BRANCHING_HEIGHT);
         // disable down direction
         probMap[0] = 0;
-        if (!signal.isInTrunk() && deltaYFromLowest >= 0 && deltaYFromLowest <= branchingHeight) {
+        if (!signal.isInTrunk() && deltaYFromLowest <= branchingHeight) {
             boolean forceUp = configuration.get(ZIGZAG_UP_CHANCE) != 0 && (CoordUtils.coordHashCode(context.pos(), 2) % configuration.get(ZIGZAG_UP_CHANCE)) == 0;
             boolean goUp =  forceUp || (signal.energy % 2 == 0 && configuration.get(FORCE_UP_AFTER_BRANCHING));
             probMap[1] = goUp ? 1 : 0;

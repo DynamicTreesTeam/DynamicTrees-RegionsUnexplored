@@ -45,65 +45,6 @@ public class DTRUCellKits {
         }
     };
 
-    public static final CellKit BRUSH = new CellKit(new ResourceLocation(DynamicTreesRU.MOD_ID, "brush")) {
-
-        private final Cell branch = new Cell() {
-            @Override
-            public int getValue() {
-                return 5;
-            }
-
-            final int[] map = {3, 3, 5, 5, 5, 5};
-
-            @Override
-            public int getValueFromSide(Direction side) {
-                return map[side.ordinal()];
-            }
-        };
-
-        private final Cell[] normalCells = {
-                CellNull.NULL_CELL,
-                new NormalCell(1),
-                new NormalCell(2),
-                new NormalCell(3),
-                new NormalCell(4),
-                new NormalCell(5),
-                new NormalCell(6),
-                new NormalCell(7),
-        };
-
-        private final CellSolver solver = new CellKits.BasicSolver(new short[]{
-                0x0513, 0x0412, 0x0322, 0x0311, 0x0211,
-        });
-
-        @Override
-        public Cell getCellForLeaves(int hydro) {
-            return normalCells[hydro];
-        }
-
-        @Override
-        public Cell getCellForBranch(int radius, int meta) {
-            if (radius == 1) return branch;
-            return CellNull.NULL_CELL;
-        }
-
-        @Override
-        public SimpleVoxmap getLeafCluster() {
-            return DTRULeafClusters.BRUSH;
-        }
-
-        @Override
-        public CellSolver getCellSolver() {
-            return solver;
-        }
-
-        @Override
-        public int getDefaultHydration() {
-            return 3;
-        }
-
-    };
-
     public static final CellKit EUCALYPTUS = new CellKit(new ResourceLocation(DynamicTreesRU.MOD_ID, "eucalyptus")) {
 
         private final Cell eucalyptusTopBranch = new BambooTopBranchCell();
@@ -314,7 +255,7 @@ public class DTRUCellKits {
 
     public static final CellKit JOSHUA = new CellKit(DynamicTreesRU.location("joshua")) {
 
-        private final Cell joshuaBranch = new Cell() {
+        private final Cell branch = new Cell() {
             @Override
             public int getValue() {
                 return 5;
@@ -327,7 +268,7 @@ public class DTRUCellKits {
 
         };
 
-        private final Cell[] joshuaFrondCells = {
+        private final Cell[] frondCells = {
                 CellNull.NULL_CELL,
                 new JoshuaFrondCell(1),
                 new JoshuaFrondCell(2),
@@ -342,12 +283,12 @@ public class DTRUCellKits {
 
         @Override
         public Cell getCellForLeaves(int hydro) {
-            return joshuaFrondCells[hydro];
+            return frondCells[hydro];
         }
 
         @Override
         public Cell getCellForBranch(int radius, int meta) {
-            return joshuaBranch;
+            return radius == 2 ? branch : CellNull.NULL_CELL;
         }
 
         @Override
@@ -383,8 +324,61 @@ public class DTRUCellKits {
         }
     };
 
+    public static final CellKit COBALT = new CellKit(new ResourceLocation(DynamicTreesRU.MOD_ID, "cobalt")) {
+
+        private final Cell branch = new Cell(){
+            @Override
+            public int getValue() {
+                return 3;
+            }
+            @Override
+            public int getValueFromSide(Direction side) {
+                return side == Direction.DOWN ? 0 : getValue();
+            }
+        };
+
+        private final Cell[] normalCells = {
+                CellNull.NULL_CELL,
+                new NormalCell(1),
+                new NormalCell(2),
+                new NormalCell(3),
+                new NormalCell(4),
+                new NormalCell(5),
+                new NormalCell(6),
+                new NormalCell(7),
+        };
+
+        private final CellSolver solver = new CellKits.BasicSolver(new short[]{0x0312, 0x0221});
+
+        @Override
+        public Cell getCellForLeaves(int hydro) {
+            return normalCells[hydro];
+        }
+
+        @Override
+        public Cell getCellForBranch(int radius, int meta)  {
+            return radius == 3 ? branch : CellNull.NULL_CELL;
+        }
+
+        @Override
+        public SimpleVoxmap getLeafCluster() {
+            return DTRULeafClusters.COBALT;
+        }
+
+        @Override
+        public CellSolver getCellSolver() {
+            return solver;
+        }
+
+        @Override
+        public int getDefaultHydration() {
+            return 2;
+        }
+
+    };
+
     public static void register(final Registry<CellKit> registry) {
-        registry.registerAll(SPARSE, BRUSH, EUCALYPTUS, POPLAR, BAMBOO, DOME, JOSHUA);
+        registry.registerAll(SPARSE, EUCALYPTUS, POPLAR, BAMBOO, DOME, JOSHUA, COBALT);
     }
 
 }

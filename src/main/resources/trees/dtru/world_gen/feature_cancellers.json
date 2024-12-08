@@ -34,5 +34,15 @@
       "types": ["dtru:tree_no_shrooms", "dtru:mushroom_2"],
       "namespaces": ["regions_unexplored", "minecraft"]
     }
+  },
+
+  {
+    "__comment": "Cancel nether trees.",
+    "select": { "name": "regions_unexplored:(blackstone_basin|infernal_holt)" },
+    "cancellers": {
+      "stage": "underground_decoration",
+      "types": [ "dtru:tree_2" ],
+      "namespaces": [ "regions_unexplored", "minecraft" ]
+    }
   }
 ]

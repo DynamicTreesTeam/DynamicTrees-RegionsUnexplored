@@ -33,33 +33,6 @@ public class DTRULeafClusters {
             0, 0, 0,
     }).setCenter(new BlockPos(1, 1, 1));
 
-    public static final SimpleVoxmap POPLAR_TOP = new SimpleVoxmap(3, 4, 3, new byte[] {
-            0, 1, 0,
-            1, 0, 1,
-            0, 1, 0,
-
-            0, 0, 0,
-            0, 2, 0,
-            0, 0, 0,
-
-            0, 0, 0,
-            0, 1, 0,
-            0, 0, 0,
-    }).setCenter(new BlockPos(1, 0, 1));
-
-    public static final SimpleVoxmap MAHOGANY = new SimpleVoxmap(5, 2, 5, new byte[] {
-            0, 1, 1, 1, 0,
-            1, 2, 3, 2, 1,
-            1, 3, 0, 3, 1,
-            1, 2, 3, 2, 1,
-            0, 1, 1, 1, 0,
-
-            0, 0, 0, 0, 0,
-            0, 1, 1, 1, 0,
-            0, 1, 1, 1, 0,
-            0, 1, 1, 1, 0,
-            0, 0, 0, 0, 0,
-    }).setCenter(new BlockPos(2, 0, 2));
 
     public static final SimpleVoxmap BRUSH = new SimpleVoxmap(5, 3, 5, new byte[] {
             0, 0, 0, 0, 0,
@@ -143,5 +116,19 @@ public class DTRULeafClusters {
             0, 0, 0,
 
     }).setCenter(new BlockPos(1, 0, 1));
+
+    public static final SimpleVoxmap COBALT = new SimpleVoxmap(5, 2, 5, new byte[] {
+            0, 0, 0, 0, 0,
+            0, 1, 2, 1, 0,
+            0, 2, 0, 2, 0,
+            0, 1, 2, 1, 0,
+            0, 0, 0, 0, 0,
+
+            0, 0, 0, 0, 0,
+            0, 0, 1, 0, 0,
+            0, 1, 2, 1, 0,
+            0, 0, 1, 0, 0,
+            0, 0, 0, 0, 0,
+    }).setCenter(new BlockPos(2, 0, 2));
 
 }

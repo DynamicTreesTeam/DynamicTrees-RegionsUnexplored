@@ -613,6 +613,21 @@
       "density": [1.0],
       "chance": 0.3
     }
-  }
+  },
 
+
+
+  {
+    "select": { "name": "regions_unexplored:blackstone_basin" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:cobalt" : 1
+        }
+      },
+      "density": [ 0.5 ],
+      "chance": 0.8,
+      "forestness" : 0.3
+    }
+  }
 ]
