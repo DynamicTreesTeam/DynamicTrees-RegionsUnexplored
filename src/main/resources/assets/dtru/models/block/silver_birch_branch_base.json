@@ -1,5 +1,6 @@
 {
   "loader": "dynamictrees:branch",
+  "family": "dtru:silver_birch",
   "textures": {
     "bark": "regions_unexplored:block/silver_birch_log_base",
     "rings": "minecraft:block/birch_log_top"

@@ -1,5 +1,6 @@
 {
   "loader": "dynamictrees:branch",
+  "family": "dtru:pine",
   "textures": {
     "bark": "regions_unexplored:block/pine_log_transition",
     "rings": "regions_unexplored:block/pine_log_top"

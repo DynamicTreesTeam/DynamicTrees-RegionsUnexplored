@@ -1,20 +1,9 @@
 package dtteam.dtru.init;
 
-import com.ferreusveritas.dynamictrees.api.TreeHelper;
 import com.ferreusveritas.dynamictrees.api.client.ModelHelper;
-import com.ferreusveritas.dynamictrees.block.PottedSaplingBlock;
-import com.ferreusveritas.dynamictrees.block.branch.BranchBlock;
-import com.ferreusveritas.dynamictrees.block.leaves.DynamicLeavesBlock;
-import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
-import com.ferreusveritas.dynamictrees.block.rooty.RootyBlock;
-import com.ferreusveritas.dynamictrees.block.rooty.SoilHelper;
-import com.ferreusveritas.dynamictrees.init.DTRegistries;
 import com.ferreusveritas.dynamictrees.tree.family.Family;
-import com.ferreusveritas.dynamictrees.tree.species.Species;
 import dtteam.dtru.block.BambooBranchBlock;
 import dtteam.dtru.tree.EucalyptusFamily;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.registries.ForgeRegistries;

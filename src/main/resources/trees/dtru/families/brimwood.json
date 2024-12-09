@@ -1,0 +1,11 @@
+{
+  "type": "dtru:brimwood",
+  "common_leaves": "dtru:brimwood",
+  "common_species": "dtru:brimwood",
+  "primitive_log": "regions_unexplored:brimwood_log",
+  "primitive_magma_log": "regions_unexplored:brimwood_log_magma",
+  "primitive_stripped_log": "regions_unexplored:stripped_brimwood_log",
+  "max_branch_radius": 12,
+  "generate_surface_root": true,
+  "fire_proof": true
+}

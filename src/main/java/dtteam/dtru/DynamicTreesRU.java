@@ -34,11 +34,8 @@ public class DynamicTreesRU {
         RegistryHandler.setup(MOD_ID);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event) {
+    private void commonSetup(final FMLCommonSetupEvent event) { }
 
-    }
-
-    @OnlyIn(Dist.CLIENT)
     private void clientSetup(final FMLClientSetupEvent event) {
         DTRUClient.setup();
     }

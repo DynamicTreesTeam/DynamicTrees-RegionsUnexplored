@@ -14,10 +14,7 @@ import dtteam.dtru.DynamicTreesRU;
 import dtteam.dtru.cell.DTRUCellKits;
 import dtteam.dtru.genfeature.DTRUGenFeatures;
 import dtteam.dtru.growthlogic.DTRUGrowthLogicKits;
-import dtteam.dtru.tree.BambooFamily;
-import dtteam.dtru.tree.EucalyptusFamily;
-import dtteam.dtru.tree.GenUnderwaterSpecies;
-import dtteam.dtru.tree.TransitionLogFamily;
+import dtteam.dtru.tree.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -33,6 +30,7 @@ import net.regions_unexplored.world.level.feature.configuration.GiantBioshroomCo
 import net.regions_unexplored.world.level.feature.configuration.RuTreeConfiguration;
 import net.regions_unexplored.world.level.feature.tree.*;
 import net.regions_unexplored.world.level.feature.tree.nether.BrimWillowFeature;
+import net.regions_unexplored.world.level.feature.tree.nether.TallBrimWillowFeature;
 
 @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
 public class DTRURegistries {
@@ -68,6 +66,7 @@ public class DTRURegistries {
         event.registerType(new ResourceLocation(DynamicTreesRU.MOD_ID, "eucalyptus"), EucalyptusFamily.TYPE);
         event.registerType(new ResourceLocation(DynamicTreesRU.MOD_ID, "stripped_transition_log"), TransitionLogFamily.TYPE_STRIPPED);
         event.registerType(new ResourceLocation(DynamicTreesRU.MOD_ID, "base_transition_log"), TransitionLogFamily.TYPE_BASE);
+        event.registerType(new ResourceLocation(DynamicTreesRU.MOD_ID, "brimwood"), BrimwoodFamily.TYPE);
     }
 
     public static final FeatureCanceller RU_TREE_CANCELLER = new TreeFeatureCanceller<>(DynamicTreesRU.location("tree"), RuTreeConfiguration.class);
@@ -79,7 +78,8 @@ public class DTRURegistries {
                     featureConfig instanceof MediumJoshuaTreeFeature ||
                     featureConfig instanceof SmallSocotraTreeFeature ||
                     featureConfig instanceof CobaltShrubFeature ||
-                    featureConfig instanceof BrimWillowFeature;
+                    featureConfig instanceof BrimWillowFeature ||
+                    featureConfig instanceof TallBrimWillowFeature;
         }
     };
     public static final FeatureCanceller RU_MUSHROOM_CANCELLER = new TreeFeatureCanceller<>(DynamicTreesRU.location("mushroom"), GiantBioshroomConfiguration.class);

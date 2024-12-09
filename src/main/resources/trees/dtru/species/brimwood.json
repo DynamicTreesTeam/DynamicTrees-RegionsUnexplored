@@ -1,0 +1,29 @@
+{
+  "family": "dtru:brimwood",
+  "signal_energy": 18.0,
+  "up_probability": 4,
+  "lowest_branch_height": 6,
+  "growth_rate": 1.0,
+  "leaves_properties": "dtru:brimwood",
+  "growth_logic_kit": "dtru:variate_height",
+  "environment_factors" : {
+    "#forge:is_cold": 0.1,
+    "#forge:is_wet": 0.1
+  },
+  "mega_species": "dtru:mega_brimwood",
+  "perfect_biomes": { "name": "regions_unexplored:infernal_holt" },
+  "primitive_sapling": "regions_unexplored:brimwood_sapling",
+  "acceptable_soils": [ "nether_soil_like", "dirt_like" ],
+  "features" : [
+    "bottom_flare",
+    {
+      "name": "roots",
+      "properties": {
+        "min_trunk_radius": 6,
+        "level_limit": 6,
+        "scale_factor": 16
+      }
+    },
+    "dtru:magma_bottom"
+  ]
+}

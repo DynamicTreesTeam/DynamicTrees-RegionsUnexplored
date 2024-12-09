@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "transition=false": {
+      "model": "dtru:block/brimwood_branch"
+    },
+    "transition=true": {
+      "model": "dtru:block/brimwood_branch_transition"
+    }
+  }
+}
