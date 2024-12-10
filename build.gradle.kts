@@ -138,7 +138,7 @@ curseforge {
     apiKey = property("curseApiKey")
 
     project {
-        id = "289529"
+        id = "1157051"
 
         addGameVersion(mcVersion)
 
