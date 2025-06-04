@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-09T17:46:04.1764108	Item Models: dtru
+// 1.20.1	2025-06-03T17:53:35.5094215	Item Models: dtru
 42b315ad74a5ffa3c8bc5e4fcb5bfabf677219a2 assets/dtru/models/item/ashen_branch.json
 b55b5030aaf3499ca78b2424b94d6918825d6b6d assets/dtru/models/item/bamboo_branch.json
 17dfba8f5599a77ada4869ef9a84a50a6cf86e88 assets/dtru/models/item/bamboo_seed.json
@@ -35,6 +35,8 @@ c6bd7063c7b7fb2fa412f4ec8f3f5beed19f522f assets/dtru/models/item/palm_branch.jso
 3d74624845b01f9238e511fb6ecb069f68d0208c assets/dtru/models/item/palm_seed.json
 5229171fd6054d3fd2757b93e87537084b18a5fe assets/dtru/models/item/pine_branch.json
 6522c9c2a378cc71c7c361ae342f73fab0a55f78 assets/dtru/models/item/pine_seed.json
+dcb66f8262b2cda58aa39d3ab8736f8dc61dd158 assets/dtru/models/item/pink_bioshroom_branch.json
+331c78fefc755ee746e4dc811d4239f35d94eeb4 assets/dtru/models/item/pink_bioshroom_seed.json
 dd8beff9118ebcf025610a3dfc2dfa99472d9775 assets/dtru/models/item/pink_magnolia_seed.json
 1391bfb4e90a60d6b62096b8c8448cca265582be assets/dtru/models/item/redwood_branch.json
 f289f4950e3b5f041f730d87917a3f75f46bedb7 assets/dtru/models/item/redwood_seed.json

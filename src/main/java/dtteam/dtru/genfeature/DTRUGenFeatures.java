@@ -27,6 +27,9 @@ public class DTRUGenFeatures {
                 SYTHIAN_TOPPER, ALTERNATIVE_BRANCH, MUSHROOM_VINES,
                 PREVENT_WATER_GEN, STRIPPED_BOTTOM, BIOME_PREDICATE_ALT,
                 MAGMA_BOTTOM);
+        if (DynamicTreesRU.isDynamicTreesPlusLoaded()){
+            DTRUPlusGenFeatures.register(registry);
+        }
     }
 
 }

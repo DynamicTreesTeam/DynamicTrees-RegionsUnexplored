@@ -1,0 +1,116 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/pink_bioshroom_cap",
+        "uvlock": true
+      },
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/pink_bioshroom_cap_inside"
+      },
+      "when": {
+        "north": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/pink_bioshroom_cap",
+        "uvlock": true,
+        "y": 90
+      },
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/pink_bioshroom_cap_inside",
+        "y": 90
+      },
+      "when": {
+        "east": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/pink_bioshroom_cap",
+        "uvlock": true,
+        "y": 180
+      },
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/pink_bioshroom_cap_inside",
+        "y": 180
+      },
+      "when": {
+        "south": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/pink_bioshroom_cap",
+        "uvlock": true,
+        "y": 270
+      },
+      "when": {
+        "west": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/pink_bioshroom_cap_inside",
+        "y": 270
+      },
+      "when": {
+        "west": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/pink_bioshroom_cap",
+        "uvlock": true,
+        "x": 270
+      },
+      "when": {
+        "up": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/pink_bioshroom_cap_inside",
+        "x": 270
+      },
+      "when": {
+        "up": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/pink_bioshroom_cap",
+        "uvlock": true,
+        "x": 90
+      },
+      "when": {
+        "down": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/pink_bioshroom_cap_inside",
+        "x": 90
+      },
+      "when": {
+        "down": "false"
+      }
+    }
+  ]
+}

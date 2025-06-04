@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/pink_bioshroom_cap_center_age0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "regions_unexplored:block/pink_bioshroom_stem",
+    "rings": "regions_unexplored:block/pink_bioshroom_stem_top"
+  }
+}

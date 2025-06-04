@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-09T17:46:04.1814149	Block States: dtru
+// 1.20.1	2025-06-03T18:10:14.6783925	Block States: dtru
 2606791521eac27fa77ebbeeea442b8073802a51 assets/dtru/blockstates/acacia_twiglet_leaves.json
 0a3e03970c6c64825a46aea6c074d41a15d87460 assets/dtru/blockstates/ashen_branch.json
 ab18794f7d55c70794422a30794d1894b64fd5b5 assets/dtru/blockstates/ashen_leaves.json
@@ -76,6 +76,11 @@ ba08fc54535767adbd81b1a52435a97d54280daf assets/dtru/blockstates/pine_leaves.jso
 b3ddd17b793b4447aca54071f7aef207b02ee362 assets/dtru/blockstates/pine_root.json
 4ab85d7fd0e300c2b71807474c34822bd72b8086 assets/dtru/blockstates/pine_sapling.json
 ba08fc54535767adbd81b1a52435a97d54280daf assets/dtru/blockstates/pine_twiglet_leaves.json
+ea01bedf039a92dbb14b92cb8d48ef54afcc9d66 assets/dtru/blockstates/pink_bioshroom_branch.json
+6ebbe88f4b1515fbc158f9b168a97351dc6f9e9c assets/dtru/blockstates/pink_bioshroom_cap.json
+8ca11a68ffa13f8c1f3a768de6c1d9f33bf5b742 assets/dtru/blockstates/pink_bioshroom_cap_center.json
+4f6b9ac4e435a7e2cfe5224698387bae59af22ab assets/dtru/blockstates/pink_bioshroom_root.json
+7ebe922707a2ed39d04626ee80c9b3531ac0891b assets/dtru/blockstates/pink_bioshroom_sapling.json
 c43f6d6e7f32e953276174993b19b53fbfd74ef7 assets/dtru/blockstates/pink_magnolia_leaves.json
 c1b843ad36a7f87bb8815a4d215a0ab62577fc68 assets/dtru/blockstates/pink_magnolia_sapling.json
 7d5dcac2290936566cc0c75fa2aa89daee8e1b59 assets/dtru/blockstates/redwood_branch.json
@@ -136,6 +141,7 @@ d972a4cef9d637ff2d0082f07dd4a6638acba1e0 assets/dtru/blockstates/stripped_magnol
 8d47266673478f7e1e596ad2f81f2bdeb054f05c assets/dtru/blockstates/stripped_mauve_branch.json
 2bcc2cb6228dabdf3f832abbd277971221bcb5aa assets/dtru/blockstates/stripped_palm_branch.json
 2ad5a4acf2289c8cecc122c27f76a24bd7a9e651 assets/dtru/blockstates/stripped_pine_branch.json
+8f33322446544ab4974c3fc902789d2870d9ac8b assets/dtru/blockstates/stripped_pink_bioshroom_branch.json
 35d87f55ae80434f40933b48d6494afcf18d986c assets/dtru/blockstates/stripped_redwood_branch.json
 90ff390408f107bf78748209e35166af39897ca9 assets/dtru/blockstates/stripped_silver_birch_branch.json
 804bb0550fd819906d59dcb93a55eed843d3c142 assets/dtru/blockstates/stripped_socotra_branch.json
@@ -172,6 +178,9 @@ c1fcb5a486e790d4f306c09f097e44127ac06f22 assets/dtru/models/block/magnolia_branc
 9b6b99399960d0e9108fb7adc590c6ab0c2b3637 assets/dtru/models/block/maple_root.json
 b683f5f8b91eb7c095c51e7f3c0073d06ea73eb4 assets/dtru/models/block/mauve_branch.json
 7411a8592733868dea4374b2451789796b81dd4f assets/dtru/models/block/mauve_root.json
+4887f32211c4dadad7a696d745965242e5a069b5 assets/dtru/models/block/mushroom/pink_bioshroom_cap.json
+690e420d00fef85cfe46b2cecfe7c9ece313052c assets/dtru/models/block/mushroom/pink_bioshroom_cap_center_age0.json
+e79e379a29f26f98a7d524a98aaacba3fd02a407 assets/dtru/models/block/mushroom/pink_bioshroom_cap_inside.json
 f4269559914392541fbc217f6cb26fb315f272ed assets/dtru/models/block/palm_branch.json
 8957c4da56de6c32e2d628dc054f914d2a075cec assets/dtru/models/block/palm_leaves/joshua_core_bottom.json
 e2f587063168a588d238661ecddd612e0abeba5f assets/dtru/models/block/palm_leaves/joshua_core_top.json
@@ -181,6 +190,8 @@ e2f587063168a588d238661ecddd612e0abeba5f assets/dtru/models/block/palm_leaves/jo
 4582413da2eb8c92447bbe49e68578bab1c59f8f assets/dtru/models/block/palm_leaves/palm_frond.json
 6e699811cdc6cb3aa60ff42a5ba7f75a169817b3 assets/dtru/models/block/pine_branch.json
 109244c697bf328a2648098a0d95b7ee7fb101af assets/dtru/models/block/pine_root.json
+14b288a740a881b60e62e8b97cd7be460f7a8e86 assets/dtru/models/block/pink_bioshroom_branch.json
+1d94088ac7e4ea73f9ed0519ba42f613d44cd33f assets/dtru/models/block/pink_bioshroom_root.json
 fdd253754b3aa41714be7a3e4a83c602ffd3a89c assets/dtru/models/block/redwood_branch.json
 84b0286ec806895639d11a496a4a4fcff82c4888 assets/dtru/models/block/redwood_root.json
 d03a35954491b3bcb8adb058dd2cfbcc076b6be9 assets/dtru/models/block/saplings/bamboo.json
@@ -203,6 +214,7 @@ babbdf130a9442e394f5d2cb88a39024b95a5a09 assets/dtru/models/block/saplings/magno
 6a4823e196536013c9ef76980649dcf577e0af4d assets/dtru/models/block/saplings/orange_maple.json
 03e774c18ce01479df13dbfef11fb18aba70a1bf assets/dtru/models/block/saplings/palm.json
 bf667502eb3321be4c81fbc7e13c6b148315f23f assets/dtru/models/block/saplings/pine.json
+d35275bccd2643f0e4ed4dec573e3facd530f90c assets/dtru/models/block/saplings/pink_bioshroom.json
 81e22252bf50374efd69bc2f82212dffdf54c7e9 assets/dtru/models/block/saplings/pink_magnolia.json
 837d0bea930520a80a95129bfdf21e2e89383aea assets/dtru/models/block/saplings/redwood_sapling.json
 4daf7c4967d06a8a67be32bccfa4bd4c1746a530 assets/dtru/models/block/saplings/red_maple.json
@@ -228,6 +240,7 @@ c3624e7d6997ecdaae50b7efbb7645c658898589 assets/dtru/models/block/stripped_maple
 dce36fe96f9c11693e72785c97dc3a4b84cc7e46 assets/dtru/models/block/stripped_mauve_branch.json
 c8cd11a28b98cc36a5e6e46dcd3d2bd764508ccc assets/dtru/models/block/stripped_palm_branch.json
 443f13cc5d0c24479f9e1db9aa1f153551eb66ed assets/dtru/models/block/stripped_pine_branch.json
+6762146d75b897b4b85a14321672fbdeca2cb1bf assets/dtru/models/block/stripped_pink_bioshroom_branch.json
 957d06b1f9d6c2ba47dd870b020d8462785d668b assets/dtru/models/block/stripped_redwood_branch.json
 e11e6857ff8da1632bd5d7261150a150cefb12da assets/dtru/models/block/stripped_silver_birch_branch.json
 51c74b06854eb2315d757e819db640f9fc38ba3b assets/dtru/models/block/stripped_socotra_branch.json

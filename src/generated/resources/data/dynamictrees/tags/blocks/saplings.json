@@ -20,6 +20,10 @@
     "dtru:orange_maple_sapling",
     "dtru:palm_sapling",
     "dtru:pine_sapling",
+    {
+      "id": "dtru:pink_bioshroom_sapling",
+      "required": false
+    },
     "dtru:pink_magnolia_sapling",
     "dtru:red_maple_sapling",
     "dtru:silver_birch_sapling",

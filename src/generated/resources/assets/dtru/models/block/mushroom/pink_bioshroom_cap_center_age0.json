@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "regions_unexplored:block/pink_bioshroom_block_glowing",
+    "side": "regions_unexplored:block/pink_bioshroom_block",
+    "top": "regions_unexplored:block/pink_bioshroom_block"
+  }
+}

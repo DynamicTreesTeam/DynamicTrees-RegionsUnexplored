@@ -1,0 +1,8 @@
+{
+  "parent": "dynamictrees:block/smartmodel/mushroom_round",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "cap": "dtru:block/pink_bioshroom_cap",
+    "stem": "regions_unexplored:block/pink_bioshroom_stem"
+  }
+}

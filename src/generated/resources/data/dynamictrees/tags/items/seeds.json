@@ -19,6 +19,10 @@
     "dtru:orange_maple_seed",
     "dtru:palm_seed",
     "dtru:pine_seed",
+    {
+      "id": "dtru:pink_bioshroom_seed",
+      "required": false
+    },
     "dtru:pink_magnolia_seed",
     "dtru:red_maple_seed",
     "dtru:silver_birch_seed",

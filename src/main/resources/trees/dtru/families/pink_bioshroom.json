@@ -1,0 +1,23 @@
+{
+  "only_if_loaded" : "dynamictreesplus",
+  "type": "dynamictreesplus:mushroom",
+  "common_cap": "dtru:pink_bioshroom",
+  "common_species": "dtru:pink_bioshroom",
+  "primitive_log": "regions_unexplored:pink_bioshroom_stem",
+  "primitive_stripped_log": "regions_unexplored:stripped_pink_bioshroom_stem",
+  "stick": "air",
+  "max_branch_radius": 24,
+  "generate_surface_root": true,
+  "branch_properties": {
+    "sound": "CHERRY_WOOD"
+  },
+  "texture_overrides": {
+    "branch": "regions_unexplored:block/pink_bioshroom_stem",
+    "branch_top": "regions_unexplored:block/pink_bioshroom_stem_top",
+    "stripped_branch": "regions_unexplored:block/stripped_pink_bioshroom_stem",
+    "stripped_branch_top": "regions_unexplored:block/stripped_pink_bioshroom_stem_top"
+  },
+  "lang_overrides": {
+    "branch": "Pink Bioshroom"
+  }
+}

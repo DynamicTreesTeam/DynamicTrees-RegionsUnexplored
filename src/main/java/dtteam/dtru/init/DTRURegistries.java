@@ -58,6 +58,9 @@ public class DTRURegistries {
     @SubscribeEvent
     public static void registerSpeciesTypes(final TypeRegistryEvent<Species> event) {
         event.registerType(new ResourceLocation(DynamicTreesRU.MOD_ID, "cypress"), GenUnderwaterSpecies.TYPE);
+        if (DynamicTreesRU.isDynamicTreesPlusLoaded()){
+            DTRUPlusRegistries.registerSpeciesTypes(event);
+        }
     }
 
     @SubscribeEvent

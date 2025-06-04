@@ -1,0 +1,59 @@
+{
+  "only_if_loaded" : "dynamictreesplus",
+  "type": "dtru:bioshroom",
+  "family": "dtru:pink_bioshroom",
+  "always_show_on_waila": true,
+  "tapering": 0,
+  "signal_energy": 10,
+  "growth_rate": 1.2,
+  "soil_longevity": 3,
+  "lowest_branch_height": 20,
+  "generate_seed": true,
+  "generate_sapling": true,
+  "growth_logic_kit": {
+    "name": "dtru:variate_height",
+    "properties": {
+      "height_variation": 8
+    }
+  },
+  "cap_properties": "dtru:pink_bioshroom",
+  "mushroom_shape_kit": {
+    "name": "dynamictreesplus:bell",
+    "properties": {
+      "max_cap_age": 5,
+      "max_age_curve_factor": 1,
+      "min_age_curve_factor": 2,
+      "curve_height_offset": -1,
+      "pointed_tip_max_age": 8,
+      "chance_to_age": 0.3
+    }
+  },
+  "primitive_sapling": "regions_unexplored:pink_bioshroom",
+  "acceptable_soils": ["fungus_like"],
+  "features" : [
+    "bottom_flare",
+    {
+      "name": "mound",
+      "properties": {
+        "offset": false
+      }
+    },
+    {
+      "name": "roots",
+      "properties": {
+        "min_trunk_radius": 8,
+        "scale_factor": 16,
+        "level_limit": 0
+      }
+    },
+    {
+      "name": "dtru:glowing_pink_bioshroom",
+      "properties": {
+        "block": "regions_unexplored:glowing_pink_bioshroom_block"
+      }
+    }
+  ],
+  "lang_overrides": {
+    "seed": "Pink Bioshroom Cap"
+  }
+}
