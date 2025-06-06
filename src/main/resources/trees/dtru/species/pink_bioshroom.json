@@ -2,7 +2,6 @@
   "only_if_loaded" : "dynamictreesplus",
   "type": "dtru:bioshroom",
   "family": "dtru:pink_bioshroom",
-  "always_show_on_waila": true,
   "tapering": 0,
   "signal_energy": 10,
   "growth_rate": 1.2,

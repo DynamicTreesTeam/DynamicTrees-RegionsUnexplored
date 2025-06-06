@@ -1,0 +1,66 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/blue_bioshroom_cap_center_age0"
+      },
+      "when": {
+        "age": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/blue_bioshroom_cap",
+        "uvlock": true,
+        "x": 270
+      },
+      "when": {
+        "age": "1|2|3|4|5|6|7|8"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/blue_bioshroom_cap_inside"
+      },
+      "when": {
+        "age": "1|2|3|4|5|6|7|8"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/blue_bioshroom_cap_inside",
+        "y": 90
+      },
+      "when": {
+        "age": "1|2|3|4|5|6|7|8"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/blue_bioshroom_cap_inside",
+        "y": 180
+      },
+      "when": {
+        "age": "1|2|3|4|5|6|7|8"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/blue_bioshroom_cap_inside",
+        "y": 270
+      },
+      "when": {
+        "age": "1|2|3|4|5|6|7|8"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/mushroom/blue_bioshroom_cap_inside",
+        "x": 90
+      },
+      "when": {
+        "age": "1|2|3|4|5|6|7|8"
+      }
+    }
+  ]
+}

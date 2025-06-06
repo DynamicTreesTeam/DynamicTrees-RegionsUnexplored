@@ -11,9 +11,10 @@ import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
 import dtteam.dtru.DynamicTreesRU;
-import dtteam.dtru.block.BiomeshroomCapProperties;
+import dtteam.dtru.block.BioshroomCapProperties;
+import dtteam.dtru.block.PinkBioshroomCapProperties;
+import dtteam.dtru.block.YellowBioshroomCapProperties;
 import dtteam.dtru.tree.BioshroomSpecies;
-import dtteam.dtru.tree.GenUnderwaterSpecies;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
@@ -37,7 +38,9 @@ public class DTRUPlusRegistries {
 
     @SubscribeEvent
     public void registerCapPropertiesTypes(final TypeRegistryEvent<CapProperties> event) {
-        event.registerType(DynamicTreesRU.location("bioshroom_cap"), BiomeshroomCapProperties.TYPE);
+        event.registerType(DynamicTreesRU.location("bioshroom_cap"), BioshroomCapProperties.TYPE);
+        event.registerType(DynamicTreesRU.location("pink_bioshroom_cap"), PinkBioshroomCapProperties.TYPE);
+        event.registerType(DynamicTreesRU.location("yellow_bioshroom_cap"), YellowBioshroomCapProperties.TYPE);
     }
 
     public static void registerSpeciesTypes(final TypeRegistryEvent<Species> event) {

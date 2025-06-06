@@ -2,35 +2,26 @@ package dtteam.dtru.block;
 
 import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
 import com.ferreusveritas.dynamictrees.systems.poissondisc.Vec2i;
-import com.ferreusveritas.dynamictrees.util.SimpleVoxmap;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.DynamicCapCenterBlock;
-import com.ferreusveritas.dynamictreesplus.systems.mushroomlogic.MushroomCapDisc;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.MapColor;
 
 import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BiomeshroomCapProperties extends CapProperties {
+public class PinkBioshroomCapProperties extends BioshroomCapProperties {
 
-    public static final TypedRegistry.EntryType<CapProperties> TYPE = TypedRegistry.newType(BiomeshroomCapProperties::new);
+    public static final TypedRegistry.EntryType<CapProperties> TYPE = TypedRegistry.newType(PinkBioshroomCapProperties::new);
 
-    public BiomeshroomCapProperties(ResourceLocation registryName) {
+    public PinkBioshroomCapProperties(ResourceLocation registryName) {
         super(registryName);
-    }
-
-    @Override
-    public BlockBehaviour.Properties getDefaultBlockProperties(MapColor mapColor) {
-        return super.getDefaultBlockProperties(mapColor).sound(SoundType.WART_BLOCK);
     }
 
     @Override

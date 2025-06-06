@@ -1,0 +1,7 @@
+{
+  "parent": "dynamictrees:item/branch",
+  "textures": {
+    "bark": "regions_unexplored:block/blue_bioshroom_stem",
+    "rings": "regions_unexplored:block/blue_bioshroom_stem_top"
+  }
+}

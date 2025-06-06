@@ -1,0 +1,11 @@
+{
+  "type": "dtru:yellow_bioshroom_cap",
+  "primitive_cap": "regions_unexplored:yellow_bioshroom_block",
+  "material_color": "COLOR_YELLOW",
+  "mushroom_item": "regions_unexplored:yellow_bioshroom",
+  "generate_face_models": true,
+  "texture_overrides": {
+    "outside_face": "regions_unexplored:block/yellow_bioshroom_block_top",
+    "inside_face": "regions_unexplored:block/yellow_bioshroom_block"
+  }
+}

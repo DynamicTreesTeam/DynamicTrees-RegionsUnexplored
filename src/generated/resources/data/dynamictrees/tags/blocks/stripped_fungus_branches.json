@@ -1,7 +1,19 @@
 {
   "values": [
     {
+      "id": "dtru:stripped_blue_bioshroom_branch",
+      "required": false
+    },
+    {
+      "id": "dtru:stripped_green_bioshroom_branch",
+      "required": false
+    },
+    {
       "id": "dtru:stripped_pink_bioshroom_branch",
+      "required": false
+    },
+    {
+      "id": "dtru:stripped_yellow_bioshroom_branch",
       "required": false
     }
   ]
