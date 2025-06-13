@@ -10,6 +10,7 @@ import com.ferreusveritas.dynamictrees.systems.genfeature.context.PostGrowContex
 import com.ferreusveritas.dynamictrees.systems.nodemapper.FindEndsNode;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.DynamicCapBlock;
+import com.ferreusveritas.dynamictreesplus.block.mushroom.DynamicCapCenterBlock;
 import com.ferreusveritas.dynamictreesplus.tree.HugeMushroomSpecies;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -55,6 +56,8 @@ public class GlowingBioshroomGenFeature extends GenFeature {
 			testPos.move(Direction.UP);
 		}
 		testPos.move(Direction.DOWN);
+		if (!(context.level().getBlockState(testPos.above()).getBlock() instanceof DynamicCapCenterBlock))
+			return false;
 		boolean placed = false;
 		for (Direction dir : Direction.Plane.HORIZONTAL){
 			if (this.placeGlowingBlocksInValidPlace(configuration, context.level(), testPos, dir)){

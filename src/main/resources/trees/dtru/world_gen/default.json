@@ -591,13 +591,14 @@
     "apply": {
       "species" : {
         "random" : {
-          "dtru:pine" : 3,
+          "dtru:pine" : 4,
           "dynamictreesplus:red_mushroom" : 1,
-          "dynamictreesplus:brown_mushroom" : 1
+          "dynamictreesplus:brown_mushroom" : 1,
+          "dtru:pink_bioshroom" : 1
         }
       },
       "density": [1.0],
-      "chance": 0.8,
+      "chance": 1.0,
       "forestness" : 1.0
     }
   },

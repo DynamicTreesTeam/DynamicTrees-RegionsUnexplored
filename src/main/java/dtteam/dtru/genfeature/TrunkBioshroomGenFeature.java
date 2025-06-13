@@ -7,6 +7,7 @@ import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeatureConfiguratio
 import com.ferreusveritas.dynamictrees.systems.genfeature.context.PostGenerationContext;
 import com.ferreusveritas.dynamictrees.systems.genfeature.context.PostGrowContext;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
+import com.ferreusveritas.dynamictreesplus.block.mushroom.DynamicCapCenterBlock;
 import com.ferreusveritas.dynamictreesplus.tree.HugeMushroomSpecies;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -52,7 +53,8 @@ public class TrunkBioshroomGenFeature extends GenFeature {
 		LevelAccessor level = context.level();
 		BlockPos.MutableBlockPos testPos = context.pos().above(configuration.get(LOWEST_BLOCK_POS)).mutable();
 		List<BlockPos> validPositions = FindValidPositions(level, testPos);
-
+		if (!(context.level().getBlockState(testPos.above()).getBlock() instanceof DynamicCapCenterBlock))
+			return false;
 		boolean placed = false;
 		for (BlockPos pos : validPositions){
 			if (level.getRandom().nextFloat() <= configuration.get(PLACE_CHANCE) && IsFreeAboveAndBelow(level, pos)){

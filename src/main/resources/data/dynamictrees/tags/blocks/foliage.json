@@ -10,6 +10,9 @@
     "regions_unexplored:cobalt_roots",
     "regions_unexplored:cobalt_earlight",
     "regions_unexplored:tall_cobalt_earlight",
-    "regions_unexplored:brimsprout"
+    "regions_unexplored:brimsprout",
+    "regions_unexplored:mycotoxic_grass",
+    "regions_unexplored:mycotoxic_mushrooms",
+    "regions_unexplored:mycotoxic_daisy"
   ]
 }

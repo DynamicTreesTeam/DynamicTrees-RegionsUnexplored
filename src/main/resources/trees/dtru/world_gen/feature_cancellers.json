@@ -11,9 +11,8 @@
   {
     "only_if_loaded": "dynamictreesplus",
     "select": { "names": [ "regions_unexplored:.*", "!regions_unexplored:alpha_grove" ], "tag": [ "!#minecraft:is_nether" ] },
-    "_to-do": ["dtru:mushroom", "dtru:mushroom_2"],
     "cancellers": {
-      "types": ["tree", "dtru:tree", "dtru:tree_2", "dynamictreesplus:cactus", "mushroom"],
+      "types": ["tree", "dtru:tree", "dtru:tree_2", "dynamictreesplus:cactus", "mushroom", "dtru:mushroom", "dtru:mushroom_2"],
       "namespaces": ["regions_unexplored", "minecraft"]
     }
   },
@@ -24,6 +23,15 @@
     "cancellers": {
       "stage": "underground_decoration",
       "types": [ "dtru:tree_2" ],
+      "namespaces": [ "regions_unexplored", "minecraft" ]
+    }
+  },
+  {
+    "only_if_loaded": "dynamictreesplus",
+    "select": { "name": "regions_unexplored:mycotoxic_undergrowth" },
+    "cancellers": {
+      "stage": "underground_decoration",
+      "types": [ "dtru:mushroom" ],
       "namespaces": [ "regions_unexplored", "minecraft" ]
     }
   }

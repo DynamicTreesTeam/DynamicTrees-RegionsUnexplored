@@ -14,7 +14,6 @@ public class DTRUGenFeatures {
     public static final GenFeature GEN_BIOME_PREDICATE = new GenerateBiomePredicateGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "biome_predicate_2"));
     public static final GenFeature BIOME_PREDICATE_ALT = new BiomePredicateGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "biome_predicate"));
     public static final GenFeature SOIL_WHITELIST = new SoilWhitelistGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "soil_whitelist"));
-    public static final GenFeature SYTHIAN_TOPPER = new SythianTopperGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "sythian_topper"));
     public static final GenFeature ALTERNATIVE_BRANCH = new AlternativeBranchGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "alt_branch"));
     public static final GenFeature MUSHROOM_VINES = new MushroomVinesGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "mushroom_vines"));
     public static final GenFeature PREVENT_WATER_GEN = new PreventWaterGenerationGenFeature(new ResourceLocation(DynamicTreesRU.MOD_ID, "prevent_water_generation"));
@@ -24,9 +23,8 @@ public class DTRUGenFeatures {
     public static void register(final Registry<GenFeature> registry) {
         registry.registerAll(BIG_BOTTOM_FLARE, EXTRA_BOTTOM_FLARE,
                 REPLACE_ON_RADIUS, GEN_BIOME_PREDICATE, SOIL_WHITELIST,
-                SYTHIAN_TOPPER, ALTERNATIVE_BRANCH, MUSHROOM_VINES,
-                PREVENT_WATER_GEN, STRIPPED_BOTTOM, BIOME_PREDICATE_ALT,
-                MAGMA_BOTTOM);
+                ALTERNATIVE_BRANCH, MUSHROOM_VINES, PREVENT_WATER_GEN,
+                STRIPPED_BOTTOM, BIOME_PREDICATE_ALT, MAGMA_BOTTOM);
         if (DynamicTreesRU.isDynamicTreesPlusLoaded()){
             DTRUPlusGenFeatures.register(registry);
         }

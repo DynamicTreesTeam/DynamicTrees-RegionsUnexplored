@@ -3,7 +3,7 @@
   "type": "dtru:bioshroom",
   "family": "dtru:yellow_bioshroom",
   "tapering": 0,
-  "signal_energy": 6,
+  "signal_energy": 3,
   "growth_rate": 1.2,
   "soil_longevity": 3,
   "lowest_branch_height": 20,
@@ -12,7 +12,7 @@
   "growth_logic_kit": {
     "name": "dtru:variate_height",
     "properties": {
-      "height_variation": 4
+      "height_variation": 7
     }
   },
   "cap_properties": "dtru:yellow_bioshroom",
