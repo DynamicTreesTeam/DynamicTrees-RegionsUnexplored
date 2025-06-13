@@ -544,6 +544,7 @@
 
 
 
+
   {
     "select": { "name": "regions_unexplored:outback" },
     "apply": {
@@ -639,6 +640,54 @@
         }
       },
       "density": [ 1.0 ],
+      "chance": 1.0,
+      "forestness" : 1.0
+    }
+  },
+
+
+  {
+    "only_if_loaded": "dynamictreesplus",
+    "select": { "name": "regions_unexplored:bioshroom_caves" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:green_bioshroom" : 1,
+          "dtru:blue_bioshroom" : 1
+        }
+      },
+      "density": [ 1.0 ],
+      "chance": 1.0,
+      "forestness" : 1.0
+    }
+  },
+  {
+    "only_if_loaded": "dynamictreesplus",
+    "select": { "name": "regions_unexplored:blackwood_taiga" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:blackwood" : 15,
+          "dark_oak" : 5,
+          "dtru:small_blue_bioshroom": 1,
+          "dtru:small_pink_bioshroom": 1
+        }
+      },
+      "density": [1.0],
+      "chance": 1.0,
+      "forestness" : 1.0
+    }
+  },
+  {
+    "only_if_loaded": "dynamictreesplus",
+    "select": { "name": "regions_unexplored:mycotoxic_undergrowth" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtru:yellow_bioshroom" : 1
+        }
+      },
+      "density": [ 1.2 ],
       "chance": 1.0,
       "forestness" : 1.0
     }

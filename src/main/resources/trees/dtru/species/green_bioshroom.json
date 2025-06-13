@@ -12,14 +12,14 @@
   "growth_logic_kit": {
     "name": "dtru:variate_height",
     "properties": {
-      "height_variation": 8
+      "height_variation": 4
     }
   },
   "cap_properties": "dtru:green_bioshroom",
   "mushroom_shape_kit": {
     "name": "dynamictreesplus:bell",
     "properties": {
-      "max_cap_age": 4,
+      "max_cap_age": 6,
       "max_age_curve_factor": 0.5,
       "min_age_curve_factor": 0.7
     }
@@ -52,6 +52,13 @@
       "name": "dtru:glowing_green_bioshroom",
       "properties": {
         "block": "regions_unexplored:glowing_green_bioshroom_block"
+      }
+    },
+    {
+      "name": "dtru:glowing_bioshroom",
+      "properties": {
+        "block": "regions_unexplored:glowing_green_bioshroom_block",
+        "place_chance": 0.1
       }
     }
   ],

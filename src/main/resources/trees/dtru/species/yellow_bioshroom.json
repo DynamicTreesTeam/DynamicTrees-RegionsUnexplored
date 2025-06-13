@@ -3,7 +3,7 @@
   "type": "dtru:bioshroom",
   "family": "dtru:yellow_bioshroom",
   "tapering": 0,
-  "signal_energy": 10,
+  "signal_energy": 6,
   "growth_rate": 1.2,
   "soil_longevity": 3,
   "lowest_branch_height": 20,
@@ -12,14 +12,14 @@
   "growth_logic_kit": {
     "name": "dtru:variate_height",
     "properties": {
-      "height_variation": 8
+      "height_variation": 4
     }
   },
   "cap_properties": "dtru:yellow_bioshroom",
   "mushroom_shape_kit": {
     "name": "dynamictreesplus:bell",
     "properties": {
-      "max_cap_age": 6,
+      "max_cap_age": 5,
       "max_age_curve_factor": 0.1,
       "min_age_curve_factor": 0.1
     }
@@ -43,9 +43,10 @@
       }
     },
     {
-      "name": "dtru:glowing_yellow_bioshroom",
+      "name": "dtru:trunk_bioshroom",
       "properties": {
-        "block": "regions_unexplored:glowing_yellow_bioshroom_block"
+        "block": "regions_unexplored:glowing_yellow_bioshroom_block",
+        "place_chance": 0.1
       }
     }
   ],

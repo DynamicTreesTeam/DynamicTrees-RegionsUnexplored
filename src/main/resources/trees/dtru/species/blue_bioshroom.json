@@ -3,7 +3,7 @@
   "type": "dtru:bioshroom",
   "family": "dtru:blue_bioshroom",
   "tapering": 0,
-  "signal_energy": 10,
+  "signal_energy": 8,
   "growth_rate": 1.2,
   "soil_longevity": 3,
   "lowest_branch_height": 20,
@@ -12,7 +12,7 @@
   "growth_logic_kit": {
     "name": "dtru:variate_height",
     "properties": {
-      "height_variation": 8
+      "height_variation": 6
     }
   },
   "cap_properties": "dtru:blue_bioshroom",
@@ -49,9 +49,17 @@
       }
     },
     {
-      "name": "dtru:glowing_blue_bioshroom",
+      "name": "dtru:trunk_bioshroom",
       "properties": {
-        "block": "regions_unexplored:glowing_blue_bioshroom_block"
+        "block": "regions_unexplored:blue_bioshroom_block",
+        "place_chance": 0.3
+      }
+    },
+    {
+      "name": "dtru:glowing_bioshroom",
+      "properties": {
+        "block": "regions_unexplored:glowing_blue_bioshroom_block",
+        "place_chance": 0.1
       }
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "type": "dtru:bioshroom_cap",
+  "type": "dtru:green_bioshroom_cap",
   "primitive_cap": "regions_unexplored:green_bioshroom_block",
   "material_color": "COLOR_GREEN",
   "mushroom_item": "regions_unexplored:green_bioshroom",

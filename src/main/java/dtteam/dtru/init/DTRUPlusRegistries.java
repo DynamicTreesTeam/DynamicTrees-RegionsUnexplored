@@ -12,6 +12,7 @@ import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
 import dtteam.dtru.DynamicTreesRU;
 import dtteam.dtru.block.BioshroomCapProperties;
+import dtteam.dtru.block.GreenBioshroomCapProperties;
 import dtteam.dtru.block.PinkBioshroomCapProperties;
 import dtteam.dtru.block.YellowBioshroomCapProperties;
 import dtteam.dtru.tree.BioshroomSpecies;
@@ -41,6 +42,7 @@ public class DTRUPlusRegistries {
         event.registerType(DynamicTreesRU.location("bioshroom_cap"), BioshroomCapProperties.TYPE);
         event.registerType(DynamicTreesRU.location("pink_bioshroom_cap"), PinkBioshroomCapProperties.TYPE);
         event.registerType(DynamicTreesRU.location("yellow_bioshroom_cap"), YellowBioshroomCapProperties.TYPE);
+        event.registerType(DynamicTreesRU.location("green_bioshroom_cap"), GreenBioshroomCapProperties.TYPE);
     }
 
     public static void registerSpeciesTypes(final TypeRegistryEvent<Species> event) {
