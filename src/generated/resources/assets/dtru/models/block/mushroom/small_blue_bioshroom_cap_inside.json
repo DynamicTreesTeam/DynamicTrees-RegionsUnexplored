@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_single_face",
+  "textures": {
+    "texture": "regions_unexplored:block/blue_bioshroom_block_glowing"
+  }
+}

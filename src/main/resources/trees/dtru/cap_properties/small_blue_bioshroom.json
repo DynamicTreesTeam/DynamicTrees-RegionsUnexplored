@@ -1,0 +1,11 @@
+{
+  "type": "dtru:pink_bioshroom_cap",
+  "primitive_cap": "regions_unexplored:blue_bioshroom_block",
+  "material_color": "COLOR_BLUE",
+  "mushroom_item": "regions_unexplored:blue_bioshroom",
+  "generate_face_models": true,
+  "texture_overrides": {
+    "outside_face": "regions_unexplored:block/blue_bioshroom_block",
+    "inside_face": "regions_unexplored:block/blue_bioshroom_block_glowing"
+  }
+}

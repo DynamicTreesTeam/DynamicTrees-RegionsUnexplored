@@ -1,0 +1,40 @@
+{
+  "only_if_loaded" : "dynamictreesplus",
+  "type": "dtru:small_bioshroom",
+  "family": "dynamictreesplus:mushroom",
+  "tapering": 0,
+  "signal_energy": 3,
+  "growth_rate": 0.8,
+  "soil_longevity": 1,
+  "lowest_branch_height": 10,
+  "generate_seed": false,
+  "generate_sapling": false,
+  "growth_logic_kit": {
+    "name": "dtru:variate_height",
+    "properties": {
+      "height_variation": 3
+    }
+  },
+  "cap_properties": "dtru:small_pink_bioshroom",
+  "mushroom_shape_kit": {
+    "name": "dynamictreesplus:bell",
+    "properties": {
+      "max_cap_age": 2,
+      "max_age_curve_factor": 0.6,
+      "min_age_curve_factor": 0.6,
+      "curve_factor_variation": 0.5,
+      "chance_to_age": 1
+    }
+  },
+  "primitive_sapling": "regions_unexplored:pink_bioshroom",
+  "acceptable_soils": ["fungus_like"],
+  "features" : [
+    {
+      "name": "dtru:glowing_pink_bioshroom",
+      "properties": {
+        "block": "shroomlight",
+        "cutout": false
+      }
+    }
+  ]
+}

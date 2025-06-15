@@ -16,10 +16,12 @@ import dtteam.dtru.block.GreenBioshroomCapProperties;
 import dtteam.dtru.block.PinkBioshroomCapProperties;
 import dtteam.dtru.block.YellowBioshroomCapProperties;
 import dtteam.dtru.tree.BioshroomSpecies;
+import dtteam.dtru.tree.SmallBioshroomSpecies;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -47,6 +49,7 @@ public class DTRUPlusRegistries {
 
     public static void registerSpeciesTypes(final TypeRegistryEvent<Species> event) {
         event.registerType(new ResourceLocation(DynamicTreesRU.MOD_ID, "bioshroom"), BioshroomSpecies.TYPE);
+        event.registerType(new ResourceLocation(DynamicTreesRU.MOD_ID, "small_bioshroom"), SmallBioshroomSpecies.TYPE);
     }
 
     public static void setup(){
@@ -55,13 +58,21 @@ public class DTRUPlusRegistries {
         setupBioshroomConnectable(RuBlocks.GLOWING_GREEN_BIOSHROOM_BLOCK.get());
         setupBioshroomConnectable(RuBlocks.GLOWING_PINK_BIOSHROOM_BLOCK.get());
         setupBioshroomConnectable(RuBlocks.GLOWING_YELLOW_BIOSHROOM_BLOCK.get());
+
+        BranchConnectables.makeBlockConnectable(Blocks.SHROOMLIGHT, (state, level, pos, side) -> {
+            if (side.getAxis() == Direction.Axis.Y) return 0;
+            BlockState branchState = level.getBlockState(pos.relative(side.getOpposite()));
+            BranchBlock branch = TreeHelper.getBranch(branchState);
+            return branch != null ? Mth.clamp(branch.getRadius(branchState) - 1, 1, 3) : 1;
+        }, Family.REGISTRY.get(new ResourceLocation("dynamictreesplus", "mushroom")));
     }
 
     private static void setupBioshroomConnectable(Block block) {
         BranchConnectables.makeBlockConnectable(block, (state, level, pos, side) -> {
-            BlockState branchState = level.getBlockState(pos.relative(Direction.UP));
+            if (side.getAxis() == Direction.Axis.Y) return 0;
+            BlockState branchState = level.getBlockState(pos.relative(side.getOpposite()));
             BranchBlock branch = TreeHelper.getBranch(branchState);
-            return branch != null ? Mth.clamp(branch.getRadius(branchState) - 1, 1, 3) : 3;
+            return branch != null ? Mth.clamp(branch.getRadius(branchState) - 1, 1, 3) : 1;
         });
     }
 

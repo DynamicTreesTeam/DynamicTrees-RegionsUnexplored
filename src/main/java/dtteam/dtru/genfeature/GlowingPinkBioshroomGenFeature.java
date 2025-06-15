@@ -25,6 +25,7 @@ import java.util.List;
 public class GlowingPinkBioshroomGenFeature extends GenFeature {
 
 	public static final ConfigurationProperty<Block> BLOCK = ConfigurationProperty.block("block");
+	public static final ConfigurationProperty<Boolean> CUTOUT = ConfigurationProperty.bool("cutout");
 
 	public GlowingPinkBioshroomGenFeature(ResourceLocation registryName) {
 		super(registryName);
@@ -32,7 +33,7 @@ public class GlowingPinkBioshroomGenFeature extends GenFeature {
 
 	@Override
 	protected void registerProperties() {
-		this.register(BLOCK, CAN_GROW_PREDICATE);
+		this.register(BLOCK, CAN_GROW_PREDICATE, CUTOUT);
 	}
 
 	@Override
@@ -46,6 +47,7 @@ public class GlowingPinkBioshroomGenFeature extends GenFeature {
 	public GenFeatureConfiguration createDefaultConfiguration() {
 		return super.createDefaultConfiguration()
 				.with(BLOCK, Blocks.AIR)
+				.with(CUTOUT, true)
 				.with(CAN_GROW_PREDICATE, (level, blockPos) -> level.getRandom().nextFloat() <= 0.05F);
 	}
 
@@ -94,9 +96,15 @@ public class GlowingPinkBioshroomGenFeature extends GenFeature {
 		if (edgeState.getBlock() == glowingBlock){
 			return false;
 		}
-		if (layers >= 2 && edgeState.canBeReplaced()){
-			level.removeBlock(testPos.above(), false);
-			level.setBlock(testPos.above().above(), glowingBlock.defaultBlockState(), 3);
+		if (configuration.get(CUTOUT)){
+			if (layers >= 2 && edgeState.canBeReplaced()){
+				level.removeBlock(testPos.above(), false);
+				level.setBlock(testPos.above().above(), glowingBlock.defaultBlockState(), 3);
+			}
+		} else {
+			if (layers >= 1 && edgeState.canBeReplaced()){
+				level.setBlock(testPos.above(), glowingBlock.defaultBlockState(), 3);
+			}
 		}
 		return true;
 	}

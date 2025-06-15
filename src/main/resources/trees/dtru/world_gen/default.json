@@ -668,8 +668,8 @@
     "apply": {
       "species" : {
         "random" : {
-          "dtru:blackwood" : 15,
-          "dark_oak" : 5,
+          "dtru:blackwood" : 30,
+          "dark_oak" : 10,
           "dtru:small_blue_bioshroom": 1,
           "dtru:small_pink_bioshroom": 1
         }

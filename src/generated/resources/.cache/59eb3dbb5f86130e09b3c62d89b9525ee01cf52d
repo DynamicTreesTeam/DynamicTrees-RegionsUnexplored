@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-06T12:01:48.6457128	Loot Tables
+// 1.20.1	2025-06-13T17:46:38.343043	Loot Tables
 f5d739cbc7c4a627b91d14b333542a8705151a34 data/dtru/loot_tables/blocks/acacia_twiglet_leaves.json
 81bdccb5d815adb258765f96fae45e24b7a833e8 data/dtru/loot_tables/blocks/ashen_leaves.json
 ba1dfc77b4976f0987cb439931b73fb2578aaa54 data/dtru/loot_tables/blocks/ashen_pine_leaves.json
@@ -36,6 +36,8 @@ a82f41973cdd6ca01e4b1e6b4e39504f7083852c data/dtru/loot_tables/blocks/redwood_le
 ad3af7f97a0e1ab6bf7fb702cd85ca454e965e5a data/dtru/loot_tables/blocks/red_maple_leaves.json
 74acc56a4820a6297844040e958fbc316ffc7239 data/dtru/loot_tables/blocks/reef_jungle_leaves.json
 188d5240aed37c665b0f766f4b6c48b2639b870a data/dtru/loot_tables/blocks/silver_birch_leaves.json
+6b7d93fd008c961177af410f573d76290b0fbb1e data/dtru/loot_tables/blocks/small_blue_bioshroom_cap.json
+b8066cc2f20d21c2ca307d781466e6a2d296f6a7 data/dtru/loot_tables/blocks/small_pink_bioshroom_cap.json
 3ef5df01e9d2ab0d4d800726727d9c0a3cfe8323 data/dtru/loot_tables/blocks/socotra_leaves.json
 b1332e6423edb88a6fbd4b48d64bc6cb22eddcd1 data/dtru/loot_tables/blocks/spruce_twiglet_leaves.json
 cbe673238d9a105936f3c9952d9a74d55a77407f data/dtru/loot_tables/blocks/twisting_birch_leaves.json
@@ -134,6 +136,8 @@ d1aa8095151c27b996302fed7e2aa054d46ef4c1 data/dtru/loot_tables/trees/leaves/twis
 37a17097e86cd5d60d2f6304184c7d835a43e0a1 data/dtru/loot_tables/trees/mushroom_caps/blue_bioshroom.json
 32929444439a4ecf62dbfbb4a019fc46c26402fd data/dtru/loot_tables/trees/mushroom_caps/green_bioshroom.json
 bf18684c12d0394f083f9a2c7a7fe3db1d3cea95 data/dtru/loot_tables/trees/mushroom_caps/pink_bioshroom.json
+68d039c2ec06f315e8307d77d4e6f9d889a81655 data/dtru/loot_tables/trees/mushroom_caps/small_blue_bioshroom.json
+d53581b06f4f4ee6c3603274950146d4feffd1e4 data/dtru/loot_tables/trees/mushroom_caps/small_pink_bioshroom.json
 be137a90b94b735e5fe5727947e3e28492756f27 data/dtru/loot_tables/trees/mushroom_caps/yellow_bioshroom.json
 966cb52c50d5c815da49dcfc3edebc275f76c492 data/dtru/loot_tables/trees/voluntary/bamboo.json
 f75028498ebdfdee3c2c134f01e3c62ff1b93e9a data/dtru/loot_tables/trees/voluntary/baobab.json
