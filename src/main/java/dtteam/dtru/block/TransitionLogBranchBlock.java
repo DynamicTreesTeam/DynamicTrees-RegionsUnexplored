@@ -59,12 +59,25 @@ public class TransitionLogBranchBlock extends ThickBranchBlock {
 
     @Override
     public void stripBranch(BlockState state, LevelAccessor level, BlockPos pos, int radius) {
-        super.stripBranch(state, level, pos, radius);
+        boolean isTransition = state.hasProperty(TRANSITION) && state.getValue(TRANSITION);
+        int reducedRadius = (getFamily().reduceRadiusWhenStripping() && !isTransition) ? 1 : 0;
+        this.getFamily().getStrippedBranch().ifPresent(strippedBranch ->
+                strippedBranch.setRadius(
+                        level,
+                        pos,
+                        Math.max(1, radius - reducedRadius),
+                        null, 3
+                )
+        );
         //If it should transition when stripped update the upper block
         if (transitionOnStripped){
-            BranchBlock upBranch = TreeHelper.getBranch(level.getBlockState(pos.above()));
+            BlockState upState = level.getBlockState(pos.above());
+            BranchBlock upBranch = TreeHelper.getBranch(upState);
             if (upBranch != null && !upBranch.isStrippedBranch()){
-                level.setBlock(pos.above(), level.getBlockState(pos.above()).setValue(TRANSITION, true), 3);
+                int upRad = upBranch.getRadius(upState);
+                int thisRad = TreeHelper.getRadius(level, pos);
+                BlockState newState = upBranch.getStateForRadius(Math.min(upRad, thisRad)).setValue(TRANSITION, true);
+                level.setBlock(pos.above(), newState, 3);
             }
         }
     }
