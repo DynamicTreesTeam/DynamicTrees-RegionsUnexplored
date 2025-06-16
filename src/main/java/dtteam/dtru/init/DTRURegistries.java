@@ -9,6 +9,7 @@ import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKit;
 import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
 import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
+import com.ferreusveritas.dynamictrees.util.CommonVoxelShapes;
 import com.ferreusveritas.dynamictrees.worldgen.featurecancellation.TreeFeatureCanceller;
 import dtteam.dtru.DynamicTreesRU;
 import dtteam.dtru.cell.DTRUCellKits;
@@ -16,12 +17,15 @@ import dtteam.dtru.genfeature.DTRUGenFeatures;
 import dtteam.dtru.growthlogic.DTRUGrowthLogicKits;
 import dtteam.dtru.tree.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.HugeMushroomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -34,6 +38,20 @@ import net.regions_unexplored.world.level.feature.tree.nether.TallBrimWillowFeat
 
 @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
 public class DTRURegistries {
+
+
+    public static final VoxelShape MUSHROOM_CAP_CONE_BASE = Shapes.box(5.0D/16, 3.0D/16, 5.0D/16, 11.0D/16, 6.0D/16, 11.0D/16);
+    public static final VoxelShape MUSHROOM_CAP_TIP_1 = Shapes.box(6.0D/16, 6.0D/16, 6.0D/16, 10.0D/16, 9.0D/16, 10.0D/16);
+    public static final VoxelShape MUSHROOM_CAP_SHORT_ROUND = Shapes.box(4.5D/16, 3.0D/16, 4.5D/16, 11.5D/16, 8.0D/16, 11.5D/16);
+
+    public static final VoxelShape SHORT_ROUND_MUSHROOM = Shapes.or(CommonVoxelShapes.MUSHROOM_STEM, MUSHROOM_CAP_SHORT_ROUND);
+    public static final VoxelShape CONE_MUSHROOM = Shapes.or(CommonVoxelShapes.MUSHROOM_STEM, Shapes.or(MUSHROOM_CAP_CONE_BASE, MUSHROOM_CAP_TIP_1));
+
+    public static void setup() {
+        CommonVoxelShapes.SHAPES.put(DynamicTreesRU.location("blue_bioshroom").toString(), SHORT_ROUND_MUSHROOM);
+        CommonVoxelShapes.SHAPES.put(DynamicTreesRU.location("pink_bioshroom").toString(), CONE_MUSHROOM);
+
+    }
 
     @SubscribeEvent
     public static void onGenFeatureRegistry(final com.ferreusveritas.dynamictrees.api.registry.RegistryEvent<GenFeature> event) {

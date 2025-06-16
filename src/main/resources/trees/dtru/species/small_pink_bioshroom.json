@@ -15,6 +15,7 @@
       "height_variation": 3
     }
   },
+  "seed": "dtru:pink_bioshroom_seed",
   "cap_properties": "dtru:small_pink_bioshroom",
   "mushroom_shape_kit": {
     "name": "dynamictreesplus:bell",

@@ -16,6 +16,7 @@
     }
   },
   "cap_properties": "dtru:blue_bioshroom",
+  "sapling_shape": "dtru:blue_bioshroom",
   "mushroom_shape_kit": {
     "name": "dynamictreesplus:bell",
     "properties": {

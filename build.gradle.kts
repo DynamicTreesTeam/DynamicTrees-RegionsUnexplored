@@ -153,7 +153,7 @@ curseforge {
         mainArtifact(tasks.findByName("jar")) {
             relations {
                 requiredDependency("dynamictrees")
-                requiredDependency("biomes-o-plenty")
+                requiredDependency("regions-unexplored")
                 optionalDependency("dynamictreesplus")
             }
         }

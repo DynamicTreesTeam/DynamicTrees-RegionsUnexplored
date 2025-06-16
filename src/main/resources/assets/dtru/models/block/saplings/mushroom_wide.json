@@ -1,0 +1,36 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "#cap"
+	},
+	"elements": [
+		{
+			"name": "Cap",
+			"from": [4.5, 3, 4.5],
+			"to": [11.5, 8, 11.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.5, 0, -0.5]},
+			"faces": {
+				"north": {"uv": [0, 7, 7, 12], "texture": "#cap"},
+				"east": {"uv": [7, 7, 14, 12], "texture": "#cap"},
+				"south": {"uv": [0, 7, 7, 12], "texture": "#cap"},
+				"west": {"uv": [7, 7, 14, 12], "texture": "#cap"},
+				"up": {"uv": [1, 0, 8, 7], "texture": "#cap"},
+				"down": {"uv": [9, 0, 16, 7], "texture": "#cap"}
+			}
+		},
+		{
+			"name": "Stem",
+			"from": [7, 0, 7],
+			"to": [9, 5, 9],
+			"faces": {
+				"north": {"uv": [14, 11, 16, 16], "texture": "#cap"},
+				"east": {"uv": [14, 11, 16, 16], "texture": "#cap"},
+				"south": {"uv": [14, 11, 16, 16], "texture": "#cap"},
+				"west": {"uv": [14, 11, 16, 16], "texture": "#cap"},
+				"up": {"uv": [14, 11, 16, 13], "texture": "#cap"},
+				"down": {"uv": [14, 14, 16, 16], "texture": "#cap", "cullface": "down"}
+			}
+		}
+	]
+}

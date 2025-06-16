@@ -64,7 +64,7 @@ public class DTRUPlusRegistries {
             BlockState branchState = level.getBlockState(pos.relative(side.getOpposite()));
             BranchBlock branch = TreeHelper.getBranch(branchState);
             return branch != null ? Mth.clamp(branch.getRadius(branchState) - 1, 1, 3) : 1;
-        }, Family.REGISTRY.get(new ResourceLocation("dynamictreesplus", "mushroom")));
+        }, new ResourceLocation("dynamictreesplus", "mushroom"));
     }
 
     private static void setupBioshroomConnectable(Block block) {

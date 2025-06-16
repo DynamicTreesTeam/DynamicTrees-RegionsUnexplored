@@ -8,6 +8,7 @@ import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
 import dtteam.dtru.init.DTRUClient;
 import dtteam.dtru.init.DTRUPlusRegistries;
+import dtteam.dtru.init.DTRURegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.data.event.GatherDataEvent;
@@ -36,6 +37,7 @@ public class DynamicTreesRU {
         MinecraftForge.EVENT_BUS.register(this);
 
         RegistryHandler.setup(MOD_ID);
+        DTRURegistries.setup();
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
