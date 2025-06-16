@@ -53,7 +53,7 @@ public class TrunkBioshroomGenFeature extends GenFeature {
 		LevelAccessor level = context.level();
 		BlockPos.MutableBlockPos testPos = context.pos().above(configuration.get(LOWEST_BLOCK_POS)).mutable();
 		List<BlockPos> validPositions = FindValidPositions(level, testPos);
-		if (!(context.level().getBlockState(testPos.above()).getBlock() instanceof DynamicCapCenterBlock))
+		if (!(context.level().getBlockState(testPos).getBlock() instanceof DynamicCapCenterBlock))
 			return false;
 		boolean placed = false;
 		for (BlockPos pos : validPositions){

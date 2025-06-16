@@ -47,7 +47,7 @@
       "name": "dtru:trunk_bioshroom",
       "properties": {
         "block": "regions_unexplored:glowing_yellow_bioshroom_block",
-        "place_chance": 0.1
+        "place_chance": 0.2
       }
     }
   ],
