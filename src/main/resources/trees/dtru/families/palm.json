@@ -1,5 +1,5 @@
 {
-  "type": "dtru:diagonal_palm",
+  "type": "dynamictrees:palm",
   "common_leaves": "dtru:palm",
   "common_species": "dtru:palm",
   "primitive_log": "regions_unexplored:palm_log",

@@ -10,7 +10,6 @@
     "#forge:is_cold": 0.1,
     "#forge:is_wet": 0.1
   },
-  "mega_species": "dtru:mega_brimwood",
   "perfect_biomes": { "name": "regions_unexplored:infernal_holt" },
   "primitive_sapling": "regions_unexplored:brimwood_sapling",
   "acceptable_soils": [ "nether_soil_like", "dirt_like" ],

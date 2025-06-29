@@ -2,6 +2,6 @@
   "common_leaves": "dtru:ashen",
   "common_species": "dtru:ashen",
   "primitive_log": "regions_unexplored:ashen_log",
-  "primitive_stripped_log": "regions_unexplored:stripped_ashen_log",
+  "generate_stripped_branch": false,
   "max_branch_radius": 8
 }

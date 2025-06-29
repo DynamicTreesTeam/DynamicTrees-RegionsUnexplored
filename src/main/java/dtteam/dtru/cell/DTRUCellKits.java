@@ -377,8 +377,52 @@ public class DTRUCellKits {
 
     };
 
+    public static final CellKit WILLOW = new CellKit(DynamicTreesRU.location("willow")) {
+
+        private final Cell branch = new WillowBranchCell();
+
+        private final Cell[] willowLeafCells = {
+                CellNull.NULL_CELL,
+                new WillowLeafCell(1),
+                new WillowLeafCell(2),
+                new WillowLeafCell(3),
+                new WillowLeafCell(4),
+                new WillowLeafCell(5),
+                new WillowLeafCell(6),
+                new WillowLeafCell(7)
+        };
+
+        private final CellKits.BasicSolver solver = new CellKits.BasicSolver(new short[]{0x0817, 0x0726, 0x0625, 0x0714, 0x0614, 0x0514, 0x0413, 0x0312, 0x0211});
+
+        @Override
+        public Cell getCellForLeaves(int distance) {
+            return this.willowLeafCells[distance];
+        }
+
+        @Override
+        public Cell getCellForBranch(int radius, int meta) {
+            return radius == 1 ? this.branch : CellNull.NULL_CELL;
+        }
+
+        @Override
+        public CellSolver getCellSolver() {
+            return this.solver;
+        }
+
+        // TODO: Willow leaf cluster.
+        @Override
+        public SimpleVoxmap getLeafCluster() {
+            return DTRULeafClusters.WILLOW;
+        }
+
+        @Override
+        public int getDefaultHydration() {
+            return 7;
+        }
+    };
+
     public static void register(final Registry<CellKit> registry) {
-        registry.registerAll(SPARSE, EUCALYPTUS, POPLAR, BAMBOO, DOME, JOSHUA, COBALT);
+        registry.registerAll(SPARSE, EUCALYPTUS, POPLAR, BAMBOO, DOME, JOSHUA, COBALT, WILLOW);
     }
 
 }
