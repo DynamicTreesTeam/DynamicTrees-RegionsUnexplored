@@ -1,5 +1,5 @@
 {
-  "parent": "dtru:block/saplings/mushroom_wide",
+  "parent": "dynamictrees:block/smartmodel/mushroom_round",
   "render_type": "minecraft:cutout_mipped",
   "textures": {
     "cap": "dtru:block/blue_bioshroom_cap",

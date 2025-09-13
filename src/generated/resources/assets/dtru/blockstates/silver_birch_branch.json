@@ -1,10 +1,7 @@
 {
   "variants": {
-    "transition=false": {
+    "": {
       "model": "dtru:block/silver_birch_branch"
-    },
-    "transition=true": {
-      "model": "dtru:block/silver_birch_branch_base"
     }
   }
 }

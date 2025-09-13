@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "regions_unexplored:block/yellow_bioshroom_block_top",
-    "side": "regions_unexplored:block/yellow_bioshroom_block",
+    "bottom": "regions_unexplored:block/yellow_bioshroom_block",
+    "side": "regions_unexplored:block/yellow_bioshroom_block_top",
     "top": "regions_unexplored:block/yellow_bioshroom_block_top"
   }
 }
