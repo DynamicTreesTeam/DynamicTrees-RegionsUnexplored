@@ -20,5 +20,7 @@ build
 # other
 eclipse
 run
-libs
-/logs
+runs
+run-data
+
+repo

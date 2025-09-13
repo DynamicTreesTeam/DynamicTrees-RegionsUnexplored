@@ -55,7 +55,7 @@
     },
     {
       "apply": {
-        "model": "dtru:block/mushroom/yellow_bioshroom_cap",
+        "model": "dtru:block/mushroom/yellow_bioshroom_cap_inside",
         "x": 90
       },
       "when": {

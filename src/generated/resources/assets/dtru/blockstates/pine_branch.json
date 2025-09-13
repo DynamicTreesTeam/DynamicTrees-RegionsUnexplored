@@ -1,10 +1,7 @@
 {
   "variants": {
-    "transition=false": {
+    "": {
       "model": "dtru:block/pine_branch"
-    },
-    "transition=true": {
-      "model": "dtru:block/pine_branch_transition"
     }
   }
 }

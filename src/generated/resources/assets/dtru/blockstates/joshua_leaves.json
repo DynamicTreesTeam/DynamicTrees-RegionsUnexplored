@@ -2,7 +2,15 @@
   "multipart": [
     {
       "apply": {
-        "model": "regions_unexplored:block/joshua_leaves_top"
+        "model": "dtru:block/palm_leaves/joshua_frond"
+      },
+      "when": {
+        "distance": "1|2"
+      }
+    },
+    {
+      "apply": {
+        "model": "dtru:block/palm_leaves/joshua_core_top"
       },
       "when": {
         "distance": "3"
@@ -10,7 +18,7 @@
     },
     {
       "apply": {
-        "model": "regions_unexplored:block/joshua_leaves_natural_bottom"
+        "model": "dtru:block/palm_leaves/joshua_core_bottom"
       },
       "when": {
         "distance": "4"
@@ -18,10 +26,18 @@
     },
     {
       "apply": {
-        "model": "regions_unexplored:block/joshua_leaves_bottom"
+        "model": "regions_unexplored:block/joshua_leaves_top"
       },
       "when": {
-        "distance": "1|2|5|6|7"
+        "OR": [
+          {
+            "direction": "0",
+            "distance": "1|2"
+          },
+          {
+            "distance": "5|6|7"
+          }
+        ]
       }
     }
   ]
