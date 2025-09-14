@@ -37,6 +37,6 @@ public class BambooBranchBlockModelGeometry extends BranchBlockModelGeometry {
 
     @Override
     public BakedModel bake(IGeometryBakingContext context, ModelBaker modelBaker, Function<Material, TextureAtlasSprite> spriteGetter, ModelState modelState, ItemOverrides itemOverrides) {
-        return new BambooBranchBlockBakedModel(ResourceLocation.tryParse(context.getModelName()), this.barkTextureLocation, this.ringsTextureLocation, this.leavesTextureLocation, spriteGetter);
+        return new BambooBranchBlockBakedModel(context, this.barkTextureLocation, this.ringsTextureLocation, this.leavesTextureLocation, spriteGetter);
     }
 }
