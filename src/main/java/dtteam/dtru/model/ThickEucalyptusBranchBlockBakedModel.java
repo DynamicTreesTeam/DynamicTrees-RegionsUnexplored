@@ -32,11 +32,6 @@ import net.minecraft.world.inventory.InventoryMenu;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
-//import net.minecraftforge.api.distmarker.Dist;
-//import net.minecraftforge.api.distmarker.OnlyIn;
-//import net.minecraftforge.client.model.IModelBuilder;
-//import net.minecraftforge.client.model.data.ModelData;
-//import net.minecraftforge.client.model.geometry.IGeometryBakingContext;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.neoforge.client.model.IModelBuilder;
@@ -60,9 +55,9 @@ public class ThickEucalyptusBranchBlockBakedModel extends EucalyptusBranchBlockB
     private final BakedModel[] trunksTopRings = new BakedModel[16]; // The trunk will feature rings on its top when there's no branches on top of it.
     private final BakedModel[] trunksBotRings = new BakedModel[16]; // The trunk will always feature rings on its bottom surface if nothing is below it.
 
-    public ThickEucalyptusBranchBlockBakedModel(IGeometryBakingContext customData, ResourceLocation barkTextureLocation, ResourceLocation ringsTextureLocation, ResourceLocation overlayTextureLocation,
+    public ThickEucalyptusBranchBlockBakedModel(IGeometryBakingContext customData,ResourceLocation modelLocation, ResourceLocation barkTextureLocation, ResourceLocation ringsTextureLocation, ResourceLocation overlayTextureLocation,
                                                 ResourceLocation thickRingsTextureLocation, Function<Material, TextureAtlasSprite> spriteGetter) {
-        super(customData, barkTextureLocation, ringsTextureLocation, overlayTextureLocation, spriteGetter);
+        super(customData, modelLocation, barkTextureLocation, ringsTextureLocation, overlayTextureLocation, spriteGetter);
         initThickModels(spriteGetter.apply(new Material(InventoryMenu.BLOCK_ATLAS, thickRingsTextureLocation)));
     }
 
@@ -192,7 +187,7 @@ public class ThickEucalyptusBranchBlockBakedModel extends EucalyptusBranchBlockB
         Direction forceRingDir = null;
         int twigRadius = 1;
 
-        ModelConnections connectionsData = extraData. get(ModelConnections.CONNECTIONS_PROPERTY);
+        ModelConnections connectionsData = extraData.get(ModelConnections.CONNECTIONS_PROPERTY);
         if (connectionsData != null) {
             connections = connectionsData.getAllRadii();
             forceRingDir = connectionsData.getRingOnly();

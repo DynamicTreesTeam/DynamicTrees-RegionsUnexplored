@@ -1,14 +1,21 @@
 {
   "values": [
+    "dtru:bamboo_sapling",
+    "dtru:blackwood_sapling",
     "dtru:blue_magnolia_sapling",
+    "dtru:cypress_sapling",
     "dtru:enchanted_birch_sapling",
     "dtru:golden_larch_sapling",
     "dtru:joshua_sapling",
+    "dtru:larch_sapling",
     "dtru:magnolia_sapling",
+    "dtru:maple_sapling",
     "dtru:oak_poplar_sapling",
     "dtru:orange_maple_sapling",
+    "dtru:pine_sapling",
     "dtru:pink_magnolia_sapling",
     "dtru:red_maple_sapling",
-    "dtru:white_magnolia_sapling"
+    "dtru:white_magnolia_sapling",
+    "dtru:willow_sapling"
   ]
 }

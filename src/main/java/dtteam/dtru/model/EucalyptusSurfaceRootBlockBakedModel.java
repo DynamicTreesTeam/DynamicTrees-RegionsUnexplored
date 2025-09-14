@@ -6,6 +6,7 @@ package dtteam.dtru.model;
 //import com.ferreusveritas.dynamictrees.util.RootConnections;
 //import com.dtteam.dynamictrees.api.network.RootConnections;
 import com.dtteam.dynamictrees.api.network.RootConnections;
+import com.dtteam.dynamictrees.model.geometry.RootsBlockModelGeometry;
 import com.dtteam.dynamictrees.block.branch.SurfaceRootBlock;
 //import com.dtteam.dynamictrees.utility.Roo
 import com.dtteam.dynamictrees.model.ModelHelper;
@@ -17,11 +18,13 @@ import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.client.resources.model.BlockModelRotation;
 import net.minecraft.client.resources.model.Material;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.inventory.InventoryMenu;
+import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 //import net.minecraftforge.api.distmarker.Dist;
@@ -51,7 +54,7 @@ public class EucalyptusSurfaceRootBlockBakedModel implements IDynamicBakedModel 
 
     private final BlockModel blockModel;
 
-//    private final ResourceLocation modelLocation;
+    private final ResourceLocation modelLocation;
 
     private final TextureAtlasSprite barkTexture;
     private final TextureAtlasSprite overlayTexture;
@@ -60,10 +63,10 @@ public class EucalyptusSurfaceRootBlockBakedModel implements IDynamicBakedModel 
     private final BakedModel[][] cores = new BakedModel[2][8]; //8 Cores for 2 axis(X, Z) with the bark texture on all 6 sides rotated appropriately.
     private final BakedModel[][] verts = new BakedModel[4][8];
 
-    public EucalyptusSurfaceRootBlockBakedModel(ResourceLocation barkTextureLocation, ResourceLocation overlayTextureLocation, Function<Material, TextureAtlasSprite> spriteGetter) {
+    public EucalyptusSurfaceRootBlockBakedModel(ResourceLocation modelLocation, ResourceLocation barkTextureLocation, ResourceLocation overlayTextureLocation, Function<Material, TextureAtlasSprite> spriteGetter) {
         this.blockModel = new BlockModel(null, new ArrayList<>(), new HashMap<>(), false, BlockModel.GuiLight.FRONT,
                 ItemTransforms.NO_TRANSFORMS, new ArrayList<>());
-//        this.modelLocation = modelLocation;
+        this.modelLocation = modelLocation;
         this.barkTexture = spriteGetter.apply(new Material(InventoryMenu.BLOCK_ATLAS, barkTextureLocation));
         this.overlayTexture = spriteGetter.apply(new Material(InventoryMenu.BLOCK_ATLAS, overlayTextureLocation));
         initModels();
@@ -225,8 +228,7 @@ public class EucalyptusSurfaceRootBlockBakedModel implements IDynamicBakedModel 
 
         int[] connections = new int[]{0, 0, 0, 0};
         RootConnections.ConnectionLevel[] connectionLevels = RootConnections.PLACEHOLDER_CONNECTION_LEVELS.clone();
-//        RootConnections connectionData = extraData.get(RootConnections.ROOT_CONNECTIONS_PROPERTY);
-        RootConnections connectionData = new RootConnections();
+        RootConnections connectionData = extraData.get(ModelHelper.ROOT_CONNECTIONS_PROPERTY);
 
         if (connectionData != null) {
             connections = connectionData.getAllRadii();
@@ -273,14 +275,14 @@ public class EucalyptusSurfaceRootBlockBakedModel implements IDynamicBakedModel 
         return quads;
     }
 
-//    @Nonnull
-//    @Override
-//    public ModelData getModelData(@Nonnull BlockAndTintGetter world, @Nonnull BlockPos pos, @Nonnull BlockState state, @Nonnull ModelData tileData) {
-//        RootConnections rootConnections = state.getBlock() instanceof SurfaceRootBlock surfaceRootBlock
-//                ? new RootConnections(surfaceRootBlock.getConnectionData(world, pos))
-//                : new RootConnections();
-//        return ModelData.builder().with(RootConnections.).build();
-//    }
+    @Nonnull
+    @Override
+    public ModelData getModelData(@Nonnull BlockAndTintGetter world, @Nonnull BlockPos pos, @Nonnull BlockState state, @Nonnull ModelData tileData) {
+        RootConnections rootConnections = state.getBlock() instanceof SurfaceRootBlock surfaceRootBlock
+                ? new RootConnections(surfaceRootBlock.getConnectionData(world, pos))
+                : new RootConnections();
+        return ModelData.builder().with(ModelHelper.ROOT_CONNECTIONS_PROPERTY, rootConnections).build();
+    }
 
     /**
      * Locates the side with the largest neighbor radius that's equal to or greater than this branch block

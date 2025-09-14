@@ -1,13 +1,20 @@
 {
   "values": [
+    "dtru:bamboo_seed",
+    "dtru:blackwood_seed",
     "dtru:blue_magnolia_seed",
+    "dtru:cypress_seed",
     "dtru:enchanted_birch_seed",
     "dtru:golden_larch_seed",
     "dtru:joshua_seed",
+    "dtru:larch_seed",
     "dtru:magnolia_seed",
+    "dtru:maple_seed",
     "dtru:orange_maple_seed",
+    "dtru:pine_seed",
     "dtru:pink_magnolia_seed",
     "dtru:red_maple_seed",
-    "dtru:white_magnolia_seed"
+    "dtru:white_magnolia_seed",
+    "dtru:willow_seed"
   ]
 }
