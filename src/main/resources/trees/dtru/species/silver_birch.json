@@ -13,6 +13,8 @@
     }
   },
   "leaves_properties": "dtru:silver_birch",
+  "generate_seed": true,
+  "generate_sapling": true,
   "environment_factors" : {
     "sparse": 0.80,
     "dry": 0.50

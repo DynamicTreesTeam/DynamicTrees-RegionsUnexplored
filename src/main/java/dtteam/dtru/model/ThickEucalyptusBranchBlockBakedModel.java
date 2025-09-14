@@ -1,13 +1,8 @@
 package dtteam.dtru.model;
 
-//import com.ferreusveritas.dynamictrees.block.branch.BranchBlock;
-//import com.ferreusveritas.dynamictrees.block.branch.ThickBranchBlock;
-//import com.ferreusveritas.dynamictrees.client.ModelUtils;
-//import com.ferreusveritas.dynamictrees.models.modeldata.ModelConnections;
-//import com.ferreusveritas.dynamictrees.tree.family.Family;
-//import com.ferreusveritas.dynamictrees.util.CoordUtils;
 import com.dtteam.dynamictrees.block.branch.BranchBlock;
 import com.dtteam.dynamictrees.block.branch.ThickBranchBlock;
+import com.dtteam.dynamictrees.model.baked.ThickBranchBlockBakedModel;
 import com.dtteam.dynamictrees.model.modeldata.ModelConnections;
 import com.dtteam.dynamictrees.model.ModelHelper;
 import com.dtteam.dynamictrees.tree.family.Family;
@@ -37,6 +32,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.neoforge.client.model.IModelBuilder;
 import net.neoforged.neoforge.client.model.data.ModelData;
 import net.neoforged.neoforge.client.model.geometry.IGeometryBakingContext;
+import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3f;
 
 import javax.annotation.Nonnull;
@@ -62,9 +58,9 @@ public class ThickEucalyptusBranchBlockBakedModel extends EucalyptusBranchBlockB
     }
 
     public void initThickModels(TextureAtlasSprite thickRingsTexture) {
-        if (isTextureNull(thickRingsTexture)) {
-            thickRingsTexture = this.ringsTexture;
-        }
+//        if (isTextureNull(thickRingsTexture)) {
+//            thickRingsTexture = this.ringsTexture;
+//        }
 
         for (int i = 0; i < ThickBranchBlock.MAX_RADIUS_THICK - ThickBranchBlock.MAX_RADIUS; i++) {
             int radius = i + ThickBranchBlock.MAX_RADIUS + 1;
@@ -76,7 +72,7 @@ public class ThickEucalyptusBranchBlockBakedModel extends EucalyptusBranchBlockB
     }
 
     private boolean isTextureNull(@Nullable TextureAtlasSprite sprite) {
-        return sprite == null || sprite.equals(ModelHelper.getTexture(ResourceLocation.withDefaultNamespace("")));
+        return sprite == null || sprite.equals(ModelHelper.getTexture(ResourceLocation.parse("")));
     }
 
     public BakedModel bakeTrunkBark(int radius, TextureAtlasSprite bark, TextureAtlasSprite overlay, boolean side) {
@@ -141,20 +137,7 @@ public class ThickEucalyptusBranchBlockBakedModel extends EucalyptusBranchBlockB
             Vector3f posTo = new Vector3f((float) partBoundary.maxX, (float) partBoundary.maxY, (float) partBoundary.maxZ);
 
             Map<Direction, BlockElementFace> mapFacesIn = Maps.newEnumMap(Direction.class);
-            float textureOffsetX = -16f;
-            float textureOffsetZ = -16f;
-
-            float minX = ((float) ((partBoundary.minX - textureOffsetX) / wholeVolumeWidth)) * 16f;
-            float maxX = ((float) ((partBoundary.maxX - textureOffsetX) / wholeVolumeWidth)) * 16f;
-            float minZ = ((float) ((partBoundary.minZ - textureOffsetZ) / wholeVolumeWidth)) * 16f;
-            float maxZ = ((float) ((partBoundary.maxZ - textureOffsetZ) / wholeVolumeWidth)) * 16f;
-
-            if (face == Direction.DOWN) {
-                minZ = ((float) ((partBoundary.maxZ - textureOffsetZ) / wholeVolumeWidth)) * 16f;
-                maxZ = ((float) ((partBoundary.minZ - textureOffsetZ) / wholeVolumeWidth)) * 16f;
-            }
-
-            float[] uvs = new float[]{minX, minZ, maxX, maxZ};
+            float[] uvs = getUvs(face, partBoundary, wholeVolumeWidth);
 
             BlockFaceUV uvface = new BlockFaceUV(uvs, getFaceAngle(Axis.Y, face));
             mapFacesIn.put(face, new BlockElementFace(null, -1, null, uvface));
@@ -164,6 +147,23 @@ public class ThickEucalyptusBranchBlockBakedModel extends EucalyptusBranchBlockB
         }
 
         return builder.build();
+    }
+
+    private static float @NotNull [] getUvs(Direction face, AABB partBoundary, int wholeVolumeWidth){
+        float textureOffsetX = -16f;
+        float textureOffsetZ = -16f;
+
+        float minX = ((float) ((partBoundary.minX - textureOffsetX) / wholeVolumeWidth)) * 16f;
+        float maxX = ((float) ((partBoundary.maxX - textureOffsetX) / wholeVolumeWidth)) * 16f;
+        float minZ = ((float) ((partBoundary.minZ - textureOffsetZ) / wholeVolumeWidth)) * 16f;
+        float maxZ = ((float) ((partBoundary.maxZ - textureOffsetZ) / wholeVolumeWidth)) * 16f;
+
+        if (face == Direction.DOWN) {
+            minZ = ((float) ((partBoundary.maxZ - textureOffsetZ) / wholeVolumeWidth)) * 16f;
+            maxZ = ((float) ((partBoundary.minZ - textureOffsetZ) / wholeVolumeWidth)) * 16f;
+        }
+
+        return new float[]{minX, minZ, maxX, maxZ};
     }
 
     @Nonnull

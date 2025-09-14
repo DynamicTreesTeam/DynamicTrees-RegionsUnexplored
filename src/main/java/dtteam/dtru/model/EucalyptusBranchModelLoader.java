@@ -1,11 +1,7 @@
 package dtteam.dtru.model;
 
-//import com.ferreusveritas.dynamictrees.api.TreeRegistry;
-//import com.ferreusveritas.dynamictrees.models.geometry.BranchBlockModelGeometry;
-//import com.ferreusveritas.dynamictrees.models.loader.BranchBlockModelLoader;
 import com.dtteam.dynamictrees.model.geometry.BranchBlockModelGeometry;
 import com.dtteam.dynamictrees.model.loader.BranchBlockModelLoader;
-//import com.dtteam.dynamictrees.u;
 import com.dtteam.dynamictrees.utility.ResourceLocationUtils;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonObject;
@@ -13,8 +9,6 @@ import com.google.gson.JsonParseException;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
-//import net.minecraftforge.api.distmarker.Dist;
-//import net.minecraftforge.api.distmarker.OnlyIn;
 
 import javax.annotation.Nullable;
 

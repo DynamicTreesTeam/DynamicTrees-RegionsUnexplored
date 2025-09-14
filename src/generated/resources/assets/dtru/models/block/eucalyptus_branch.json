@@ -1,6 +1,5 @@
 {
   "loader": "dtru:eucalyptus",
-  "family": "eucalyptus",
   "render_type": "minecraft:cutout",
   "textures": {
     "bark": "regions_unexplored:block/eucalyptus_log",
