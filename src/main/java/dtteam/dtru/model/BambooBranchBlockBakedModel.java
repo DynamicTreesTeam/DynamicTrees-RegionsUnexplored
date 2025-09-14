@@ -54,7 +54,7 @@ public class BambooBranchBlockBakedModel implements IDynamicBakedModel {
 
     protected final BlockModel blockModel;
 
-    protected final ResourceLocation modelLocation;
+    // protected final ResourceLocation modelLocation;
 
     protected final TextureAtlasSprite barkTexture;
     protected final TextureAtlasSprite ringsTexture;
@@ -66,12 +66,12 @@ public class BambooBranchBlockBakedModel implements IDynamicBakedModel {
     protected final BakedModel[] rings = new BakedModel[8]; // 8 Cores with the ring textures on all 6 sides.
     protected BakedModel leaves;
 
-    public BambooBranchBlockBakedModel(ResourceLocation modelLocation, ResourceLocation barkTextureLocation, ResourceLocation ringsTextureLocation, ResourceLocation leavesTextureLocation,
+    public BambooBranchBlockBakedModel(IGeometryBakingContext context, ResourceLocation barkTextureLocation, ResourceLocation ringsTextureLocation, ResourceLocation leavesTextureLocation,
                                        Function<Material, TextureAtlasSprite> spriteGetter) {
         this.blockModel = new BlockModel(null, new ArrayList<>(), new HashMap<>(), false, BlockModel.GuiLight.FRONT,
                 ItemTransforms.NO_TRANSFORMS, new ArrayList<>());
-//        this.blockModel.customData.setRenderTypeHint(customData.getRenderTypeHint());
-        this.modelLocation = modelLocation;
+        this.blockModel.customData.setRenderTypeHint(context.getRenderTypeHint());
+        // this.modelLocation = modelLocation;
         this.barkTexture = spriteGetter.apply(new Material(InventoryMenu.BLOCK_ATLAS, barkTextureLocation));
         this.ringsTexture = spriteGetter.apply(new Material(InventoryMenu.BLOCK_ATLAS, ringsTextureLocation));
         this.leavesTexture = spriteGetter.apply(new Material(InventoryMenu.BLOCK_ATLAS, leavesTextureLocation));
