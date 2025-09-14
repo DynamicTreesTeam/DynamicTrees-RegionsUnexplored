@@ -15,9 +15,9 @@
   },
   "leaves_properties": "dtru:palm",
   "environment_factors" : {
-    "#forge:is_cold": 0.75,
-    "#forge:is_hot": 1.1,
-    "#forge:is_dry": 1.1
+    "#c:is_cold": 0.75,
+    "#c:is_hot": 1.1,
+    "#c:is_dry": 1.1
   },
   "transformable": false,
   "perfect_biomes": { "tag": ".*(tropics|rainforest).*" },

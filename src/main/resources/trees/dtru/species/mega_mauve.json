@@ -9,9 +9,9 @@
   "max_branch_radius": 24,
   "leaves_properties": "dtru:mauve",
   "environment_factors" : {
-    "#forge:is_cold": 0.8,
-    "#forge:is_hot": 0.8,
-    "#forge:is_dry": 0.5
+    "#c:is_cold": 0.8,
+    "#c:is_hot": 0.8,
+    "#c:is_dry": 0.5
   },
   "perfect_biomes": { "name": "regions_unexplored:rocky_meadow" },
   "features": [

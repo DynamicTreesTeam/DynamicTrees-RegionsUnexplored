@@ -9,8 +9,8 @@
   "generate_sapling": true,
   "growth_logic_kit": "dtru:variate_height",
   "environment_factors" : {
-    "#forge:is_cold": 0.1,
-    "#forge:is_wet": 0.1
+    "#c:is_cold": 0.1,
+    "#c:is_wet": 0.1
   },
   "perfect_biomes": { "name": "regions_unexplored:infernal_holt" },
   "primitive_sapling": "regions_unexplored:brimwood_sapling",

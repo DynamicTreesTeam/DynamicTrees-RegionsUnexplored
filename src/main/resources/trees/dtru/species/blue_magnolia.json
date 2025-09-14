@@ -9,9 +9,9 @@
   "generate_seed": true,
   "generate_sapling": true,
   "environment_factors": {
-    "#forge:is_cold": 0.75,
-    "#forge:is_hot": 0.9,
-    "#forge:is_dry": 0.5
+    "#c:is_cold": 0.75,
+    "#c:is_hot": 0.9,
+    "#c:is_dry": 0.5
   },
   "perfect_biomes": {
     "name": ".*magnolia.*"

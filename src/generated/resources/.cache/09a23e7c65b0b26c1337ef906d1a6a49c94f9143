@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-14T12:24:45.7851712	Block States: dtru
+// 1.21.1	2025-09-14T14:22:51.095342	Block States: dtru
 2606791521eac27fa77ebbeeea442b8073802a51 assets/dtru/blockstates/acacia_twiglet_leaves.json
 0a3e03970c6c64825a46aea6c074d41a15d87460 assets/dtru/blockstates/ashen_branch.json
 ab18794f7d55c70794422a30794d1894b64fd5b5 assets/dtru/blockstates/ashen_leaves.json
@@ -102,6 +102,7 @@ a82f9fc1c2378f77e75442eb41b6eff31ae0c687 assets/dtru/blockstates/reef_jungle_lea
 a03f7d2cf10764ec684ac54fd380cb63ad4c151b assets/dtru/blockstates/rooty_alpha_grass_block.json
 0a4ce36c3d361e77a8ad056f6724b4883868108e assets/dtru/blockstates/rooty_argillite.json
 beaa46e3e5d59bd44ddc68d3984784a9b376cc5d assets/dtru/blockstates/rooty_argillite_grass_block.json
+35c20f611de5e89957923bb64a663b1a1a131766 assets/dtru/blockstates/rooty_ashen_dirt.json
 947806f7deaaa25926ba1d490b2815361b2fe1f4 assets/dtru/blockstates/rooty_brimsprout_nylium.json
 f24fb9bf0b97a53205652e3c0203659e5ce4c3d4 assets/dtru/blockstates/rooty_chalk.json
 77c2f262e060a8d2781257e52f85a303f9513608 assets/dtru/blockstates/rooty_chalk_grass_block.json
