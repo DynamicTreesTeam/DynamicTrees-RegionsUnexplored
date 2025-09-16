@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dtteam.dtru.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AshenDirtBlockSafeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

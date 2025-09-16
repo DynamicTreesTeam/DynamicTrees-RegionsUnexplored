@@ -35,6 +35,9 @@ import dtteam.dtru.growthlogic.DTRUGrowthLogicKits;
 import dtteam.dtru.tree.*;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
@@ -45,20 +48,17 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.regions_unexplored.RegionsUnexplored;
+import net.regions_unexplored.RegionsUnexploredNeo;
+import net.regions_unexplored.client.RegionsUnexploredClient;
 import net.regions_unexplored.world.features.treedecorators.BlackwoodBioshroom;
 import net.regions_unexplored.world.level.feature.configuration.GiantBioshroomConfiguration;
 import net.regions_unexplored.world.level.feature.configuration.RuTreeConfiguration;
 import net.regions_unexplored.world.level.feature.tree.*;
 import net.regions_unexplored.world.level.feature.tree.nether.BrimWillowFeature;
 import net.regions_unexplored.world.level.feature.tree.nether.TallBrimWillowFeature;
-//import net.minecraftforge.registries.ForgeRegistries;
-//import net.neoforged.fml.common.Mod;
-//import net.regions_unexplored.world.features.treedecorators.BlackwoodBioshroom;
-//import net.regions_unexplored.world.level.feature.configuration.GiantBioshroomConfiguration;
-//import net.regions_unexplored.world.level.feature.configuration.RuTreeConfiguration;
-//import net.regions_unexplored.world.level.feature.tree.*;
-//import net.regions_unexplored.world.level.feature.tree.nether.BrimWillowFeature;
-//import net.regions_unexplored.world.level.feature.tree.nether.TallBrimWillowFeature;
 
 @EventBusSubscriber(modid = DynamicTreesRU.MOD_ID)
 public class DTRURegistries {
@@ -72,7 +72,6 @@ public class DTRURegistries {
     public static void setup() {
         CommonVoxelShapes.SHAPES.put(DynamicTreesRU.location("blue_bioshroom").toString(), SHORT_ROUND_MUSHROOM);
         CommonVoxelShapes.SHAPES.put(DynamicTreesRU.location("pink_bioshroom").toString(), CONE_MUSHROOM);
-
     }
 
     @SubscribeEvent

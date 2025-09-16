@@ -9,7 +9,12 @@ import com.dtteam.dynamictrees.tree.species.Species;
 import dtteam.dtru.init.DTRUClient;
 import dtteam.dtru.init.DTRUPlusRegistries;
 import dtteam.dtru.init.DTRURegistries;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.ModList;
@@ -17,6 +22,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
+import net.regions_unexplored.world.level.block.other_dirt.AshenDirtBlock;
 
 import java.util.Objects;
 
@@ -27,6 +33,7 @@ public class DynamicTreesRU {
     public static final String MOD_ID = "dtru";
 
     public DynamicTreesRU(IEventBus bus, ModContainer modContainer) {
+
         bus.addListener(this::commonSetup);
         bus.addListener(this::clientSetup);
         bus.addListener(this::gatherData);
