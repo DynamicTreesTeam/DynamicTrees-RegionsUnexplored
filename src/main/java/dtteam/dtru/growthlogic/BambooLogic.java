@@ -1,8 +1,5 @@
 package dtteam.dtru.growthlogic;
 
-//import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKitConfiguration;
-//import com.ferreusveritas.dynamictrees.growthlogic.context.DirectionManipulationContext;
-//import com.ferreusveritas.dynamictrees.growthlogic.context.DirectionSelectionContext;
 import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKitConfiguration;
 import com.dtteam.dynamictrees.systems.growthlogic.context.DirectionManipulationContext;
 import com.dtteam.dynamictrees.systems.growthlogic.context.DirectionSelectionContext;

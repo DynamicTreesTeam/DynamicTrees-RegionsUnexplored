@@ -1,15 +1,8 @@
 package dtteam.dtru.init;
 
-//import com.ferreusveritas.dynamictrees.api.client.ModelHelper;
-//import com.ferreusveritas.dynamictrees.tree.family.Family;
-//import dtteam.dtru.block.BambooBranchBlock;
-//import dtteam.dtru.tree.EucalyptusFamily;
-
-import com.dtteam.dynamictrees.client.BlockColorMultipliers;
 import com.dtteam.dynamictrees.tree.family.Family;
 import dtteam.dtru.DynamicTreesRU;
 import dtteam.dtru.block.BambooBranchBlock;
-import com.dtteam.dynamictrees.event.handler.ClientModEventHandler;
 import dtteam.dtru.tree.EucalyptusFamily;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -19,11 +12,8 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
-//import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
-
 
 import java.util.stream.Collectors;
-
 
 @EventBusSubscriber(modid = DynamicTreesRU.MOD_ID)
 public class DTRUClient {
@@ -35,7 +25,6 @@ public class DTRUClient {
     private static void registerRenderLayers () {
         BuiltInRegistries.BLOCK.stream().filter(block -> block instanceof BambooBranchBlock).forEach(block -> ItemBlockRenderTypes.setRenderLayer(block, RenderType.cutoutMipped()));
     }
-
 
     @SubscribeEvent
     @OnlyIn(Dist.CLIENT)

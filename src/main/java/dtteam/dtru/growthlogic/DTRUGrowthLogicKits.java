@@ -1,11 +1,8 @@
 package dtteam.dtru.growthlogic;
 
-//import com.ferreusveritas.dynamictrees.api.registry.Registry;
-//import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKit;
 import com.dtteam.dynamictrees.api.registry.Registry;
 import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
 import dtteam.dtru.DynamicTreesRU;
-//import dtteam.dtru.DtruPort;
 
 public class DTRUGrowthLogicKits {
     public static final GrowthLogicKit THIN_CONIFER = new PineLogic(DynamicTreesRU.location( "thin_conifer"));

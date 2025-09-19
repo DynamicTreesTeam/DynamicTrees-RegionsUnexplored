@@ -1,12 +1,5 @@
 package dtteam.dtru.tree;
 
-//import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
-//import com.ferreusveritas.dynamictrees.block.branch.BranchBlock;
-//import com.ferreusveritas.dynamictrees.data.provider.BranchLoaderBuilder;
-//import com.ferreusveritas.dynamictrees.tree.family.Family;
-//import com.ferreusveritas.dynamictrees.util.BlockBounds;
-//import dtteam.dtru.block.BambooBranchBlock;
-//import dtteam.dtru.event.BakedModelEventHandler;
 import com.dtteam.dynamictrees.api.registry.TypedRegistry;
 import com.dtteam.dynamictrees.api.voxmap.BlockPosBounds;
 import com.dtteam.dynamictrees.block.branch.BranchBlock;
@@ -14,9 +7,6 @@ import com.dtteam.dynamictrees.tree.family.Family;
 import dtteam.dtru.block.BambooBranchBlock;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
-//import net.minecraftforge.client.model.generators.BlockModelBuilder;
-//import net.minecraftforge.common.data.ExistingFileHelper;
-
 
 public class BambooFamily extends Family {
 
@@ -46,9 +36,8 @@ public class BambooFamily extends Family {
     }
 
 //    @Override
-//    public BiFunction<BlockModelBuilder, ExistingFileHelper, BranchLoaderBuilder> generateStateData() {
+//    public BiFunction<BlockModelBuilder, ExistingFileHelper, BranchLoaderBuilder> getBranchLoaderConstructor() {
 //        return (parent, existingFileHelper) -> new BranchLoaderBuilder(BakedModelEventHandler.BAMBOO, parent, existingFileHelper);
 //    }
-
 
 }

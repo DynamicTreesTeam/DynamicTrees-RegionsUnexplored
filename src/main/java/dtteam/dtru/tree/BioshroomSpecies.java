@@ -1,16 +1,5 @@
 package dtteam.dtru.tree;
 
-//import com.ferreusveritas.dynamictrees.api.registry.RegistryHandler;
-//import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
-//import com.ferreusveritas.dynamictrees.block.DynamicSaplingBlock;
-//import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
-//import com.ferreusveritas.dynamictrees.systems.nodemapper.NetVolumeNode;
-//import com.ferreusveritas.dynamictrees.tree.family.Family;
-//import com.ferreusveritas.dynamictrees.tree.species.Species;
-//import com.ferreusveritas.dynamictrees.util.SafeChunkBounds;
-//import com.ferreusveritas.dynamictrees.worldgen.JoCode;
-//import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
-//import com.ferreusveritas.dynamictreesplus.tree.HugeMushroomSpecies;
 import com.dtteam.dynamictrees.api.registry.TypedRegistry;
 import com.dtteam.dynamictrees.block.sapling.DynamicSaplingBlock;
 import com.dtteam.dynamictrees.registry.NeoForgeRegistryHandler;

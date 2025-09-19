@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-16T05:05:57.8727004	Block States: dtru
+// 1.21.1	2025-09-16T08:01:51.6055904	Block States: dtru
 2606791521eac27fa77ebbeeea442b8073802a51 assets/dtru/blockstates/acacia_twiglet_leaves.json
 0a3e03970c6c64825a46aea6c074d41a15d87460 assets/dtru/blockstates/ashen_branch.json
 ab18794f7d55c70794422a30794d1894b64fd5b5 assets/dtru/blockstates/ashen_leaves.json
@@ -9,6 +9,7 @@ ab18794f7d55c70794422a30794d1894b64fd5b5 assets/dtru/blockstates/ashen_leaves.js
 e971bed14bf586d9295e6186f08b3899451d0c10 assets/dtru/blockstates/baobab_branch.json
 1cbce07404005861c13cb776c16b7b82dae86f01 assets/dtru/blockstates/baobab_leaves.json
 69a3b76c098523c0be560c410d480827587208b0 assets/dtru/blockstates/baobab_sapling.json
+377743b1bdc342a0ff204787d0f49afc91ab25f7 assets/dtru/blockstates/big_apple_oak_sapling.json
 c833b7ab5e98865cdcd8b7f1b3d56b6095bda01c assets/dtru/blockstates/blackwood_branch.json
 96882d3dec217433c169c3106bdf16648d769b2d assets/dtru/blockstates/blackwood_leaves.json
 31d3020bc89315a38be19fdf3f830798b693bed6 assets/dtru/blockstates/blackwood_root.json
@@ -235,6 +236,7 @@ fdd253754b3aa41714be7a3e4a83c602ffd3a89c assets/dtru/models/block/redwood_branch
 84b0286ec806895639d11a496a4a4fcff82c4888 assets/dtru/models/block/redwood_root.json
 d03a35954491b3bcb8adb058dd2cfbcc076b6be9 assets/dtru/models/block/saplings/bamboo.json
 fce30114ef343356e165ca7db78c64313f2b4f18 assets/dtru/models/block/saplings/baobab.json
+7a849487d3813ef0bcd33e55299ef4e396af2777 assets/dtru/models/block/saplings/big_apple_oak.json
 a6dce937073b5fcc90ba2e11e9e990dbcc302cf2 assets/dtru/models/block/saplings/blackwood.json
 8b512da23404bf9fa77569fd1dea816d38b43172 assets/dtru/models/block/saplings/blue_bioshroom.json
 2529c9b748506bf400ba8381bba3de4f2117697d assets/dtru/models/block/saplings/blue_magnolia.json

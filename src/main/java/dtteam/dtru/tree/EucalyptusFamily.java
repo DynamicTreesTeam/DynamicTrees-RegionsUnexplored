@@ -1,7 +1,5 @@
 package dtteam.dtru.tree;
 
-//import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
-//import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.dtteam.dynamictrees.api.registry.TypedRegistry;
 import com.dtteam.dynamictrees.tree.family.Family;
 import net.minecraft.core.BlockPos;

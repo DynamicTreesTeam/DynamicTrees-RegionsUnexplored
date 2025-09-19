@@ -1,10 +1,5 @@
 package dtteam.dtru.growthlogic;
 
-//import com.ferreusveritas.dynamictrees.api.configuration.ConfigurationProperty;
-//import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKit;
-//import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKitConfiguration;
-//import com.ferreusveritas.dynamictrees.growthlogic.context.PositionalSpeciesContext;
-//import com.ferreusveritas.dynamictrees.util.CoordUtils;
 import com.dtteam.dynamictrees.api.configuration.ConfigurationProperty;
 import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
 import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKitConfiguration;

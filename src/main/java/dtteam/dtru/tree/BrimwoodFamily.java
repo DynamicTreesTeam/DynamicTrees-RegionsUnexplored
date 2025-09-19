@@ -1,18 +1,5 @@
 package dtteam.dtru.tree;
 
-//import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
-//import com.ferreusveritas.dynamictrees.block.branch.BasicBranchBlock;
-//import com.ferreusveritas.dynamictrees.block.branch.BranchBlock;
-//import com.ferreusveritas.dynamictrees.tree.family.Family;
-//import com.ferreusveritas.dynamictrees.api.data.BranchStateGenerator;
-//import com.ferreusveritas.dynamictrees.api.data.Generator;
-//import com.ferreusveritas.dynamictrees.api.registry.RegistryHandler;
-//import com.ferreusveritas.dynamictrees.block.branch.ThickBranchBlock;
-//import com.ferreusveritas.dynamictrees.data.provider.DTBlockStateProvider;
-//import com.ferreusveritas.dynamictrees.util.MutableLazyValue;
-//import com.ferreusveritas.dynamictrees.util.Optionals;
-//import com.ferreusveritas.dynamictrees.util.ResourceLocationUtils;
-
 import com.dtteam.dynamictrees.api.lazyvalue.MutableLazyValue;
 import com.dtteam.dynamictrees.api.registry.TypedRegistry;
 import com.dtteam.dynamictrees.block.branch.BasicBranchBlock;

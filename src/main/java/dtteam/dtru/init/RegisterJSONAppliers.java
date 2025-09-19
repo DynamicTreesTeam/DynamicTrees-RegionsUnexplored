@@ -1,6 +1,5 @@
 package dtteam.dtru.init;
 
-
 import com.dtteam.dynamictrees.deserialization.PropertyAppliers;
 import com.dtteam.dynamictrees.event.ApplierRegistryEvent;
 import com.dtteam.dynamictrees.tree.family.Family;

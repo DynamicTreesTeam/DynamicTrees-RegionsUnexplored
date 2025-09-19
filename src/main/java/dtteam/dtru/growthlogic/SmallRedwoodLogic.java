@@ -1,12 +1,5 @@
 package dtteam.dtru.growthlogic;
 
-//import com.ferreusveritas.dynamictrees.growthlogic.ConiferLogic;
-//import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKitConfiguration;
-//import com.ferreusveritas.dynamictrees.growthlogic.context.DirectionManipulationContext;
-//import com.ferreusveritas.dynamictrees.growthlogic.context.DirectionSelectionContext;
-//import com.ferreusveritas.dynamictrees.systems.GrowSignal;
-//import com.ferreusveritas.dynamictrees.tree.species.Species;
-//import com.ferreusveritas.dynamictrees.util.CoordUtils;
 import com.dtteam.dynamictrees.systems.GrowSignal;
 import com.dtteam.dynamictrees.systems.growthlogic.ConiferLogic;
 import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKitConfiguration;

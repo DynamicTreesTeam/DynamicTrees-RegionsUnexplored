@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-14T12:24:45.7801197	Loot Tables
+// 1.21.1	2025-09-16T08:01:51.6005918	Loot Tables
 badcd7439a1dc5ac852d1da6b6a6edfc1aee2e26 data/dtru/loot_table/blocks/acacia_twiglet_leaves.json
 7002565d98ecf4fdea83edb1de9fb22b6f3f7185 data/dtru/loot_table/blocks/ashen_leaves.json
 3ed077ff94ec7ae9501a1fa68bba5ac36d44f6ea data/dtru/loot_table/blocks/ashen_pine_leaves.json
@@ -141,6 +141,7 @@ c900e05c422f862d7baef1db1ded8417f0087750 data/dtru/loot_table/trees/mushroom_cap
 0a0dc2f9cf02783ebf6e1ad780d59fb04d16ab75 data/dtru/loot_table/trees/mushroom_caps/yellow_bioshroom.json
 966cb52c50d5c815da49dcfc3edebc275f76c492 data/dtru/loot_table/trees/voluntary/bamboo.json
 f75028498ebdfdee3c2c134f01e3c62ff1b93e9a data/dtru/loot_table/trees/voluntary/baobab.json
+6f317075bd736737971dd0c364d488181143d70d data/dtru/loot_table/trees/voluntary/big_apple_oak.json
 3dec60f3b6582a0c43075887dcc974471488a39b data/dtru/loot_table/trees/voluntary/blackwood.json
 e66446e5ccb9d84edea1a0238a458e4d7bcaff4b data/dtru/loot_table/trees/voluntary/blue_bioshroom.json
 76e2b14d205034861efd9dedf8cefc99364b7613 data/dtru/loot_table/trees/voluntary/blue_magnolia.json
