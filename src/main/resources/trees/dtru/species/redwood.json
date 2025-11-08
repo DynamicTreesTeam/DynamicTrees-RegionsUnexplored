@@ -9,15 +9,13 @@
   "max_branch_radius": 24,
   "growth_logic_kit": "dtru:redwood",
   "leaves_properties": "dtru:redwood",
-  "generate_seed": true,
-  "generate_sapling": true,
   "environment_factors" : {
     "#c:is_hot": 0.50,
     "#c:is_dry": 0.25,
     "#c:is_forest": 1.05
   },
-  "always_show_on_waila": false,
   "world_gen_leaf_map_height": 64,
+  "primitive_sapling": "regions_unexplored:redwood_sapling",
   "common_override": { "name": ".*redwood.*" },
   "perfect_biomes": { "name": ".*redwood.*" },
   "world_gen_acceptable_soils": [ "dirt_like" ],
@@ -58,5 +56,10 @@
         "only_world_gen": true
       }
     }
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Redwood Cone"
+  },
+  "generate_seed": true,
+  "generate_sapling": true
 }

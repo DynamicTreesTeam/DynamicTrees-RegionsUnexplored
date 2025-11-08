@@ -42,8 +42,8 @@ public class DTRURegistries {
     public static final VoxelShape MUSHROOM_CAP_TIP_1 = Shapes.box(6.0D/16, 6.0D/16, 6.0D/16, 10.0D/16, 9.0D/16, 10.0D/16);
     public static final VoxelShape MUSHROOM_CAP_SHORT_ROUND = Shapes.box(4.5D/16, 3.0D/16, 4.5D/16, 11.5D/16, 8.0D/16, 11.5D/16);
 
-    public static final VoxelShape SHORT_ROUND_MUSHROOM = Shapes.or(CommonVoxelShapes.MUSHROOM_STEM, MUSHROOM_CAP_SHORT_ROUND);
-    public static final VoxelShape CONE_MUSHROOM = Shapes.or(CommonVoxelShapes.MUSHROOM_STEM, Shapes.or(MUSHROOM_CAP_CONE_BASE, MUSHROOM_CAP_TIP_1));
+    public static final VoxelShape SHORT_ROUND_MUSHROOM = Shapes.or(CommonVoxelShapes.SAPLING_TRUNK, MUSHROOM_CAP_SHORT_ROUND);
+    public static final VoxelShape CONE_MUSHROOM = Shapes.or(CommonVoxelShapes.SAPLING_TRUNK, Shapes.or(MUSHROOM_CAP_CONE_BASE, MUSHROOM_CAP_TIP_1));
 
     public static void setup() {
         CommonVoxelShapes.SHAPES.put(DynamicTreesRU.location("blue_bioshroom").toString(), SHORT_ROUND_MUSHROOM);
@@ -125,19 +125,20 @@ public class DTRURegistries {
             final FeatureConfiguration featureConfig = configuredFeature.config();
 
             if (isConfigClass(featureConfig)) {
-                if (featureConfig instanceof TreeConfiguration treeConfiguration && treeConfiguration.decorators.size() > 0 && treeConfiguration.decorators.get(0) instanceof BlackwoodBioshroom){
+                if (featureConfig instanceof TreeConfiguration treeConfiguration && !treeConfiguration.decorators.isEmpty() && treeConfiguration.decorators.getFirst() instanceof BlackwoodBioshroom){
                     return false;
                 }
                 String nameSpace = "";
-                final ConfiguredFeature<?, ?> nextConfiguredFeature = configuredFeature.getFeatures().findFirst().get();
+                var firstFeature = configuredFeature.getFeatures().findFirst();
+                if (firstFeature.isEmpty()) return false;
+                final ConfiguredFeature<?, ?> nextConfiguredFeature = firstFeature.get();
                 final FeatureConfiguration nextFeatureConfig = nextConfiguredFeature.config();
-//                final ResourceLocation featureRegistryName = ForgeRegistries.FEATURES.getKey(nextConfiguredFeature.feature());
                 final ResourceLocation featureRegistryName = BuiltInRegistries.FEATURE.getKey(nextConfiguredFeature.feature());
 
                 if (featureRegistryName != null) {
                     nameSpace = featureRegistryName.getNamespace();
                 }
-                return isConfigClass(nextFeatureConfig) && !nameSpace.equals("") &&
+                return isConfigClass(nextFeatureConfig) && !nameSpace.isEmpty() &&
                         featureCancellations.shouldCancelNamespace(nameSpace); // Removes any individual trees.
             }
 

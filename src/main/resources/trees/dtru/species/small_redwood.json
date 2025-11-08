@@ -14,11 +14,7 @@
     "#c:is_dry": 0.25,
     "#c:is_wet": 0.75
   },
-  "always_show_on_waila": true,
-  "seed_name": "redwood_seed",
-  "sapling_name": "redwood_sapling",
   "perfect_biomes": { "name": ".*redwood.*" },
-  "primitive_sapling": "regions_unexplored:redwood_sapling",
   "mega_species": "dtru:redwood",
   "features" : [
     "conifer_topper",
