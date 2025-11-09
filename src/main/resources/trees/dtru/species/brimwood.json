@@ -17,14 +17,14 @@
   "acceptable_soils": [ "nether_soil_like", "dirt_like" ],
   "features" : [
     "bottom_flare",
+    "dtru:magma_bottom",
     {
       "name": "roots",
       "properties": {
-        "min_trunk_radius": 6,
+        "min_trunk_radius": 8,
         "level_limit": 6,
         "scale_factor": 16
       }
-    },
-    "dtru:magma_bottom"
+    }
   ]
 }

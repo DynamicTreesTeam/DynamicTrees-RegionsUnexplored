@@ -4,6 +4,7 @@ import com.dtteam.dynamictrees.api.lazyvalue.MutableLazyValue;
 import com.dtteam.dynamictrees.api.registry.TypedRegistry;
 import com.dtteam.dynamictrees.block.branch.BasicBranchBlock;
 import com.dtteam.dynamictrees.block.branch.BranchBlock;
+import com.dtteam.dynamictrees.block.branch.SurfaceRootBlock;
 import com.dtteam.dynamictrees.block.branch.ThickBranchBlock;
 import com.dtteam.dynamictrees.data.Generator;
 import com.dtteam.dynamictrees.data.generator.BranchStateGenerator;
@@ -41,7 +42,7 @@ public class BrimwoodFamily extends TransitionLogFamily {
     }
 
     protected BranchBlock createMagmaBranchBlock(ResourceLocation name) {
-        BasicBranchBlock branch = new ThickBranchBlock(name, this.getProperties()){
+        BasicBranchBlock branch = new ThickBranchBlock(name, this.getProperties().lightLevel(b->4)){
             @Override
             public Optional<Block> getPrimitiveLog() {
                 if (getFamily() instanceof BrimwoodFamily magmaLogFamily)

@@ -63,7 +63,7 @@ public class TransitionLogBranchBlock extends ThickBranchBlock {
     @Override
     public void stripBranch(BlockState state, LevelAccessor level, BlockPos pos, int radius) {
         boolean isTransition = state.hasProperty(TRANSITION) && state.getValue(TRANSITION);
-        int reducedRadius = (getFamily().reduceRadiusWhenStripping() && !isTransition) ? 1 : 0;
+        int reducedRadius = (getFamily().reduceRadiusWhenStripping() && !(isTransition && transitionOnStripped)) ? 1 : 0;
         this.getFamily().getStrippedBranch().ifPresent(strippedBranch ->
                 strippedBranch.setRadius(
                         level,

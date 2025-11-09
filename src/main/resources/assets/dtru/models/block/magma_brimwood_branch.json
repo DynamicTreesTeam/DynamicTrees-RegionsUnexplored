@@ -1,0 +1,8 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "regions_unexplored:block/brimwood_log_magma",
+    "rings": "regions_unexplored:block/brimwood_log_top"
+  },
+  "family": "dtru:brimwood"
+}
