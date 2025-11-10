@@ -108,7 +108,7 @@ dependencies {
     // implementation files("libs/coolmod-${mc_version}-${coolmod_version}.jar")
 //    implementation(fg.deobf("com.ferreusveritas.dynamictrees:DynamicTrees-$mcVersion:${property("dynamicTreesVersion")}"))
 //    implementation(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
-    implementation "curse.maven:dynamictrees-252818:7201567"
+    implementation "curse.maven:dynamictrees-252818:7206627"
     implementation "curse.maven:dynamictreesplus-478155:7205442"
     implementation "curse.maven:regions-unexplored-659110:6273893"
     implementation "curse.maven:terrablender-neoforge-940057:6054947"
