@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-16T08:01:51.6055904	Block States: dtru
+// 1.21.1	2025-11-10T00:41:02.0569673	Block States: dtru
 2606791521eac27fa77ebbeeea442b8073802a51 assets/dtru/blockstates/acacia_twiglet_leaves.json
 0a3e03970c6c64825a46aea6c074d41a15d87460 assets/dtru/blockstates/ashen_branch.json
 ab18794f7d55c70794422a30794d1894b64fd5b5 assets/dtru/blockstates/ashen_leaves.json
@@ -73,6 +73,10 @@ e13bda88a825940bbebc21cc71d94647ea324c32 assets/dtru/blockstates/magnolia_root.j
 e16e768d48c132bbb00c47e54a66537b2ed7dd40 assets/dtru/blockstates/mauve_leaves.json
 f76100b77f8bdff729fa4921fbba2d77d003925d assets/dtru/blockstates/mauve_root.json
 2528a54bd29f598b41009d4c5e5239e8b9101c73 assets/dtru/blockstates/mauve_sapling.json
+a2bbf8b67a90736325941bda12d6c721d6c05520 assets/dtru/blockstates/mega_cypress_sapling.json
+2d4b0f7d59b53928a0f06eb83dd6c7d460d433a6 assets/dtru/blockstates/mega_eucalyptus_sapling.json
+f5b5affcf89a9ddd887dba7a5f4d5b564d86fe7e assets/dtru/blockstates/mega_mauve_sapling.json
+83b997acc01ff35415b16feee419ab4c368f851c assets/dtru/blockstates/mega_pine_sapling.json
 9b73d2419e07259eb9681640ac018a6aeb7e7e93 assets/dtru/blockstates/oak_poplar_leaves.json
 bb55f5ed209ebb6b861e08feb9d7bff52ea8e4d6 assets/dtru/blockstates/oak_poplar_sapling.json
 9b73d2419e07259eb9681640ac018a6aeb7e7e93 assets/dtru/blockstates/oak_twiglet_leaves.json
@@ -253,6 +257,10 @@ a6ed3c75a8f8b7f2d41f740ca71866dedaafbf84 assets/dtru/models/block/saplings/golde
 babbdf130a9442e394f5d2cb88a39024b95a5a09 assets/dtru/models/block/saplings/magnolia.json
 25ef391b764f1166cf32b7fba0a1b856e3138e06 assets/dtru/models/block/saplings/maple.json
 8c252845d40e79ce036ba4bf91cf3da08e37889f assets/dtru/models/block/saplings/mauve.json
+7066d2f60df293667dbed457c5e0dcf7a208969a assets/dtru/models/block/saplings/mega_cypress.json
+1415924d0a650975a498bc438a6a769fd7ff3c63 assets/dtru/models/block/saplings/mega_eucalyptus.json
+c1277a023574fe691a068a38c6d1f29abbb46df3 assets/dtru/models/block/saplings/mega_mauve.json
+f435e4cc432b38cd8297154b33a9f050ef8ef496 assets/dtru/models/block/saplings/mega_pine.json
 7a849487d3813ef0bcd33e55299ef4e396af2777 assets/dtru/models/block/saplings/oak_poplar.json
 6a4823e196536013c9ef76980649dcf577e0af4d assets/dtru/models/block/saplings/orange_maple.json
 03e774c18ce01479df13dbfef11fb18aba70a1bf assets/dtru/models/block/saplings/palm.json

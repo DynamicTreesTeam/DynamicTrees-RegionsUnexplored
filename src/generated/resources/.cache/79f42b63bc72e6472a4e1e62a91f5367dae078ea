@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-16T08:01:51.5985909	Item Models: dtru
+// 1.21.1	2025-11-10T00:41:02.051657	Item Models: dtru
 42b315ad74a5ffa3c8bc5e4fcb5bfabf677219a2 assets/dtru/models/item/ashen_branch.json
 b55b5030aaf3499ca78b2424b94d6918825d6b6d assets/dtru/models/item/bamboo_branch.json
 17dfba8f5599a77ada4869ef9a84a50a6cf86e88 assets/dtru/models/item/bamboo_seed.json
@@ -35,6 +35,10 @@ d186699f96bd517e05d74cd90fb988495121ba62 assets/dtru/models/item/maple_branch.js
 bec65b3d94b7a24b1ecba3706411e738aaa966f3 assets/dtru/models/item/maple_seed.json
 28144a39c4c6030a304f81f6c13a8e93e034f0e6 assets/dtru/models/item/mauve_branch.json
 b2bd4c707b64159fd402da21fe43c0a6c342c502 assets/dtru/models/item/mauve_seed.json
+87dabdec180f20d1dafa803a1ea94eec85e550cd assets/dtru/models/item/mega_cypress_seed.json
+842152497e83d4577e218ac8fd343d95c9a330a0 assets/dtru/models/item/mega_eucalyptus_seed.json
+fb93473ef84e2f6477d5790fddb77d1dc2a9613a assets/dtru/models/item/mega_mauve_seed.json
+cc6388a8f38fa5c8e94c5db4fe6b9c7ba378d9df assets/dtru/models/item/mega_pine_seed.json
 c0eb68f90ef6b0bc15c9cc51f3ea90a379453623 assets/dtru/models/item/orange_maple_seed.json
 c6bd7063c7b7fb2fa412f4ec8f3f5beed19f522f assets/dtru/models/item/palm_branch.json
 3d74624845b01f9238e511fb6ecb069f68d0208c assets/dtru/models/item/palm_seed.json

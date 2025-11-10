@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-16T08:01:51.6005918	Loot Tables
+// 1.21.1	2025-11-10T00:41:02.0531613	Loot Tables
 badcd7439a1dc5ac852d1da6b6a6edfc1aee2e26 data/dtru/loot_table/blocks/acacia_twiglet_leaves.json
 7002565d98ecf4fdea83edb1de9fb22b6f3f7185 data/dtru/loot_table/blocks/ashen_leaves.json
 3ed077ff94ec7ae9501a1fa68bba5ac36d44f6ea data/dtru/loot_table/blocks/ashen_pine_leaves.json
@@ -158,6 +158,10 @@ ad96cfb2994b9c2ff6cbd9d48cb8ab17146cf210 data/dtru/loot_table/trees/voluntary/go
 78a7b4fa94b12062795c5c54dd738d8c12cefffd data/dtru/loot_table/trees/voluntary/magnolia.json
 8b9497c1ed9a190a6e81f7ac36945e242bfc8e1f data/dtru/loot_table/trees/voluntary/maple.json
 22c2cb105e6c9d11593efbc0025e058fca0dd540 data/dtru/loot_table/trees/voluntary/mauve.json
+1b5cc2a2915872226e0b49ff7ac059700a8d41fe data/dtru/loot_table/trees/voluntary/mega_cypress.json
+60e1551611cc769246c68c240edb6d5e5af6df88 data/dtru/loot_table/trees/voluntary/mega_eucalyptus.json
+73014f56ce415ae1df9f55c6829b0e26a96f61de data/dtru/loot_table/trees/voluntary/mega_mauve.json
+1934cf012731de8151d3c52154811d975b6e939a data/dtru/loot_table/trees/voluntary/mega_pine.json
 64428e6acdba4333827b964210d31c1700d4bd6c data/dtru/loot_table/trees/voluntary/orange_maple.json
 8f20855496bc43db62a0e8a12d111bfddf89375a data/dtru/loot_table/trees/voluntary/palm.json
 15ab8ca140a34605a29e6375b3a979fdea0dbe07 data/dtru/loot_table/trees/voluntary/pine.json
