@@ -39,7 +39,7 @@ displayName="Dynamic Trees for Regions Unexplored" #mandatory
 #logoFile="examplemod.png" #optional
 
 # A text field displayed in the mod UI
-#credits="" #optional
+credits="${mod_credits}" #optional
 
 # A text field displayed in the mod UI
 authors="${mod_authors}" #optional

@@ -1,8 +1,11 @@
+import me.modmuss50.mpp.ReleaseType
+
 plugins {
     id 'java-library'
     id 'maven-publish'
     id 'net.neoforged.moddev' version '2.0.99'
     id 'idea'
+    id "me.modmuss50.mod-publish-plugin" version "0.8.4"
 }
 
 //tasks.named('wrapper', Wrapper).configure {
@@ -124,6 +127,7 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             mod_license            : mod_license,
             mod_version            : mod_version,
             mod_authors            : mod_authors,
+            mod_credits            : mod_credits,
             mod_description        : mod_description
     ]
     inputs.properties replaceProperties
@@ -144,6 +148,36 @@ publishing {
         maven {
             url "file://${project.projectDir}/repo"
         }
+    }
+}
+
+def changelogFile = file("build/changelog.txt")
+
+publishMods {
+    file = jar.archiveFile
+    displayName = "${mod_name.replace(' ','')}-NeoForge-${minecraft_version} ${project.version}"
+    if (changelogFile.exists()) {
+        changelog.set(changelogFile.getText())
+    }
+    type = ReleaseType.of(versionType.toUpperCase())
+    modLoaders.add("neoforge")
+
+    curseforge {
+        projectId = "1157051"
+        projectSlug = "dynamic-trees-regions-unexplored" // Required for discord webhook
+        accessToken = curseApiKey ?: System.getenv("CURSEFORGE_API_KEY")
+        minecraftVersions.add("1.21.1")
+        requires("dynamictrees")
+        requires("regions-unexplored")
+        optional("dynamictreesplus")
+    }
+    modrinth {
+        projectId = "IOcN8dvy"
+        accessToken = modrinthToken ?: System.getenv("MODRINTH_TOKEN")
+        minecraftVersions.add("1.21.1")
+        requires("vdjF5PL5") //dt
+        requires("Tkikq67H") //ru
+        optional("qaO9Dqpu") //dt+
     }
 }
 
