@@ -15,7 +15,7 @@ import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 
 import java.util.stream.Collectors;
 
-@EventBusSubscriber(modid = DynamicTreesRU.MOD_ID)
+@EventBusSubscriber(modid = DynamicTreesRU.MOD_ID, value = Dist.CLIENT)
 public class DTRUClient {
 
     public static void setup() {
