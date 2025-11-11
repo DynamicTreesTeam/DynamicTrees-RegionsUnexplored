@@ -7,14 +7,13 @@ package dtteam.dtru.genfeature;
 //import com.ferreusveritas.dynamictrees.systems.genfeature.context.PostGenerationContext;
 //import com.ferreusveritas.dynamictrees.tree.species.Species;
 //import dtteam.dtru.block.TransitionLogBranchBlock;
+
 import com.dtteam.dynamictrees.api.configuration.ConfigurationProperty;
 import com.dtteam.dynamictrees.systems.genfeature.GenFeature;
 import com.dtteam.dynamictrees.systems.genfeature.GenFeatureConfiguration;
 import com.dtteam.dynamictrees.systems.genfeature.context.PostGenerationContext;
 import com.dtteam.dynamictrees.tree.TreeHelper;
 import com.dtteam.dynamictrees.tree.species.Species;
-//import dtteam.dtru.tree.BrimwoodFamily;
-//import dtteam.dtru.tree.TransitionLogFamily;
 import dtteam.dtru.block.TransitionLogBranchBlock;
 import dtteam.dtru.tree.BrimwoodFamily;
 import dtteam.dtru.tree.TransitionLogFamily;

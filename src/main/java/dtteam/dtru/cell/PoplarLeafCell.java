@@ -3,7 +3,6 @@ package dtteam.dtru.cell;
 
 //import com.ferreusveritas.dynamictrees.cell.MatrixCell;
 
-import com.dtteam.dynamictrees.api.registry.TypedRegistry;
 import com.dtteam.dynamictrees.systems.cell.MatrixCell;
 
 public class PoplarLeafCell extends MatrixCell {

@@ -1,14 +1,7 @@
 package dtteam.dtru.model;
 
-//import com.ferreusveritas.dynamictrees.block.branch.SurfaceRootBlock;
-//import com.ferreusveritas.dynamictrees.client.ModelHelper;
-//import com.ferreusveritas.dynamictrees.util.CoordUtils;
-//import com.ferreusveritas.dynamictrees.util.RootConnections;
-//import com.dtteam.dynamictrees.api.network.RootConnections;
 import com.dtteam.dynamictrees.api.network.RootConnections;
-import com.dtteam.dynamictrees.model.geometry.RootsBlockModelGeometry;
 import com.dtteam.dynamictrees.block.branch.SurfaceRootBlock;
-//import com.dtteam.dynamictrees.utility.Roo
 import com.dtteam.dynamictrees.model.ModelHelper;
 import com.dtteam.dynamictrees.utility.CoordUtils;
 import com.google.common.collect.Maps;
@@ -27,13 +20,6 @@ import net.minecraft.world.inventory.InventoryMenu;
 import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
-//import net.minecraftforge.api.distmarker.Dist;
-//import net.minecraftforge.api.distmarker.OnlyIn;
-//import net.minecraftforge.client.ChunkRenderTypeSet;
-//import net.minecraftforge.client.NamedRenderTypeManager;
-//import net.minecraftforge.client.model.IDynamicBakedModel;
-//import net.minecraftforge.client.model.IModelBuilder;
-//import net.minecraftforge.client.model.data.ModelData;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.neoforge.client.ChunkRenderTypeSet;

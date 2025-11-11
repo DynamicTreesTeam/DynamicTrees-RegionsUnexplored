@@ -1,7 +1,5 @@
 package dtteam.dtru.model;
 
-//import com.ferreusveritas.dynamictrees.models.geometry.BranchBlockModelGeometry;
-//import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.dtteam.dynamictrees.model.geometry.BranchBlockModelGeometry;
 import com.dtteam.dynamictrees.tree.family.Family;
 import net.minecraft.client.renderer.block.model.ItemOverrides;
@@ -14,9 +12,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.neoforge.client.model.geometry.IGeometryBakingContext;
-//import net.minecraftforge.api.distmarker.Dist;
-//import net.minecraftforge.api.distmarker.OnlyIn;
-//import net.minecraftforge.client.model.geometry.IGeometryBakingContext;
 
 import javax.annotation.Nullable;
 import java.util.function.Function;

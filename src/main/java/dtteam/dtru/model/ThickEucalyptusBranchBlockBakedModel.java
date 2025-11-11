@@ -2,9 +2,8 @@ package dtteam.dtru.model;
 
 import com.dtteam.dynamictrees.block.branch.BranchBlock;
 import com.dtteam.dynamictrees.block.branch.ThickBranchBlock;
-import com.dtteam.dynamictrees.model.baked.ThickBranchBlockBakedModel;
-import com.dtteam.dynamictrees.model.modeldata.ModelConnections;
 import com.dtteam.dynamictrees.model.ModelHelper;
+import com.dtteam.dynamictrees.model.modeldata.ModelConnections;
 import com.dtteam.dynamictrees.tree.family.Family;
 import com.dtteam.dynamictrees.utility.CoordUtils;
 import com.google.common.collect.Maps;

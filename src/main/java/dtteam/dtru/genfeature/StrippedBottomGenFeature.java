@@ -10,12 +10,12 @@ package dtteam.dtru.genfeature;
 //import com.ferreusveritas.dynamictrees.tree.family.Family;
 //import com.ferreusveritas.dynamictrees.tree.species.Species;
 //import dtteam.dtru.block.TransitionLogBranchBlock;
+
 import com.dtteam.dynamictrees.api.configuration.ConfigurationProperty;
 import com.dtteam.dynamictrees.systems.genfeature.GenFeature;
 import com.dtteam.dynamictrees.systems.genfeature.GenFeatureConfiguration;
 import com.dtteam.dynamictrees.systems.genfeature.context.PostGenerationContext;
 import com.dtteam.dynamictrees.tree.TreeHelper;
-//import dtteam.dtru.tree.TransitionLogFamily;
 import dtteam.dtru.block.TransitionLogBranchBlock;
 import dtteam.dtru.tree.TransitionLogFamily;
 import net.minecraft.core.BlockPos;
