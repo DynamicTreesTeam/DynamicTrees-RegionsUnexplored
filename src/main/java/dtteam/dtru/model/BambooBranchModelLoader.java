@@ -24,7 +24,7 @@ public class BambooBranchModelLoader extends BranchBlockModelLoader {
     @Override
     public BranchBlockModelGeometry read(JsonObject modelObject, JsonDeserializationContext deserializationContext) throws JsonParseException {
         final JsonObject textures = this.getTexturesObject(modelObject);
-        final ResourceLocation familyName = this.getLocation(modelObject);
+        final ResourceLocation familyName = this.getLocation(modelObject, "family");
 
         return this.getModelGeometry(this.getBarkTextureLocation(textures), this.getRingsTextureLocation(textures), this.getLeavesTextureLocation(textures),
                 familyName == null ? null : ResourceLocationUtils.parseDTLocation(familyName));

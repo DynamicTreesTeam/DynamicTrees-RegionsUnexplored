@@ -1,7 +1,5 @@
 package dtteam.dtru.block;
 
-//import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
-//import com.ferreusveritas.dynamictreesplus.block.mushroom.CapProperties;
 import com.dtteam.dynamictrees.api.registry.TypedRegistry;
 import com.dtteam.dynamictreesplus.block.mushroom.CapProperties;
 import net.minecraft.resources.ResourceLocation;
@@ -17,8 +15,8 @@ public class BioshroomCapProperties extends CapProperties {
     }
 
     @Override
-    public BlockBehaviour.Properties getDefaultBlockProperties(MapColor mapColor) {
-        return super.getDefaultBlockProperties(mapColor).sound(SoundType.WART_BLOCK);
+    public BlockBehaviour.Properties getDefaultBlockProperties() {
+        return super.getDefaultBlockProperties().sound(SoundType.WART_BLOCK);
     }
 
 }
