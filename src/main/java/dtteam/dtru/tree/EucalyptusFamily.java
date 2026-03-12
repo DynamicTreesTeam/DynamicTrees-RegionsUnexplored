@@ -8,7 +8,7 @@ import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
-import net.regions_unexplored.config.RuCommonConfig;
+import net.regions_unexplored.config.RuClientConfig;
 
 import java.awt.*;
 
@@ -22,9 +22,9 @@ public class EucalyptusFamily extends Family {
     @OnlyIn(Dist.CLIENT)
     public int branchColorMultiplier(BlockState state, BlockAndTintGetter level, BlockPos pos) {
         Color rainbow = Color.getHSBColor(
-                ((float)pos.getX() + (float)pos.getY() + (float)pos.getZ()) / RuCommonConfig.EUCALYPTUS_TRANSITION_SIZE.get().floatValue(),
-                RuCommonConfig.EUCALYPTUS_SATURATION.get().floatValue(),
-                RuCommonConfig.EUCALYPTUS_BRIGHTNESS.get().floatValue());
+                ((float)pos.getX() + (float)pos.getY() + (float)pos.getZ()) / RuClientConfig.EUCALYPTUS_TRANSITION_SIZE.get().floatValue(),
+                RuClientConfig.EUCALYPTUS_SATURATION.get().floatValue(),
+                RuClientConfig.EUCALYPTUS_BRIGHTNESS.get().floatValue());
         return rainbow.getRGB();
     }
 }
