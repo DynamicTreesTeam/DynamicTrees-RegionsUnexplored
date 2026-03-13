@@ -77,7 +77,8 @@ public class DTRURegistries {
     @SubscribeEvent
     public static void registerSpeciesTypes(final TypeRegistryEvent<Species> event) {
         if (!event.isEntryOfType(Species.class)) return;
-        event.registerType(DynamicTreesRU.location("cypress"), GenUnderwaterSpecies.TYPE);
+        event.registerType(DynamicTreesRU.location("generate_underwater"), GenUnderwaterSpecies.TYPE);
+        event.registerType(DynamicTreesRU.location("cypress"), GenUnderwaterSpecies.TYPE);//Marked for removal
         if (DynamicTreesRU.isDynamicTreesPlusLoaded()){
             DTRUPlusRegistries.registerSpeciesTypes(event);
         }

@@ -394,13 +394,13 @@
     "apply": {
       "species" : {
         "random" : {
-          "dtru:dead" : 2,
+          "dtru:dead" : 1,
           "dtru:pine" : 1,
           "dtru:dead_pine" : 1
         }
       },
       "density": [1.6],
-      "chance": 0.8,
+      "chance": 0.6,
       "forestness" : 1.0
     }
   },

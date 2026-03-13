@@ -21,7 +21,7 @@ public class GenUnderwaterSpecies extends Species {
 
     private static final int maxDepth = 7;
     public boolean isAcceptableSoilForWorldgen(LevelAccessor world, BlockPos pos, BlockState soilBlockState) {
-        final boolean isAcceptableSoil = isAcceptableSoil(world, pos, soilBlockState);
+        final boolean isAcceptableSoil = isAcceptableSoilForWorldgen(soilBlockState);
 
         // If the block is water, check the block below it is valid soil (and not water).
         if (isAcceptableSoil && isWater(soilBlockState)) {

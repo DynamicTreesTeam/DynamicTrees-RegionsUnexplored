@@ -79,7 +79,10 @@ neoForge {
             // gameDirectory = project.file('run-data')
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources').getAbsolutePath(), "--existing-mod", "dynamictrees", "--existing-mod", "regions_unexplored"
+            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(),
+                    '--existing', file('src/main/resources').getAbsolutePath(),
+                    "--existing-mod", "dynamictrees",
+                    "--existing-mod", "regions_unexplored"
         }
 
         // applies to all the run configs above
@@ -115,6 +118,8 @@ dependencies {
 //    implementation "curse.maven:dynamictreesplus-478155:7205442"
     implementation "curse.maven:regions-unexplored-659110:7737325"
     implementation "curse.maven:terrablender-neoforge-940057:6054947"
+    implementation "curse.maven:lithostitched-936015:7731887"
+    implementation "curse.maven:biolith-852512:7074761"
 
     implementation "curse.maven:jade-324717:6853386"
 }
