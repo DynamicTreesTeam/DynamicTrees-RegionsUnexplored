@@ -24,7 +24,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
-import net.regions_unexplored.block.RuBlocks;
+import net.regions_unexplored.registry.RUBlocks;
 
 public class DTRUPlusRegistries {
 
@@ -54,11 +54,11 @@ public class DTRUPlusRegistries {
     }
 
     public static void setup(){
-        setupBioshroomConnectable(RuBlocks.BLUE_BIOSHROOM_BLOCK.get());
-        setupBioshroomConnectable(RuBlocks.GLOWING_BLUE_BIOSHROOM_BLOCK.get());
-        setupBioshroomConnectable(RuBlocks.GLOWING_GREEN_BIOSHROOM_BLOCK.get());
-        setupBioshroomConnectable(RuBlocks.GLOWING_PINK_BIOSHROOM_BLOCK.get());
-        setupBioshroomConnectable(RuBlocks.GLOWING_YELLOW_BIOSHROOM_BLOCK.get());
+        setupBioshroomConnectable(RUBlocks.BLUE_BIOSHROOM_BLOCK.get());
+        setupBioshroomConnectable(RUBlocks.GLOWING_BLUE_BIOSHROOM_BLOCK.get());
+        setupBioshroomConnectable(RUBlocks.GLOWING_GREEN_BIOSHROOM_BLOCK.get());
+        setupBioshroomConnectable(RUBlocks.GLOWING_PINK_BIOSHROOM_BLOCK.get());
+        setupBioshroomConnectable(RUBlocks.GLOWING_YELLOW_BIOSHROOM_BLOCK.get());
 
         BranchConnectables.makeBlockConnectable(Blocks.SHROOMLIGHT, (state, level, pos, side) -> {
             if (side.getAxis() == Direction.Axis.Y) return 0;

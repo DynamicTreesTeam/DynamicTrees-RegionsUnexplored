@@ -29,12 +29,12 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.regions_unexplored.world.features.treedecorators.BlackwoodBioshroom;
 import net.regions_unexplored.world.level.feature.configuration.GiantBioshroomConfiguration;
-import net.regions_unexplored.world.level.feature.configuration.RuTreeConfiguration;
+import net.regions_unexplored.world.level.feature.configuration.RUTreeConfiguration;
 import net.regions_unexplored.world.level.feature.tree.*;
 import net.regions_unexplored.world.level.feature.tree.nether.BrimWillowFeature;
 import net.regions_unexplored.world.level.feature.tree.nether.TallBrimWillowFeature;
+import net.regions_unexplored.worldgen.treedecorator.BlackwoodBioshroomDecorator;
 
 @EventBusSubscriber(modid = DynamicTreesRU.MOD_ID)
 public class DTRURegistries {
@@ -93,7 +93,7 @@ public class DTRURegistries {
         event.registerType(DynamicTreesRU.location("brimwood"), BrimwoodFamily.TYPE);
     }
 
-    public static final FeatureCanceller RU_TREE_CANCELLER = new TreeFeatureCanceller<>(DynamicTreesRU.location("tree"), RuTreeConfiguration.class);
+    public static final FeatureCanceller RU_TREE_CANCELLER = new TreeFeatureCanceller<>(DynamicTreesRU.location("tree"), RUTreeConfiguration.class);
     public static final FeatureCanceller RU_TREE2_CANCELLER = new TreeFeatureCanceller<>(DynamicTreesRU.location("tree_2"), NoneFeatureConfiguration.class){
         @Override
         public boolean shouldCancel(ConfiguredFeature<?, ?> configuredFeature, BiomePropertySelectors.NormalFeatureCancellation featureCancellations) {
@@ -118,14 +118,14 @@ public class DTRURegistries {
     };
     public static final FeatureCanceller TREE_NO_SHROOMS_CANCELLER = new TreeFeatureCanceller<>(DynamicTreesRU.location("tree_no_shrooms"), NoneFeatureConfiguration.class){
         private boolean isConfigClass (FeatureConfiguration config){
-            return config instanceof TreeConfiguration || config instanceof RuTreeConfiguration;
+            return config instanceof TreeConfiguration || config instanceof RUTreeConfiguration;
         }
         @Override
         public boolean shouldCancel(ConfiguredFeature<?, ?> configuredFeature, BiomePropertySelectors.NormalFeatureCancellation featureCancellations) {
             final FeatureConfiguration featureConfig = configuredFeature.config();
 
             if (isConfigClass(featureConfig)) {
-                if (featureConfig instanceof TreeConfiguration treeConfiguration && !treeConfiguration.decorators.isEmpty() && treeConfiguration.decorators.getFirst() instanceof BlackwoodBioshroom){
+                if (featureConfig instanceof TreeConfiguration treeConfiguration && !treeConfiguration.decorators.isEmpty() && treeConfiguration.decorators.getFirst() instanceof BlackwoodBioshroomDecorator){
                     return false;
                 }
                 String nameSpace = "";
