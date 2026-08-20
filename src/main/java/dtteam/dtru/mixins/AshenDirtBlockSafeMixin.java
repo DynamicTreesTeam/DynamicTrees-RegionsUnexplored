@@ -3,7 +3,7 @@ package dtteam.dtru.mixins;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.regions_unexplored.world.level.block.other_dirt.AshenDirtBlock;
+import net.regions_unexplored.block.type.dirt.AshenDirtBlock;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;

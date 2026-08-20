@@ -116,9 +116,9 @@ dependencies {
     implementation "com.dtteam.dynamictreesplus:DynamicTreesPlus:$dynamic_trees_plus_version"
 //    implementation "curse.maven:dynamictrees-252818:7206627"
 //    implementation "curse.maven:dynamictreesplus-478155:7205442"
-    implementation "curse.maven:regions-unexplored-659110:7737325"
+    implementation "curse.maven:regions-unexplored-659110:8419667"
     implementation "curse.maven:terrablender-neoforge-940057:6054947"
-    implementation "curse.maven:lithostitched-936015:7731887"
+    implementation "curse.maven:lithostitched-936015:8378498"
     implementation "curse.maven:biolith-852512:7074761"
 
     implementation "curse.maven:jade-324717:6853386"
@@ -170,23 +170,23 @@ publishMods {
     type = ReleaseType.of(versionType.toUpperCase())
     modLoaders.add("neoforge")
 
-    curseforge {
-        projectId = "1157051"
-        projectSlug = "dynamic-trees-regions-unexplored" // Required for discord webhook
-        accessToken = curseApiKey ?: System.getenv("CURSEFORGE_API_KEY")
-        minecraftVersions.add("1.21.1")
-        requires("dynamictrees")
-        requires("regions-unexplored")
-        optional("dynamictreesplus")
-    }
-    modrinth {
-        projectId = "IOcN8dvy"
-        accessToken = modrinthToken ?: System.getenv("MODRINTH_TOKEN")
-        minecraftVersions.add("1.21.1")
-        requires("vdjF5PL5") //dt
-        requires("Tkikq67H") //ru
-        optional("qaO9Dqpu") //dt+
-    }
+//    curseforge {
+//        projectId = "1157051"
+//        projectSlug = "dynamic-trees-regions-unexplored" // Required for discord webhook
+//        accessToken = curseApiKey ?: System.getenv("CURSEFORGE_API_KEY")
+//        minecraftVersions.add("1.21.1")
+//        requires("dynamictrees")
+//        requires("regions-unexplored")
+//        optional("dynamictreesplus")
+//    }
+//    modrinth {
+//        projectId = "IOcN8dvy"
+//        accessToken = modrinthToken ?: System.getenv("MODRINTH_TOKEN")
+//        minecraftVersions.add("1.21.1")
+//        requires("vdjF5PL5") //dt
+//        requires("Tkikq67H") //ru
+//        optional("qaO9Dqpu") //dt+
+//    }
 }
 
 tasks.withType(JavaCompile).configureEach {

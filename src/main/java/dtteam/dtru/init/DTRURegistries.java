@@ -34,7 +34,13 @@ import net.regions_unexplored.world.level.feature.configuration.RUTreeConfigurat
 import net.regions_unexplored.world.level.feature.tree.*;
 import net.regions_unexplored.world.level.feature.tree.nether.BrimWillowFeature;
 import net.regions_unexplored.world.level.feature.tree.nether.TallBrimWillowFeature;
-import net.regions_unexplored.worldgen.treedecorator.BlackwoodBioshroomDecorator;
+
+import net.regions_unexplored.worldgen.treedecorator.AttachedToLogsDecorator;
+import net.regions_unexplored.worldgen.treedecorator.GroupBranchDecorator;
+import net.regions_unexplored.worldgen.treedecorator.HangingVinesDecorator;
+import net.regions_unexplored.worldgen.treedecorator.PlaceOnGroundDecorator;
+import net.regions_unexplored.worldgen.treedecorator.RandomBranchDecorator;
+import net.regions_unexplored.worldgen.treedecorator.WillowTrunkDecorator;
 
 @EventBusSubscriber(modid = DynamicTreesRU.MOD_ID)
 public class DTRURegistries {
@@ -126,7 +132,13 @@ public class DTRURegistries {
             final FeatureConfiguration featureConfig = configuredFeature.config();
 
             if (isConfigClass(featureConfig)) {
-                if (featureConfig instanceof TreeConfiguration treeConfiguration && !treeConfiguration.decorators.isEmpty() && treeConfiguration.decorators.getFirst() instanceof BlackwoodBioshroomDecorator){
+                if (featureConfig instanceof TreeConfiguration treeConfiguration && !treeConfiguration.decorators.isEmpty() && (
+                        treeConfiguration.decorators.getFirst() instanceof AttachedToLogsDecorator ||
+                                treeConfiguration.decorators.getFirst() instanceof GroupBranchDecorator ||
+                                treeConfiguration.decorators.getFirst() instanceof HangingVinesDecorator ||
+                                treeConfiguration.decorators.getFirst() instanceof PlaceOnGroundDecorator ||
+                                treeConfiguration.decorators.getFirst() instanceof RandomBranchDecorator ||
+                                treeConfiguration.decorators.getFirst() instanceof WillowTrunkDecorator)){
                     return false;
                 }
                 String nameSpace = "";
