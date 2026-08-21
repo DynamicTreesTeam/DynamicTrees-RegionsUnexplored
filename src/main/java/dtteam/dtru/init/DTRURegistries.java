@@ -34,7 +34,6 @@ import net.regions_unexplored.world.level.feature.configuration.RUTreeConfigurat
 import net.regions_unexplored.world.level.feature.tree.*;
 import net.regions_unexplored.world.level.feature.tree.nether.BrimWillowFeature;
 import net.regions_unexplored.world.level.feature.tree.nether.TallBrimWillowFeature;
-import net.regions_unexplored.worldgen.treedecorator.BlackwoodBioshroomDecorator;
 
 @EventBusSubscriber(modid = DynamicTreesRU.MOD_ID)
 public class DTRURegistries {
@@ -126,9 +125,11 @@ public class DTRURegistries {
             final FeatureConfiguration featureConfig = configuredFeature.config();
 
             if (isConfigClass(featureConfig)) {
-                if (featureConfig instanceof TreeConfiguration treeConfiguration && !treeConfiguration.decorators.isEmpty() && treeConfiguration.decorators.getFirst() instanceof BlackwoodBioshroomDecorator){
-                    return false;
-                }
+//                if (featureConfig instanceof TreeConfiguration treeConfiguration
+//                        && !treeConfiguration.decorators.isEmpty()
+//                        && treeConfiguration.decorators.getFirst() instanceof BlackwoodBioshroomDecorator){
+//                    return false;
+//                }
                 String nameSpace = "";
                 var firstFeature = configuredFeature.getFeatures().findFirst();
                 if (firstFeature.isEmpty()) return false;

@@ -116,9 +116,9 @@ dependencies {
     implementation "com.dtteam.dynamictreesplus:DynamicTreesPlus:$dynamic_trees_plus_version"
 //    implementation "curse.maven:dynamictrees-252818:7206627"
 //    implementation "curse.maven:dynamictreesplus-478155:7205442"
-    implementation "curse.maven:regions-unexplored-659110:7737325"
+    implementation "curse.maven:regions-unexplored-659110:8419667"
     implementation "curse.maven:terrablender-neoforge-940057:6054947"
-    implementation "curse.maven:lithostitched-936015:7731887"
+    implementation "curse.maven:lithostitched-936015:8378498"
     implementation "curse.maven:biolith-852512:7074761"
 
     implementation "curse.maven:jade-324717:6853386"
