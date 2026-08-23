@@ -12,7 +12,7 @@
     "__comment": "Override for biomes with bioshrooms.",
     "select": { "name": "regions_unexplored:(blackwood_taiga|fungal_fen)" },
     "cancellers": {
-      "types": ["dtru:tree_no_shrooms"],
+      "types": ["dtru:tree_2"],
       "namespaces": ["regions_unexplored", "minecraft"]
     }
   },

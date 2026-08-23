@@ -12,19 +12,28 @@ import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
 import com.dtteam.dynamictrees.tree.family.Family;
 import com.dtteam.dynamictrees.tree.species.Species;
 import com.dtteam.dynamictrees.worldgen.featurecancellation.TreeFeatureCanceller;
+import dev.worldgen.lithostitched.api.util.Weighted;
+import dev.worldgen.lithostitched.api.util.WeightedList;
+import dev.worldgen.lithostitched.worldgen.feature.SimplePlacedFeature;
+import dev.worldgen.lithostitched.worldgen.feature.config.SelectConfig;
+import dev.worldgen.lithostitched.worldgen.feature.config.SimplePlacedConfig;
+import dev.worldgen.lithostitched.worldgen.feature.config.WeightedSelectorConfig;
 import dtteam.dtru.DynamicTreesRU;
 import dtteam.dtru.cell.DTRUCellKits;
 import dtteam.dtru.genfeature.DTRUGenFeatures;
 import dtteam.dtru.growthlogic.DTRUGrowthLogicKits;
 import dtteam.dtru.tree.*;
+import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.TreeFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.HugeMushroomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -97,13 +106,24 @@ public class DTRURegistries {
     public static final FeatureCanceller RU_TREE2_CANCELLER = new TreeFeatureCanceller<>(DynamicTreesRU.location("tree_2"), NoneFeatureConfiguration.class){
         @Override
         public boolean shouldCancel(ConfiguredFeature<?, ?> configuredFeature, BiomePropertySelectors.NormalFeatureCancellation featureCancellations) {
-            final Feature<?> featureConfig = configuredFeature.feature();
-            return featureConfig instanceof LargeJoshuaTreeFeature ||
-                    featureConfig instanceof MediumJoshuaTreeFeature ||
-                    featureConfig instanceof SmallSocotraTreeFeature ||
-                    featureConfig instanceof CobaltShrubFeature ||
-                    featureConfig instanceof BrimWillowFeature ||
-                    featureConfig instanceof TallBrimWillowFeature;
+            final Feature<?> feature = configuredFeature.feature();
+
+            if (configuredFeature.config() instanceof SimplePlacedConfig(Holder<PlacedFeature> feature1)){
+                var config = feature1.value().feature().value().config();
+                return config instanceof TreeConfiguration || config instanceof RUTreeConfiguration;
+            }
+
+            if (configuredFeature.config() instanceof WeightedSelectorConfig(WeightedList<Holder<PlacedFeature>> features)){
+                return features.unwrap().stream().map(w -> w.value().value().feature().value())
+                        .anyMatch(cf -> cf.feature() instanceof TreeFeature || cf.config() instanceof RUTreeConfiguration);
+            }
+
+            return feature instanceof LargeJoshuaTreeFeature ||
+                    feature instanceof MediumJoshuaTreeFeature ||
+                    feature instanceof SmallSocotraTreeFeature ||
+                    feature instanceof CobaltShrubFeature ||
+                    feature instanceof BrimWillowFeature ||
+                    feature instanceof TallBrimWillowFeature;
         }
     };
     public static final FeatureCanceller RU_MUSHROOM_CANCELLER = new TreeFeatureCanceller<>(DynamicTreesRU.location("mushroom"), GiantBioshroomConfiguration.class);
