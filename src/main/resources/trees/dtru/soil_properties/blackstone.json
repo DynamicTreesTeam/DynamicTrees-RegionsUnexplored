@@ -1,0 +1,4 @@
+{
+  "primitive_soil": "minecraft:blackstone",
+  "acceptable_soils": [ "stone_like", "nether_like" ]
+}

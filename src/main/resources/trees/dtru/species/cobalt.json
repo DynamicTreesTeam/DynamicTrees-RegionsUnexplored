@@ -21,5 +21,5 @@
   },
   "perfect_biomes": { "tags": [ "#c:is_nether" ] },
   "primitive_sapling": "regions_unexplored:cobalt_sapling",
-  "acceptable_soils": ["nether_soil_like"]
+  "acceptable_soils": ["nether_soil_like", "stone_like"]
 }
