@@ -1,16 +1,5 @@
 package dtteam.dtru.genfeature;
 
-//import com.ferreusveritas.dynamictrees.api.TreeHelper;
-//import com.ferreusveritas.dynamictrees.api.configuration.ConfigurationProperty;
-//import com.ferreusveritas.dynamictrees.block.branch.BranchBlock;
-//import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
-//import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeatureConfiguration;
-//import com.ferreusveritas.dynamictrees.systems.genfeature.context.PostGenerationContext;
-//import com.ferreusveritas.dynamictrees.systems.genfeature.context.PostGrowContext;
-//import com.ferreusveritas.dynamictrees.tree.family.Family;
-//import com.ferreusveritas.dynamictrees.tree.species.Species;
-//import dtteam.dtru.block.TransitionLogBranchBlock;
-
 import com.dtteam.dynamictrees.api.configuration.ConfigurationProperty;
 import com.dtteam.dynamictrees.systems.genfeature.GenFeature;
 import com.dtteam.dynamictrees.systems.genfeature.GenFeatureConfiguration;

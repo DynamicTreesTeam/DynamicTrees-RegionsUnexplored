@@ -1,0 +1,38 @@
+{
+  "family": "dtru:mauve",
+  "tapering": 0.3,
+  "signal_energy": 16.0,
+  "lowest_branch_height": 4,
+  "up_probability": 1,
+  "growth_rate": 0.8,
+  "leaves_properties": "dtru:salmon_wisteria",
+  "generate_seed": true,
+  "generate_sapling": true,
+  "environment_factors" : {
+    "#c:is_cold": 0.8,
+    "#c:is_hot": 0.8,
+    "#c:is_dry": 0.5
+  },
+  "mega_species": "dtru:mega_salmon_wisteria",
+  "primitive_sapling": "regions_unexplored:salmon_wisteria_sapling",
+  "features" : [
+    "bee_nest",
+    {
+      "name": "dtru:wisteria_vines",
+      "properties": {
+        "vine_type": "ceiling",
+        "block": "regions_unexplored:salmon_wisteria_vines",
+        "max_length": 5,
+        "quantity": 12,
+        "fruiting_radius": 10
+      }
+    },
+    "bottom_flare",
+    {
+      "name": "roots",
+      "properties": {
+        "min_trunk_radius": 9
+      }
+    }
+  ]
+}

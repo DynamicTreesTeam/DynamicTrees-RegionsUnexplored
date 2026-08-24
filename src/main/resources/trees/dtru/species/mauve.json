@@ -1,7 +1,9 @@
 {
   "family": "dtru:mauve",
   "tapering": 0.3,
-  "signal_energy": 12.0,
+  "signal_energy": 16.0,
+  "lowest_branch_height": 4,
+  "up_probability": 1,
   "growth_rate": 0.8,
   "leaves_properties": "dtru:mauve",
   "generate_seed": true,
@@ -12,9 +14,29 @@
     "#c:is_dry": 0.5
   },
   "mega_species": "dtru:mega_mauve",
-  "perfect_biomes": { "name": "regions_unexplored:rocky_meadow" },
-  "primitive_sapling": "regions_unexplored:mauve_sapling",
+  "primitive_sapling": "regions_unexplored:lavender_wisteria_sapling",
   "features" : [
-    "bee_nest"
-  ]
+    "bee_nest",
+    {
+      "name": "dtru:wisteria_vines",
+      "properties": {
+        "vine_type": "ceiling",
+        "block": "regions_unexplored:lavender_wisteria_vines",
+        "max_length": 5,
+        "quantity": 12,
+        "fruiting_radius": 10
+      }
+    },
+    "bottom_flare",
+    {
+      "name": "roots",
+      "properties": {
+        "min_trunk_radius": 9
+      }
+    }
+  ],
+  "lang_overrides": {
+    "species": "Lavender Wisteria",
+    "seed": "Lavender Wisteria Seed"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "loader": "dynamictrees:surface_root",
   "textures": {
-    "bark": "regions_unexplored:block/mauve_log"
+    "bark": "regions_unexplored:block/wisteria_log"
   }
 }

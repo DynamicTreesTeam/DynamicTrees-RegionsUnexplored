@@ -1,15 +1,15 @@
 {
   "values": [
     {
-      "id": "dtru:blue_bioshroom_seed",
-      "required": false
-    },
-    {
       "id": "dtru:green_bioshroom_seed",
       "required": false
     },
     {
       "id": "dtru:pink_bioshroom_seed",
+      "required": false
+    },
+    {
+      "id": "dtru:blue_bioshroom_seed",
       "required": false
     },
     {

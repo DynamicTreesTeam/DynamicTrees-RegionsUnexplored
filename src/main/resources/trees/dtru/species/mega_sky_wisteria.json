@@ -1,0 +1,45 @@
+{
+  "family": "dtru:mauve",
+  "tapering": 0.25,
+  "signal_energy": 32.0,
+  "up_probability": 2,
+  "lowest_branch_height": 9,
+  "growth_rate": 1.5,
+  "soil_longevity": 16,
+  "max_branch_radius": 24,
+  "leaves_properties": "dtru:sky_wisteria",
+  "environment_factors" : {
+    "#c:is_cold": 0.8,
+    "#c:is_hot": 0.8,
+    "#c:is_dry": 0.5
+  },
+  "features": [
+    "bottom_flare",
+    {
+      "name": "roots",
+      "properties": {
+        "level_limit": 3,
+        "scale_factor": 20,
+        "min_trunk_radius": 9
+      }
+    },
+    "mound",
+    "bee_nest",
+    {
+      "name": "dtru:wisteria_vines",
+      "properties": {
+        "vine_type": "ceiling",
+        "block": "regions_unexplored:sky_wisteria_vines",
+        "max_length": 5,
+        "quantity": 24,
+        "fruiting_radius": 6
+      }
+    }
+  ],
+  "generate_seed": true,
+  "generate_sapling": true,
+  "sapling_shape": "fat_sapling",
+  "model_overrides": {
+    "sapling": "dynamictrees:block/smartmodel/large_sapling"
+  }
+}

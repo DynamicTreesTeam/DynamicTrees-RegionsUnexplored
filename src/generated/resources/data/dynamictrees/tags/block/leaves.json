@@ -1,5 +1,6 @@
 {
   "values": [
+    "dtru:joshua_leaves",
     "dtru:acacia_twiglet_leaves",
     "dtru:ashen_leaves",
     "dtru:ashen_pine_leaves",
@@ -17,7 +18,6 @@
     "dtru:flowering_leaves",
     "dtru:flowering_undergrowth_leaves",
     "dtru:golden_larch_leaves",
-    "dtru:joshua_leaves",
     "dtru:kapok_leaves",
     "dtru:larch_leaves",
     "dtru:magnolia_leaves",
@@ -33,7 +33,9 @@
     "dtru:redwood_leaves",
     "dtru:red_maple_leaves",
     "dtru:reef_jungle_leaves",
+    "dtru:salmon_wisteria_leaves",
     "dtru:silver_birch_leaves",
+    "dtru:sky_wisteria_leaves",
     "dtru:socotra_leaves",
     "dtru:spruce_twiglet_leaves",
     "dtru:twisting_birch_leaves",

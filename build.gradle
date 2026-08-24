@@ -122,6 +122,7 @@ dependencies {
     implementation "curse.maven:biolith-852512:7074761"
 
     implementation "curse.maven:jade-324717:6853386"
+    implementation "curse.maven:cc-tweaked-282001:5714512"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

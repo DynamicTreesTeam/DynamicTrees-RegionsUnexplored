@@ -1,4 +1,7 @@
 {
-  "primitive_leaves": "regions_unexplored:mauve_leaves",
-  "has_tick_particles": true
+  "primitive_leaves": "regions_unexplored:lavender_wisteria_leaves",
+  "has_tick_particles": true,
+  "texture_overrides": {
+    "leaves": "regions_unexplored:block/wisteria_leaves"
+  }
 }

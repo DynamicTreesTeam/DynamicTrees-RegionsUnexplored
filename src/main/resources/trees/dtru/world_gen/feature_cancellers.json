@@ -40,7 +40,7 @@
     "select": { "name": "regions_unexplored:mycotoxic_undergrowth" },
     "cancellers": {
       "stage": "underground_decoration",
-      "types": [ "dtru:mushroom" ],
+      "types": [ "dtru:mushroom", "dtru:mushroom_2" ],
       "namespaces": [ "regions_unexplored", "minecraft" ]
     }
   }

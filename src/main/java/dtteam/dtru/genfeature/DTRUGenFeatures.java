@@ -22,13 +22,15 @@ public class DTRUGenFeatures {
     public static final GenFeature PREVENT_WATER_GEN = new PreventWaterGenerationGenFeature(DynamicTreesRU.location( "prevent_water_generation"));
     public static final GenFeature STRIPPED_BOTTOM = new StrippedBottomGenFeature(DynamicTreesRU.location( "stripped_bottom"));
     public static final GenFeature MAGMA_BOTTOM = new MagmaBottomGenFeature(DynamicTreesRU.location( "magma_bottom"));
+    public static final GenFeature WISTERIA_VINES = new WisteriaVinesGenFeature(DynamicTreesRU.location( "wisteria_vines"));
 
 //    @SubscribeEvent
     public static void register(final Registry<GenFeature> registry) {
         registry.registerAll(BIG_BOTTOM_FLARE, EXTRA_BOTTOM_FLARE,
                 REPLACE_ON_RADIUS, GEN_BIOME_PREDICATE, SOIL_WHITELIST,
                 ALTERNATIVE_BRANCH, MUSHROOM_VINES, PREVENT_WATER_GEN,
-                STRIPPED_BOTTOM, BIOME_PREDICATE_ALT, MAGMA_BOTTOM);
+                STRIPPED_BOTTOM, BIOME_PREDICATE_ALT, MAGMA_BOTTOM,
+                WISTERIA_VINES);
         if (DynamicTreesRU.isDynamicTreesPlusLoaded()){
             DTRUPlusGenFeatures.register(registry);
         }

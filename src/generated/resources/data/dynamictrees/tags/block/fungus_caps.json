@@ -1,15 +1,15 @@
 {
   "values": [
     {
-      "id": "dtru:blue_bioshroom_sapling",
-      "required": false
-    },
-    {
       "id": "dtru:green_bioshroom_sapling",
       "required": false
     },
     {
       "id": "dtru:pink_bioshroom_sapling",
+      "required": false
+    },
+    {
+      "id": "dtru:blue_bioshroom_sapling",
       "required": false
     },
     {

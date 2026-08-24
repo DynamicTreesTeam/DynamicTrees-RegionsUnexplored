@@ -1,7 +1,7 @@
 {
   "loader": "dynamictrees:branch",
   "textures": {
-    "bark": "regions_unexplored:block/mauve_log",
-    "rings": "regions_unexplored:block/mauve_log_top"
+    "bark": "regions_unexplored:block/wisteria_log",
+    "rings": "regions_unexplored:block/wisteria_log_top"
   }
 }

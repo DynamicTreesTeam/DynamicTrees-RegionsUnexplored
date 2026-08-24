@@ -126,11 +126,11 @@
     },
     {
       "type": "dynamictrees:thick_branch_rings",
-      "resource": "regions_unexplored:block/mauve_log_top"
+      "resource": "regions_unexplored:block/wisteria_log_top"
     },
     {
       "type": "dynamictrees:thick_branch_rings",
-      "resource": "regions_unexplored:block/stripped_mauve_log_top"
+      "resource": "regions_unexplored:block/stripped_wisteria_log_top"
     },
     {
       "type": "dynamictrees:thick_branch_rings",

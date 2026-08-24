@@ -1,5 +1,6 @@
 {
   "values": [
+    "dtru:palm_seed",
     "dtru:bamboo_seed",
     "dtru:baobab_seed",
     "dtru:big_apple_oak_seed",
@@ -21,13 +22,16 @@
     "dtru:mega_eucalyptus_seed",
     "dtru:mega_mauve_seed",
     "dtru:mega_pine_seed",
+    "dtru:mega_salmon_wisteria_seed",
+    "dtru:mega_sky_wisteria_seed",
     "dtru:orange_maple_seed",
-    "dtru:palm_seed",
     "dtru:pine_seed",
     "dtru:pink_magnolia_seed",
     "dtru:redwood_seed",
     "dtru:red_maple_seed",
+    "dtru:salmon_wisteria_seed",
     "dtru:silver_birch_seed",
+    "dtru:sky_wisteria_seed",
     "dtru:socotra_seed",
     "dtru:white_magnolia_seed",
     "dtru:willow_seed"
