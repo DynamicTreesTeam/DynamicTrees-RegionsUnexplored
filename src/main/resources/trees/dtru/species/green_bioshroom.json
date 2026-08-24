@@ -15,6 +15,8 @@
       "height_variation": 4
     }
   },
+  "preferred_climate" : "temperate",
+  "climate_tolerance": 1.0,
   "cap_properties": "dtru:green_bioshroom",
   "mushroom_shape_kit": {
     "name": "dynamictreesplus:bell",
@@ -46,12 +48,6 @@
         "min_trunk_radius": 8,
         "scale_factor": 16,
         "level_limit": 0
-      }
-    },
-    {
-      "name": "dtru:glowing_green_bioshroom",
-      "properties": {
-        "block": "regions_unexplored:glowing_green_bioshroom_block"
       }
     },
     {

@@ -15,10 +15,6 @@
     }
   },
   "leaves_properties": "dtru:enchanted_birch",
-  "environment_factors" : {
-    "sparse": 0.80,
-    "dry": 0.50
-  },
   "lang_overrides": {
     "seed": "Enchanted Birch Catkin"
   }

@@ -13,8 +13,6 @@
     }
   },
   "leaves_properties": "dtru:twisting_birch",
-  "environment_factors" : {
-    "sparse": 0.80,
-    "dry": 0.50
-  }
+  "preferred_climate" : "temperate",
+  "climate_tolerance": 0.5
 }

@@ -9,13 +9,9 @@
   "max_branch_radius": 8,
   "growth_logic_kit": "dtru:mega_pine",
   "leaves_properties": "dtru:pine",
-  "environment_factors" : {
-    "hot": 0.50,
-    "dry": 0.25,
-    "wet": 0.75
-  },
+  "preferred_climate" : "cold",
+  "climate_tolerance": 0.7,
   "world_gen_leaf_map_height": 60,
-  "perfect_biomes": { "tag": "#c:is_coniferous" },
   "features" : [
     "conifer_topper",
     "clear_volume",

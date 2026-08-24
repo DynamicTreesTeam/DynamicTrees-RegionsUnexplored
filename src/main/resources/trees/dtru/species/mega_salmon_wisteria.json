@@ -8,11 +8,8 @@
   "soil_longevity": 16,
   "max_branch_radius": 24,
   "leaves_properties": "dtru:salmon_wisteria",
-  "environment_factors" : {
-    "#c:is_cold": 0.8,
-    "#c:is_hot": 0.8,
-    "#c:is_dry": 0.5
-  },
+  "preferred_climate" : "temperate",
+  "climate_tolerance": 0.3,
   "features": [
     "bottom_flare",
     {

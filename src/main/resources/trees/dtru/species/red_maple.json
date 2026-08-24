@@ -9,15 +9,8 @@
   "growth_logic_kit": "dtru:variate_height",
   "generate_seed": true,
   "generate_sapling": true,
-  "environment_factors": {
-    "#c:is_cold": 1.1,
-    "#c:is_hot": 0.2,
-    "#c:is_dry": 0.4,
-    "#c:is_forest": 0.9
-  },
-  "perfect_biomes": {
-    "name": ".*maple.*"
-  },
+  "preferred_climate" : "temperate",
+  "climate_tolerance": 0.8,
   "primitive_sapling": "regions_unexplored:red_maple_sapling",
   "acceptable_soils": ["dirt_like"],
   "features": [

@@ -15,13 +15,8 @@
   },
   "leaves_properties": "dtru:eucalyptus",
   "world_gen_leaf_map_height": 64,
-  "environment_factors" : {
-    "#c:is_snowy": 0.5,
-    "#c:is_dry": 0.75
-  },
-  "perfect_biomes": {
-    "tag": "#minecraft:is_jungle"
-  },
+  "preferred_climate" : "tropical",
+  "climate_tolerance": 0.7,
   "features": [
     {
       "name": "roots",

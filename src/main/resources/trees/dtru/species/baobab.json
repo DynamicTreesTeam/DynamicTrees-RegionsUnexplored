@@ -10,13 +10,8 @@
   "leaves_properties": "dtru:baobab",
   "generate_seed": true,
   "generate_sapling": true,
-  "environment_factors": {
-    "#c:is_cold": 0.75,
-    "#c:is_forest": 0.9
-  },
-  "perfect_biomes": {
-    "name": "regions_unexplored:.*baobab.*"
-  },
+  "preferred_climate" : "arid",
+  "climate_tolerance": 0.3,
   "primitive_sapling": "regions_unexplored:baobab_sapling",
   "features": [
     "mound"

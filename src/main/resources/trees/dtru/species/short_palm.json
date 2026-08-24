@@ -14,13 +14,9 @@
     }
   },
   "leaves_properties": "dtru:palm",
-  "environment_factors" : {
-    "#c:is_cold": 0.75,
-    "#c:is_hot": 1.1,
-    "#c:is_dry": 1.1
-  },
+  "preferred_climate" : "tropical",
+  "climate_tolerance": 0.5,
   "transformable": false,
-  "perfect_biomes": { "tag": ".*(tropics|rainforest).*" },
   "acceptable_soils": [ "dirt_like", "sand_like" ],
   "features": [
     {

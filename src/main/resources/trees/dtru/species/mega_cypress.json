@@ -17,11 +17,8 @@
     }
   },
   "leaves_properties": "dtru:cypress",
-  "environment_factors" : {
-    "#c:is_hot": 0.7,
-    "#c:is_dry": 0.5
-  },
-  "perfect_biomes": { "tags": [ "#c:is_swamp", "#minecraft:is_overworld" ] },
+  "preferred_climate" : "temperate",
+  "climate_tolerance": 0.2,
   "acceptable_soils": [ "water_like", "dirt_like" ],
   "features": [
     "dtru:extra_bottom_flare",

@@ -15,13 +15,8 @@
   "leaves_properties": "dtru:kapok",
   "generate_seed": true,
   "generate_sapling": true,
-  "environment_factors" : {
-    "#c:is_snowy": 0.5,
-    "#c:is_dry": 0.75
-  },
-  "perfect_biomes": {
-    "tag": "#minecraft:is_jungle"
-  },
+  "preferred_climate" : "tropical",
+  "climate_tolerance": 0.5,
   "primitive_saplings": [
     "regions_unexplored:kapok_sapling"
   ],

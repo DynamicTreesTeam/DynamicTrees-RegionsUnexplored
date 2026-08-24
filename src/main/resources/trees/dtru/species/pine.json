@@ -9,11 +9,8 @@
   "leaves_properties": "dtru:pine",
   "generate_seed": true,
   "generate_sapling": true,
-  "environment_factors" : {
-    "#c:is_hot": 0.50,
-    "#c:is_wet": 0.75
-  },
-  "perfect_biomes": { "tag": "#c:is_coniferous" },
+  "preferred_climate" : "cold",
+  "climate_tolerance": 0.7,
   "primitive_sapling": "regions_unexplored:pine_sapling",
   "world_gen_acceptable_soils": [ "snow_like" ],
   "acceptable_soils": ["dirt_like"],

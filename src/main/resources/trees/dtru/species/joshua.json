@@ -16,12 +16,8 @@
   "leaves_properties": "dtru:joshua",
   "generate_seed": true,
   "generate_sapling": true,
-  "environment_factors" : {
-    "#c:is_wet": 0.75,
-    "#c:is_cold": 0.75
-  },
-  "perfect_biomes": { "tags": [ "#c:is_desert", "#minecraft:is_overworld" ] },
+  "preferred_climate" : "arid",
+  "climate_tolerance": 0.5,
   "primitive_sapling": "regions_unexplored:joshua_sapling",
-  "acceptable_soils": ["dirt_like", "sand_like"],
-  "features" : []
+  "acceptable_soils": ["dirt_like", "sand_like"]
 }

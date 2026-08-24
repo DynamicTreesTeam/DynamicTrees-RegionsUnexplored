@@ -8,11 +8,8 @@
   "leaves_properties": "dtru:sky_wisteria",
   "generate_seed": true,
   "generate_sapling": true,
-  "environment_factors" : {
-    "#c:is_cold": 0.8,
-    "#c:is_hot": 0.8,
-    "#c:is_dry": 0.5
-  },
+  "preferred_climate" : "temperate",
+  "climate_tolerance": 0.3,
   "mega_species": "dtru:mega_sky_wisteria",
   "primitive_sapling": "regions_unexplored:sky_wisteria_sapling",
   "features" : [

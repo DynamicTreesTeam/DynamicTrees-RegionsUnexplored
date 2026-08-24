@@ -1,15 +1,5 @@
 package dtteam.dtru.genfeature;
 
-//import com.ferreusveritas.dynamictrees.api.TreeHelper;
-//import com.ferreusveritas.dynamictrees.api.configuration.ConfigurationProperty;
-//import com.ferreusveritas.dynamictrees.api.network.MapSignal;
-//import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
-//import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeatureConfiguration;
-//import com.ferreusveritas.dynamictrees.systems.genfeature.context.PostGenerationContext;
-//import com.ferreusveritas.dynamictrees.systems.nodemapper.FindEndsNode;
-//import com.ferreusveritas.dynamictreesplus.block.mushroom.DynamicCapCenterBlock;
-//import com.ferreusveritas.dynamictreesplus.systems.mushroomlogic.context.MushroomCapContext;
-//import com.ferreusveritas.dynamictreesplus.tree.HugeMushroomSpecies;
 import com.dtteam.dynamictrees.api.configuration.ConfigurationProperty;
 import com.dtteam.dynamictrees.api.network.MapSignal;
 import com.dtteam.dynamictrees.systems.genfeature.GenFeature;
@@ -34,7 +24,6 @@ import java.util.List;
 
 public class MushroomVinesGenFeature extends GenFeature {
 
-	// Min radius for the flare.
 	public static final ConfigurationProperty<Float> VINE_PLACE_CHANCE = ConfigurationProperty.floatProperty("vine_place_chance");
 	public static final ConfigurationProperty<Integer> MAX_LENGTH = ConfigurationProperty.integer("max_length");
 	public static final ConfigurationProperty<Block> BLOCK = ConfigurationProperty.block("block");
