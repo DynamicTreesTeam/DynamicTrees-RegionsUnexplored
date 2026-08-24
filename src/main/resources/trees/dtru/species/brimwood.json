@@ -11,7 +11,7 @@
   "preferred_climate" : "arid",
   "climate_tolerance": 0.1,
   "primitive_sapling": "regions_unexplored:brimwood_sapling",
-  "acceptable_soils": [ "nether_like", "dirt_like" ],
+  "acceptable_soils": [ "nether_soil_like", "dirt_like" ],
   "features" : [
     "bottom_flare",
     "dtru:magma_bottom",

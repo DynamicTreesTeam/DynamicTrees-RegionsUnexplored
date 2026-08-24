@@ -18,5 +18,5 @@
   "preferred_climate" : "arid",
   "climate_tolerance": 0.1,
   "primitive_sapling": "regions_unexplored:cobalt_sapling",
-  "acceptable_soils": ["nether_soil_like", "stone_like"]
+  "acceptable_soils": ["nether_soil_like"]
 }

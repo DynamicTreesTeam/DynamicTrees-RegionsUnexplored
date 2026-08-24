@@ -111,15 +111,11 @@ configurations {
 }
 
 dependencies {
-    // implementation files("libs/coolmod-${mc_version}-${coolmod_version}.jar")
     implementation "com.dtteam.dynamictrees:dynamictrees-neoforge-$minecraft_version:$dynamic_trees_version"
     implementation "com.dtteam.dynamictreesplus:DynamicTreesPlus:$dynamic_trees_plus_version"
-//    implementation "curse.maven:dynamictrees-252818:7206627"
-//    implementation "curse.maven:dynamictreesplus-478155:7205442"
     implementation "curse.maven:regions-unexplored-659110:8419667"
-    implementation "curse.maven:terrablender-neoforge-940057:6054947"
     implementation "curse.maven:lithostitched-936015:8660310"
-    implementation "curse.maven:biolith-852512:7074761"
+    //implementation "curse.maven:biolith-852512:8435635"
 
     implementation "curse.maven:jade-324717:6853386"
     implementation "curse.maven:cc-tweaked-282001:5714512"
